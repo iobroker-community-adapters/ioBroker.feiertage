@@ -14,9 +14,17 @@ Es können keine Einstellungen vorgenommen werden.
 
 Der Adapter startet jeden Tag um Mitternacht. Ein häufigeres Starten ist nicht erforderlich.
 
+-----
 
+This adapter delivers date and name of the next German holiday. Furthermore it tells if today, tommorw or the day after tommorow is a holiday in Germany.
+
+There is nothing to setup.
+
+The adapter starts daily at midnight. Due to the nature of the subject, no higher frequency is required.
 
 ## Changelog
+### 0.0.2 (2016-04-27)
+* (pix) Title and Description corrected
 ### 0.0.1 (2016-04-26)
 * (pix) Adapter created
 
