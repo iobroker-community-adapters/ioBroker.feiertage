@@ -1,16 +1,10 @@
 {
   "name": "iobroker.feiertage",
   "description": "Deutsche Feiertage",
-  "version": "0.0.1",
-  "author": {
-    "name": "pix",
-    "email": ""
-  },
+  "version": "0.0.2",
+  "author": "pix",
   "contributors": [
-    {
-      "name": "pix",
-      "email": ""
-    }
+    "pix"
   ],
   "homepage": "https://github.com/ioBroker/ioBroker.feiertage",
   "repository": {
@@ -47,10 +41,6 @@
     "test": "node node_modules/mocha/bin/mocha"
   },
   "maintainers": [
-    {
-      "name": "pix",
-      "email": ""
-    }
-  ],
-  "readmeFilename": "README.md"
+    "pix"
+  ]
 }
