@@ -4,7 +4,6 @@
 "use strict";
 
 var utils   = require(__dirname + '/lib/utils'); // Get common adapter utils
-var tools   = require(__dirname + '/lib/tools');
 
 var channels = [];
 var iopkg;
@@ -36,17 +35,6 @@ var adapter = utils.adapter({
         }, 240000);
     }
 });
-
-var idheute =           "heute.boolean",
-    idmorgen =          "morgen.boolean",
-    iduebermorgen =     "uebermorgen.boolean",
-    idheuteName =       "heute.Name",
-    idmorgenName =      "morgen.Name",
-    iduebermorgenName = "uebermorgen.Name",
-    idnaechsterDatum =  "naechster.Datum",
-    idnaechsterName =   "naechster.Name",
-    idnaechsterDauer =  "naechster.Dauer";
-
 
 // Script ermittelt, ob heute oder morgen ein Feiertag ist
 var sj;                 // Schaltjahr
@@ -112,23 +100,23 @@ function checkHolidays() {
 
    // heute 
    var istFeiertag;
-   adapter.setState(idheuteName, feiertag(tag));
+   adapter.setState("heute.Name", feiertag(tag));
    istFeiertag = (feiertag(tag).length < 2) ? false : true;
-   adapter.setState(idheute, istFeiertag);
+   adapter.setState("heute.boolean", istFeiertag);
    
    // morgen
    tag = tag + 1;
    if (tag > 365 + sj) tag = 1;
-   adapter.setState(idmorgenName, feiertag(tag));
+   adapter.setState("morgen.Name", feiertag(tag));
    istFeiertag = (feiertag(tag).length < 2) ? false : true;
-   adapter.setState(idmorgen, istFeiertag);
+   adapter.setState("morgen.boolean", istFeiertag);
    
    // übermorgen
    tag = tag + 1;
    if (tag > 365 + sj) tag = 1;
-   adapter.setState(iduebermorgenName, feiertag(tag));
+   adapter.setState("uebermorgen.Name", feiertag(tag));
    istFeiertag = (feiertag(tag).length < 2) ? false : true;
-   adapter.setState(iduebermorgen, istFeiertag);
+   adapter.setState("uebermorgen.boolean", istFeiertag);
    
    // nächster Feiertag
    var noch = 0;
@@ -138,10 +126,10 @@ function checkHolidays() {
        istFeiertag = (feiertag(tag).length < 2) ? false : true;
        if (istFeiertag) {
            var datum_tdj = tagdesjahresZudatum(tag);
-           adapter.setState(idnaechsterName, feiertag(tag));
-           adapter.setState(idnaechsterDatum, formatDate(datum_tdj));
+           adapter.setState("naechster.Name", feiertag(tag));
+           adapter.setState("naechster.Datum", formatDate(datum_tdj));
            adapter.log.info('Nächster Feiertag: '  + feiertag(tag) + ' in ' + noch + ' Tagen am ' + formatDate(datum_tdj));
-           adapter.setState(idnaechsterDauer, noch);
+           adapter.setState("naechster.Dauer", noch);
        }
    }
 }
