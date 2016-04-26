@@ -24,7 +24,8 @@ The adapter starts daily at midnight. Due to the nature of the subject, no highe
 
 ## Changelog
 ### 0.0.2 (2016-04-27)
-* (pix) Title and Description corrected
+* (pix) Title and description corrected
+* (pix) English translation of readme file
 
 ### 0.0.1 (2016-04-26)
 * (pix) Adapter created
