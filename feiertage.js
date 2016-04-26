@@ -11,17 +11,30 @@ var iopkg;
 
 var adapter = utils.adapter({
     name: 'feiertage',
-    useFormatDate: true
+    useFormatDate: true,
+    
+    unload: function (callback) {
+        adapter.log.info("adapter feiertage is unloading");
+    },
+    discover: function (callback) {
+        adapter.log.info("adapter feiertage discovered");
+    },
+    install: function (callback) {
+        adapter.log.info("adapter feiertage installed");
+    },
+    uninstall: function (callback) {
+        adapter.log.info("adapter feiertage UN-installed");
+    },
+    ready: function () {
+        adapter.log.debug("Adapter feiertage got 'Ready' Signal");
+        adapter.log.debug("adapter feiertage initializing objects");
+        checkHolidays();
+
+    setTimeout(function () {
+        adapter.log.info('force terminating after 4 minutes');
+        adapter.stop();
+    }, 240000);
 });
-
-adapter.on('ready', checkHolidays);
-
-
-setTimeout(function () {
-    adapter.log.info('force terminating after 4 minutes');
-    adapter.stop();
-}, 240000);
-
 
 var idheute =           "heute.boolean",
     idmorgen =          "morgen.boolean",
