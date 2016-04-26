@@ -23,6 +23,9 @@ There is nothing to setup.
 The adapter starts daily at midnight. Due to the nature of the subject, no higher frequency is required.
 
 ## Changelog
+### 0.0.3 (2016-04-27)
+* (pix) Writing to objects corrected
+
 ### 0.0.2 (2016-04-27)
 * (pix) Title and description corrected
 * (pix) English translation of readme file
