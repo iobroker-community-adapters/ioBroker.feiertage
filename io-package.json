@@ -2,11 +2,7 @@
     "common": {
         "name":                     "feiertage",
         "title":                    "Deutsche Feiertage",
-<<<<<<< HEAD
-        "desc":                     "Feiertage im deutschen Kalender berechnet nach der Gaußschen Osterformel unter Verwendung der Formel von Heiner Lichtenberg",
-=======
         "desc":                     "Deutsche Feiertage berechnet nach der Formel von Heiner Lichtenberg beruhend auf der Gaußschen Osterformel",
->>>>>>> origin/master
         "version": "0.0.2",
         "mode":                     "schedule",
         "schedule":                 "0 0 * * *",
