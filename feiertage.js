@@ -4,6 +4,7 @@
 "use strict";
 
 var utils   = require(__dirname + '/lib/utils'); // Get common adapter utils
+var tools   = require(__dirname + '/lib/tools');
 
 var channels = [];
 var iopkg;
