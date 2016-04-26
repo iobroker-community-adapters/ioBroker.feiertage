@@ -30,10 +30,11 @@ var adapter = utils.adapter({
         adapter.log.debug("adapter feiertage initializing objects");
         checkHolidays();
 
-    setTimeout(function () {
-        adapter.log.info('force terminating after 4 minutes');
-        adapter.stop();
-    }, 240000);
+        setTimeout(function () {
+            adapter.log.info('force terminating after 4 minutes');
+            adapter.stop();
+        }, 240000);
+    }
 });
 
 var idheute =           "heute.boolean",
