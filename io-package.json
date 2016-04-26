@@ -1,0 +1,174 @@
+{
+    "common": {
+        "name":                     "feiertage",
+        "title":                    "Deustche Feiertage",
+        "desc":                     "Feiertage im deutschen Kalender berechnet nach der Formel von Heiner Lichtenberg beruhend auf der Gaußschen Osterformel",
+        "version": "0.0.1",
+        "mode":                     "schedule",
+        "schedule":                 "0 0 * * *",
+        "platform":                 "javascript/Node.js",
+        "loglevel":                 "info",
+        "keywords":                 ["calendar", "Kalender", "Feiertag", "Feiertage", "Woche", "Jahr", "Tag", "Monat", "holiday"],
+        "main":                     "feiertage.js",
+        "authors": [
+            "pix"
+        ],
+        "license":                  "MIT",
+        "readme":                   "https://github.com/ioBroker/ioBroker.feiertage/blob/master/README.md",
+        "icon":                     "feiertage.png",
+        "extIcon":                  "https://raw.githubusercontent.com/ioBroker/ioBroker.feiertage/master/admin/feiertage.png",
+        "localLink":                "https://de.wikipedia.org/wiki/Gaußsche_Osterformel",
+		"allowInit":                true,
+        "type":                     "schedule"
+    },
+    "objects": [
+
+
+    ],
+    "instanceObjects": [
+        {
+            "_id":  "heute",
+            "type": "channel",
+            "common": {
+                "role": "day",
+                "name": ""
+            },
+            "native": {}
+        },
+        {
+            "_id":  "heute.Name",
+            "type": "state",
+            "common": {
+                "name":  "Feiertag heute - Name",
+                "desc":  "Welcher Feiertag ist heute?",
+                "type":  "string",
+                "read":  true,
+                "write": false
+            },
+            "native": {}
+        },
+        {
+            "_id":  "heute.boolean",
+            "type": "state",
+            "common": {
+                "name":  "Feiertag heute?",
+                "desc":  "Ist heute ein Feiertag?",
+                "type":  "boolean",
+                "read":  true,
+                "write": false
+            },
+            "native": {}
+        },
+        {
+            "_id":  "morgen",
+            "type": "channel",
+            "common": {
+                "role": "day",
+                "name": ""
+            },
+            "native": {}
+        },
+        {
+            "_id":  "morgen.Name",
+            "type": "state",
+            "common": {
+                "name":  "Feiertag morgen - Name",
+                "desc":  "Welcher Feiertag ist morgen?",
+                "type":  "string",
+                "read":  true,
+                "write": false
+            },
+            "native": {}
+        },
+        {
+            "_id":  "morgen.boolean",
+            "type": "state",
+            "common": {
+                "name":  "Feiertag morgen?",
+                "desc":  "Ist morgen ein Feiertag?",
+                "type":  "boolean",
+                "read":  true,
+                "write": false
+            },
+            "native": {}
+        },
+        {
+            "_id":  "uebermorgen",
+            "type": "channel",
+            "common": {
+                "role": "day",
+                "name": ""
+            },
+            "native": {}
+        },
+        {
+            "_id":  "uebermorgen.Name",
+            "type": "state",
+            "common": {
+                "name":  "Feiertag übermorgen - Name",
+                "desc":  "Welcher Feiertag ist übermorgen?",
+                "type":  "string",
+                "read":  true,
+                "write": false
+            },
+            "native": {}
+        },
+        {
+            "_id":  "uebermorgen.boolean",
+            "type": "state",
+            "common": {
+                "name":  "Feiertag übermorgen?",
+                "desc":  "Ist übermorgen ein Feiertag?",
+                "type":  "boolean",
+                "read":  true,
+                "write": false
+            },
+            "native": {}
+        },
+        {
+            "_id":  "naechster",
+            "type": "channel",
+            "common": {
+                "role": "day",
+                "name": ""
+            },
+            "native": {}
+        },
+        {
+            "_id":  "naechster.Name",
+            "type": "state",
+            "common": {
+                "name":  "naechster Feiertag - Name",
+                "desc":  "Welcher ist der naechste Feiertag?",
+                "type":  "string",
+                "read":  true,
+                "write": false
+            },
+            "native": {}
+        },
+        {
+            "_id":  "naechster.Datum",
+            "type": "state",
+            "common": {
+                "name":  "Naechster Feiertag - Datum?",
+                "desc":  "Wann ist der naechste Feiertag?",
+                "type":  "datetime",
+                "read":  true,
+                "write": false
+            },
+            "native": {}
+        },
+        {
+            "_id":  "naechster.Dauer",
+            "type": "state",
+            "common": {
+                "name":  "Naechster Feiertag - Dauer bis dahin",
+                "desc":  "Zahl der Tage bis zum nächsten Feiertag",
+                "type":  "number",
+                "read":  true,
+                "write": false
+            },
+            "native": {}
+        }
+    ]
+}
