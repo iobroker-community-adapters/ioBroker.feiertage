@@ -4,7 +4,6 @@
 "use strict";
 
 var utils   = require(__dirname + '/lib/utils'); // Get common adapter utils
-var tools   = require(__dirname + '/lib/tools');
 
 var channels = [];
 var iopkg;
@@ -29,6 +28,7 @@ var adapter = utils.adapter({
         adapter.log.debug("Adapter feiertage got 'Ready' Signal");
         adapter.log.debug("adapter feiertage initializing objects");
         checkHolidays();
+        adapter.log.info("adapter feiertage objects written");
 
         setTimeout(function () {
             adapter.log.info('force terminating after 4 minutes');
