@@ -17,23 +17,23 @@ Dieser Adapter liefert das Datum und den Namen des nächsten deutschen Feiertage
 
 ## Datenpunkte / Datapoints
 
-Feiertag heute  (false/true)
+Feiertag __heute__  (false/true)
 
-Feiertag heute Name  (z.B. "*1. Weihnachtsfeiertag*")
+Feiertag __heute Name__  (z.B. "*1. Weihnachtsfeiertag*")
 
-Feiertag morgen  (*false/true*)
+Feiertag __morgen__  (*false/true*)
 
-Feiertag morgen Name  (z.B. "*2. Weihnachtsfeiertag*")
+Feiertag __morgen Name__  (z.B. "*2. Weihnachtsfeiertag*")
 
-Feiertag uebermorgen  (*false/true*)
+Feiertag __uebermorgen__  (*false/true*)
 
-Feiertag uebermorgen Name  (z.B. "")
+Feiertag __uebermorgen Name__  (z.B. "")
 
-Feiertag naechster Name  (z.B. "*Maifeiertag*")
+Feiertag __naechster Name__  (z.B. "*Maifeiertag*")
 
-Feiertag naechster Datum  (z.B. "*01.05.2016*")
+Feiertag __naechster Datum__  (z.B. "*01.05.2016*")
 
-Feiertag naechster Dauer  (z.B. "*2 Tage*")
+Feiertag __naechster Dauer__  (z.B. "*2 Tage*")
 
 ## Einstellungen / Configuration
 Deutsch  | English
