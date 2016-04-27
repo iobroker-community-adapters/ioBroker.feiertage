@@ -88,6 +88,6 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 ---
-Logo is crafted by CHALLENGER
+*Logo is crafted by CHALLENGER
 
-Thank you, paul53, for the inspiration!
+Thank you, paul53, for the inspiration!*
