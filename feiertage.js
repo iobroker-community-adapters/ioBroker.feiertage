@@ -127,7 +127,7 @@ function checkHolidays() {
        istFeiertag = (feiertag(tag).length < 2) ? false : true;
        if (istFeiertag) {
            var datum_tdj = tagdesjahresZudatum(tag);
-           adapter.setState("naechster.Name", {ack: true, val: istFeiertag});
+           adapter.setState("naechster.Name", {ack: true, val: feiertag(tag)});
            
            // Workaround für formatDate
            var next_ft_jahr = datum_tdj.getFullYear();
