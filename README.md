@@ -64,6 +64,8 @@ Der Adapter startet jeden Tag um Mitternacht. Ein häufigeres Starten ist nicht 
 
 * Übersetzungen / Translation
 * Einstellungsdatei / config file
+* Optin/optout besondere Tage, die keine Feiertage sind (Heiligabend, Rosenmontag, ...)
+* Auswahl nach Bundesland
 
 ## License
 
