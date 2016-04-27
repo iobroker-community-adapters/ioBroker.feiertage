@@ -165,6 +165,7 @@
                 "name":  "Naechster Feiertag - Dauer bis dahin",
                 "desc":  "Zahl der Tage bis zum nächsten Feiertag",
                 "type":  "number",
+                "unit":  "Tage"
                 "read":  true,
                 "write": false
             },
