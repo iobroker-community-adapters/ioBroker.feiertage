@@ -19,21 +19,21 @@ Dieser Adapter liefert das Datum und den Namen des nächsten deutschen Feiertage
 
 Feiertag heute  (false/true)
 
-Feiertag heute Name  (z.B. "1. Weihnachtsfeiertag")
+Feiertag heute Name  (z.B. "*1. Weihnachtsfeiertag*")
 
-Feiertag morgen  (false/true)
+Feiertag morgen  (*false/true*)
 
-Feiertag morgen Name  (z.B. "2. Weihnachtsfeiertag")
+Feiertag morgen Name  (z.B. "*2. Weihnachtsfeiertag*")
 
-Feiertag uebermorgen  (false/true)
+Feiertag uebermorgen  (*false/true*)
 
 Feiertag uebermorgen Name  (z.B. "")
 
-Feiertag naechster Name  (z.B. "Maifeiertag")
+Feiertag naechster Name  (z.B. "*Maifeiertag*")
 
-Feiertag naechster Datum  (z.B. "01.05.2016")
+Feiertag naechster Datum  (z.B. "*01.05.2016*")
 
-Feiertag naechster Dauer  (z.B. "2 Tage")
+Feiertag naechster Dauer  (z.B. "*2 Tage*")
 
 ## Einstellungen / Configuration
 Deutsch  | English
