@@ -89,4 +89,5 @@ SOFTWARE.
 
 ---
 Logo is crafted by CHALLENGER
+
 Thank you, paul53, for the inspiration!
