@@ -9,27 +9,41 @@
 [![NPM](https://nodei.co/npm/iobroker.feiertage.png?downloads=true)](https://nodei.co/npm/iobroker.feiertage/)
 --
 ## Beschreibung / Description
-Dieser Adapter liefert das Datum und den Namen des nächsten deutschen Feiertages und gibt Auskunft, ob heute, morgen oder übermorgen ein Feiertag ist.
-This adapter delivers date and name of the next German holiday. Furthermore it tells if today, tommorw or the day after tommorow is a holiday in Germany.
+Deutsch  | English
+------------- | -------------
+Dieser Adapter liefert das Datum und den Namen des nächsten deutschen Feiertages und gibt Auskunft, ob heute, morgen oder übermorgen ein Feiertag ist.  | This adapter delivers date and name of the next German holiday. Furthermore it tells if today, tommorw or the day after tommorow is a holiday in Germany.
+
+
 
 ## Datenpunkte / Datapoints
-Feiertag heute (false/true)
-Feiertag heute Name (z.B. "1. Weihnachtsfeiertag")
-Feiertag morgen (false/true)
-Feiertag morgen Name (z.B. "2. Weihnachtsfeiertag")
-Feiertag uebermorgen (false/true)
-Feiertag uebermorgen Name (z.B. "")
-Feiertag naechster Name (z.B. "Maifeiertag")
-Feiertag naechster Datum (z.B. "01.05.2016")
-Feiertag naechster Dauer (z.B. "2 Tage")
+
+Feiertag heute  (false/true)
+
+Feiertag heute Name  (z.B. "1. Weihnachtsfeiertag")
+
+Feiertag morgen  (false/true)
+
+Feiertag morgen Name  (z.B. "2. Weihnachtsfeiertag")
+
+Feiertag uebermorgen  (false/true)
+
+Feiertag uebermorgen Name  (z.B. "")
+
+Feiertag naechster Name  (z.B. "Maifeiertag")
+
+Feiertag naechster Datum  (z.B. "01.05.2016")
+
+Feiertag naechster Dauer  (z.B. "2 Tage")
 
 ## Einstellungen / Configuration
-Es können keine Einstellungen vorgenommen werden.
-There is nothing to setup.
+Deutsch  | English
+------------- | -------------
+Es können keine Einstellungen am Adapter vorgenommen werden.  | There is nothing to setup.
 
 ## Aktivierung / Schedule
-Der Adapter startet jeden Tag um Mitternacht. Ein häufigeres Starten ist nicht erforderlich.
-The adapter starts daily at midnight. Due to the nature of the subject, no higher frequency is required.
+Deutsch  | English
+------------- | -------------
+Der Adapter startet jeden Tag um Mitternacht. Ein häufigeres Starten ist nicht erforderlich. | The adapter starts daily at midnight. Due to the nature of the subject, no higher frequency is required.
 
 ## Changelog
 ### 0.0.3 (2016-04-27)
