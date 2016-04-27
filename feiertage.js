@@ -128,8 +128,18 @@ function checkHolidays() {
        if (istFeiertag) {
            var datum_tdj = tagdesjahresZudatum(tag);
            adapter.setState("naechster.Name", feiertag(tag));
-           adapter.setState("naechster.Datum", formatDate(datum_tdj));
-           adapter.log.info('Nächster Feiertag: '  + feiertag(tag) + ' in ' + noch + ' Tagen am ' + formatDate(datum_tdj));
+           
+           // Workaround für formatDate
+           var next_ft_jahr = datum_tdj.getFullYear();
+           var next_ft_monat = ( (datum_tdj.getMonth() + 1) < 10) ? '0' + (datum_tdj.getMonth() + 1) : (datum_tdj.getMonth() + 1);
+           var next_ft_tag = ( datum_tdj.getDate() < 10) ? '0' + datum_tdj.getDate() : datum_tdj.getDate();
+           var next_ft = next_ft_tag + '.' + next_ft_monat + '.' + next_ft_jahr;
+           adapter.log.info('Nächster Feiertag: '  + feiertag(tag) + ' in ' + noch + ' Tagen am ' + next_ft);
+           adapter.setState("naechster.Datum", next_ft);
+           // Ende Workaround
+           
+           //adapter.setState("naechster.Datum", formatDate(datum_tdj));
+           //adapter.log.info('Nächster Feiertag: '  + feiertag(tag) + ' in ' + noch + ' Tagen am ' + formatDate(datum_tdj));
            adapter.setState("naechster.Dauer", noch);
        }
    }
