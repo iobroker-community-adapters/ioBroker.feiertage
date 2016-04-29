@@ -21,6 +21,27 @@
 		"allowInit":                true,
         "type":                     "schedule"
     },
+    "native": {
+        "enable_neujahr":  true,
+        "enable_dreikoenige":  true,
+        "enable_maifeiertag":  true,
+        "enable_mhimmelfahrt":  true,
+        "enable_einheitstag":  true,
+        "enable_reformationstag":  true,
+        "enable_allerheiligen":  true,
+        "enable_heiligabend":  true,
+        "enable_weihnachtstag1":  true,
+        "enable_weihnachtstag2":  true,
+        "enable_silvester":  true,
+        "enable_rosenmontag":  true,
+        "enable_karfreitag":  true,
+        "enable_ostersonntag":  true,
+        "enable_ostermontag":  true,
+        "enable_chimmelfahrt":  true,
+        "enable_pfingstsonntag":  true,
+        "enable_pfingstmontag":  true,
+        "enable_fronleichnam":  true,
+    },
     "objects": [
 
 
