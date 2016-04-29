@@ -46,7 +46,7 @@ Deutsch  | English
 Der Adapter startet jeden Tag um Mitternacht. Ein häufigeres Starten ist nicht erforderlich. | The adapter starts daily at midnight. Due to the nature of the subject, no higher frequency is required.
 
 ## Changelog
-### 0.0.5 (2016-04-27)
+### 0.0.5 (2016-04-29)
 * (pix) Selectable Holidays in settings
 
 ### 0.0.4 (2016-04-27)
