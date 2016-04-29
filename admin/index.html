@@ -22,38 +22,222 @@
         width: 150px;
         text-align: right;
     }
+    .loc {
+    	text-align: right;
+    	color: grey;
+    }
 </style>
 <!-- you have to define 2 functions in the global scope: -->
 <script type="text/javascript">
 	systemDictionary = {
-        "Deutsche Feiertage Adapter settings": {
-            "en": "Deutsche Feiertage Adapter settings",
-            "de": "Deutsche Feiertage Adapter Einstellungen",
-            "ru": "Настройки Deutsche Feiertage Adapter"
-        },
-        "There is nothing to setup": {
-            "en": "There is nothing to setup",
-            "de": "Es gibt nichts einzustellen",
-            "ru": "Нечего настраивать"
-        },
+            "Deutsche Feiertage Adapter settings": {
+                "en": "German Holidays Adapter settings",
+                "de": "Deutsche Feiertage Adapter Einstellungen",
+                "ru": "Настройки Deutsche Feiertage Adapter"
+            },
+            "Feiertage": 
+            	{"en": "Holidays",                           "de": "Feiertage",                              "ru": "Пожалуйста, переводить"},
+            "Auswahl": 
+            	{"en": "Optin",                              "de": "Auswahl",                                "ru": "Пожалуйста, переводить"},
+            "Beschreibung": 
+            	{"en": "Description",                        "de": "Beschreibung",                           "ru": "Пожалуйста, переводить"},
+            "kirchlicher Feiertag": 
+            	{"en": "religous Holiday",                   "de": "kirchlicher Feiertag",                   "ru": "Пожалуйста, переводить"},
+            "kalendarischer Feiertag": 
+            	{"en": "calendrical Holiday",                "de": "kalendarischer Feiertag",                "ru": "Пожалуйста, переводить"},
+            "politischer Feiertag": 
+            	{"en": "political Holiday",                  "de": "politischer Feiertag",                   "ru": "Пожалуйста, переводить"},
+            "Neujahr": 
+            	{"en": "New Year's Day",                     "de": "Neujahr",                                "ru": "Пожалуйста, переводить"},
+            "Heilige Drei Könige": 
+            	{"en": "Epiphany",                           "de": "Dreikönigstag",                          "ru": "Пожалуйста, переводить"},
+            "Rosenmontag": 
+            	{"en": "Rose Monday",                        "de": "Rosenmontag",                            "ru": "Пожалуйста, переводить"},
+            "Karfreitag": 
+            	{"en": "Good Friday",                        "de": "Karfreitag",                             "ru": "Пожалуйста, переводить"},
+            "Ostersonntag": 
+            	{"en": "Easter Sunday",                      "de": "Ostersonntag",                           "ru": "Пожалуйста, переводить"},
+            "Ostermontag": 
+            	{"en": "Easter Monday",                      "de": "Ostermontag",                            "ru": "Пожалуйста, переводить"},
+            "Maifeiertag": 
+            	{"en": "May Day",                            "de": "Tag der Arbeit - Maifeiertag",           "ru": "Пожалуйста, переводить"},
+            "Christi Himmelfahrt": 
+            	{"en": "Ascension of Christ",                "de": "Christi Himmelfahrt",                    "ru": "Пожалуйста, переводить"},
+            "Pfingstsonntag": 
+            	{"en": "Whitsunday",                         "de": "Pfingstsonntag",                         "ru": "Пожалуйста, переводить"},
+            "Pfingstmontag": 
+            	{"en": "Whit Monday",                        "de": "Pfingstmontag",                          "ru": "Пожалуйста, переводить"},
+            "Fronleichnam": 
+            	{"en": "Corpus Christi",                    "de": "Fronleichnam",                            "ru": "Пожалуйста, переводить"},
+            "Mariä Himmelfahrt": 
+            	{"en": "Assumption of Mary",                "de": "Mariä Himmelfahrt",                       "ru": "Пожалуйста, переводить"},
+            "Tag der deutschen Einheit": 
+            	{"en": "Day of German unity",               "de": "Tag der deutschen Einheit",               "ru": "Пожалуйста, переводить"},
+            "Reformationstag": 
+            	{"en": "Reformation Day",                   "de": "Reformationstag",                         "ru": "Пожалуйста, переводить"},
+            "Allerheiligen": 
+            	{"en": "All Saints' Day",                   "de": "Allerheiligen",                           "ru": "Пожалуйста, переводить"},
+            "Heiligabend": 
+            	{"en": "Christmas Eve",                     "de": "Heiligabend",                             "ru": "Пожалуйста, переводить"},
+            "1. Weihnachtstag": 
+            	{"en": "Christmas Day",                     "de": "1. Weihnachtstag",                        "ru": "Пожалуйста, переводить"},
+            "2. Weihnachtstag": 
+            	{"en": "2nd Christmas Day",                 "de": "2. Weihnachtstag",                        "ru": "Пожалуйста, переводить"},
+            "Silvester": 
+            	{"en": "New Year's Eve",                    "de": "Silvester",                               "ru": "Пожалуйста, переводить"}
 	};
+    
+    function setValue(id, value, onChange) {
+        // example: select elements with id=key and class=value and insert value
+        if ($('#' + id + '.value').attr('type') == 'checkbox') {
+            $('#' + id + '.value').prop('checked', value).change(function() {
+                onChange();
+            });
+        } else {
+            $('#' + id + '.value').val(value).change(function() {
+                onChange();
+            }).keyup(function() {
+                onChange();
+            });
+        }
+    }
+	
     function load(settings, onChange) {
-        if (!settings) return;
+        $('.value').each(function () {
+            var id = $(this).attr('id');
+            setValue(id, settings[id] || '', onChange);
+        });
         onChange(false);
     }
+    
     function save(callback) {
-        callback(null);
+        var obj = {};
+        $('.value').each(function () {
+            var $this = $(this);
+            if ($this.attr('type') == 'checkbox') {
+                obj[$this.attr('id')] = $this.prop('checked');
+            } else {
+                obj[$this.attr('id')] = $this.val();
+            }
+        });
+        callback(obj, common);
     }
+    
 </script>
+<!-- Todo
+Tooltips oder Erklärungen für die einzelnen Feiertage
+ggf. Sortierung
+-->
 
 <div id="adapter-container">
-
     <table><tr>
         <td><img src="feiertage.png"></td>
         <td style="padding-top: 20px;padding-left: 10px"><h3 class="translate">Deutsche Feiertage Adapter settings</h3></td>
     </tr></table>
-
-    <div class="translate">
-        <h4>There is nothing to setup</h4>
-    </div>
+    
+    <table id="config"></table>
+        <tr style="height: 10px; padding-top: 10px" class="ui-widget-header"><td colspan="3" class="translate" style="padding-left: 20px">Einstellungen</td></tr>
+        <tr style="height: 10px; padding-top: 10px" class="ui-widget-header"><td colspan="3" class="translate" style="padding-left: 20px">Diese Feiertage sollen angezeigt werden</td></tr>
+        <tr>
+            <td class= "translate">Auswahl</td>
+            <td class= "translate">Feiertage</td>
+            <td class= "translate">Beschreibung</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" id="neujahr" value="true" class="value"></td>
+            <td class="translate">Neujahr</td>
+            <td class="translate">kalendarischer Feiertag</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" id="dreikoenige" value="true" class="value"></td>
+            <td class="translate">Heilige Drei Könige<span="loc">&nbasp;(BW,BY,ST)</span></td>
+            <td class="translate">kirchlicher Feiertag</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" id="rosenmontag" value="true" class="value"></td>
+            <td class="translate">Rosenmontag</td>
+            <td class="translate">kalendarischer Feiertag</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" id="karfreitag" value="true" class="value"></td>
+            <td class="translate">Karfreitag</td>
+            <td class="translate">kirchlicher Feiertag</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" id="ostersonntag" value="true" class="value"></td>
+            <td class="translate">Ostersonntag</td>
+            <td class="translate">kirchlicher Feiertag</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" id="ostermontag" value="true" class="value"></td>
+            <td class="translate">Ostermontag</td>
+            <td class="translate">kirchlicher Feiertag</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" id="maifeiertag" value="true" class="value"></td>
+            <td class="translate">Maifeiertag</td>
+            <td class="translate">politischer Feiertag</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" id="chimmelfahrt" value="true" class="value"></td>
+            <td class="translate">Christi Himmelfahrt</td>
+            <td class="translate">kirchlicher Feiertag</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" id="pfingstsonntag" value="true" class="value"></td>
+            <td class="translate">Pfingstsonntag</td>
+            <td class="translate">kirchlicher Feiertag</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" id="pfingstmontag" value="true" class="value"></td>
+            <td class="translate">Pfingstmontag</td>
+            <td class="translate">kirchlicher Feiertag</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" id="fronleichnam" value="true" class="value"></td>
+            <td class="translate">Fronleichnam<span="loc">(BW, BY, HE, NW, RP, SL (SA, TH nicht überall))</span></td>
+            <td class="translate">kirchlicher Feiertag</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" id="mhimmelfahrt" value="true" class="value"></td>
+            <td class="translate">Mariä Himmelfahrt<span="loc">&nbasp;(BY (nicht überall), SL)</span></td>
+            <td class="translate">kirchlicher Feiertag</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" id="einheitstag" value="true" class="value"></td>
+            <td class="translate">Tag der deutschen Einheit</td>
+            <td class="translate">politischer Feiertag</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" id="reformationstag" value="true" class="value"></td>
+            <td class="translate">Reformationstag<span="loc">&nbasp;(BB, MV, SA, ST,TH)</span></td>
+            <td class="translate">kirchlicher Feiertag</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" id="allerheiligen" value="true" class="value"></td>
+            <td class="translate">Allerheiligen<span="loc">&nbasp;(BW, BY, NW, RP, SL)</span></td>
+            <td class="translate">kirchlicher Feiertag</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" id="heiligabend" value="true" class="value"></td>
+            <td class="translate">Heiligabend</td>
+            <td class="translate">kirchlicher Feiertag</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" id="weihnachtstag1" value="true" class="value"></td>
+            <td class="translate">1. Weihnachtstag</td>
+            <td class="translate">kirchlicher Feiertag</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" id="weihnachtstag2" value="true" class="value"></td>
+            <td class="translate">2. Weihnachtstag</td>
+            <td class="translate">kirchlicher Feiertag</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" id="silvester" value="true" class="value"></td>
+            <td class="translate">Silvester</td>
+            <td class="translate">kalendarischer Feiertag</td>
+        </tr>
+        
+    </table>
 </html>
