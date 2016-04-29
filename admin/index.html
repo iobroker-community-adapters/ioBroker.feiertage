@@ -97,8 +97,9 @@
             "Silvester": 
             	{"en": "New Year's Eve",                    "de": "Silvester",                               "ru": "Пожалуйста, переводить"}
 	};
+    var onChange = null;
     
-    function setValue(id, value, onChange) {
+function setValue(id, value) {
         // example: select elements with id=key and class=value and insert value
         if ($('#' + id + '.value').attr('type') == 'checkbox') {
             $('#' + id + '.value').prop('checked', value).change(function() {
@@ -108,30 +109,35 @@
             $('#' + id + '.value').val(value).change(function() {
                 onChange();
             }).keyup(function() {
-                onChange();
+                $(this).trigger('change');
             });
         }
     }
 	
-    function load(settings, onChange) {
-        $('.value').each(function () {
-            var id = $(this).attr('id');
-            setValue(id, settings[id] || '', onChange);
-        });
+    function load(settings, _onChange) {
+        onChange = _onChange;
+        fillSelectIPs('#adapterAddress', settings.adapterAddress, false, true);
+        for (var key in settings) {
+            setValue(key, settings[key]);
+        }
         onChange(false);
     }
     
     function save(callback) {
+        callback(getSettings());
+    }
+    function getSettings() {
         var obj = {};
         $('.value').each(function () {
             var $this = $(this);
+            var id = $this.attr('id');
             if ($this.attr('type') == 'checkbox') {
                 obj[$this.attr('id')] = $this.prop('checked');
             } else {
                 obj[$this.attr('id')] = $this.val();
             }
         });
-        callback(obj, common);
+        return obj;
     }
     
 </script>
