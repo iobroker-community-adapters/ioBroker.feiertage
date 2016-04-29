@@ -40,7 +40,7 @@
         "enable_chimmelfahrt":  true,
         "enable_pfingstsonntag":  true,
         "enable_pfingstmontag":  true,
-        "enable_fronleichnam":  true,
+        "enable_fronleichnam":  true
     },
     "objects": [
 
