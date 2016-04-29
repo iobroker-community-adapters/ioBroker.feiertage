@@ -3,7 +3,7 @@
         "name":                     "feiertage",
         "title":                    "Deutsche Feiertage",
         "desc":                     "Deutsche Feiertage berechnet nach der Formel von Heiner Lichtenberg beruhend auf der Gaußschen Osterformel",
-        "version": "0.0.4",
+        "version": "0.0.5",
         "mode":                     "schedule",
         "schedule":                 "0 0 * * *",
         "platform":                 "javascript/Node.js",
