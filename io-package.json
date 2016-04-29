@@ -20,7 +20,7 @@
         "localLink":                "https://de.wikipedia.org/wiki/Gaußsche_Osterformel",
 		"allowInit":                true,
         "type":                     "schedule",
-        "noConfig":                 true
+        "noConfig":                 false
     },
     "native": {
         "enable_neujahr":  true,
