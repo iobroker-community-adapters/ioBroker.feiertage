@@ -44,17 +44,17 @@ var ostern;             // Ostersonntag: Tag im Jahr
 // Regional nicht relevante Feiertage auskommentieren oder löschen !!
 function feiertag(day) {
     var Name = '';
-         if (day == 1        && adapter.config.enable_neujahr)          Name = 'Neujahr';
-    else if (day == 6        && adapter.config.enable_dreikoenige)      Name = 'Heilige Drei Könige (BW,BY,ST)';
-    else if (sj + 121 == day && adapter.config.enable_maifeiertag)      Name = 'Maifeiertag';
-    else if (day == sj + 227 && adapter.config.enable_mhimmelfahrt)     Name = 'Maria Himmelfahrt (BY (nicht überall), SL)';
-    else if (day == sj + 276 && adapter.config.enable_einheitstag)      Name = 'Tag der dt. Einheit';
-    else if (day == sj + 304 && adapter.config.enable_reformationstag)  Name = 'Reformationstag (BB, MV, SA, ST,TH)';
-    else if (day == sj + 305 && adapter.config.enable_allerheiligen)    Name = 'Allerheiligen (BW, BY, NW, RP, SL)';
-    else if (day == sj + 358 && adapter.config.enable_heiligabend)      Name = 'Heiligabend';
-    else if (day == sj + 359 && adapter.config.enable_weihnachtstag1)   Name = '1. Weihnachtstag';
-    else if (day == sj + 360 && adapter.config.enable_weihnachtstag2)   Name = '2. Weihnachtstag';
-    else if (day == sj + 365 && adapter.config.enable_silvester)        Name = 'Silvester';
+         if (day == 1        && adapter.config.enable_neujahr)           Name = 'Neujahr';
+    else if (day == 6        && adapter.config.enable_dreikoenige)       Name = 'Heilige Drei Könige (BW,BY,ST)';
+    else if (sj + 121 == day && adapter.config.enable_maifeiertag)       Name = 'Maifeiertag';
+    else if (day == sj + 227 && adapter.config.enable_mhimmelfahrt)      Name = 'Maria Himmelfahrt (BY (nicht überall), SL)';
+    else if (day == sj + 276 && adapter.config.enable_einheitstag)       Name = 'Tag der dt. Einheit';
+    else if (day == sj + 304 && adapter.config.enable_reformationstag)   Name = 'Reformationstag (BB, MV, SA, ST,TH)';
+    else if (day == sj + 305 && adapter.config.enable_allerheiligen)     Name = 'Allerheiligen (BW, BY, NW, RP, SL)';
+    else if (day == sj + 358 && adapter.config.enable_heiligabend)       Name = 'Heiligabend';
+    else if (day == sj + 359 && adapter.config.enable_weihnachtstag1)    Name = '1. Weihnachtstag';
+    else if (day == sj + 360 && adapter.config.enable_weihnachtstag2)    Name = '2. Weihnachtstag';
+    else if (day == sj + 365 && adapter.config.enable_silvester)         Name = 'Silvester';
      
     else if (day == ostern - 48 && adapter.config.enable_rosenmontag)    Name = 'Rosenmontag';
     else if (day == ostern -  2 && adapter.config.enable_karfreitag)     Name = 'Karfreitag';
