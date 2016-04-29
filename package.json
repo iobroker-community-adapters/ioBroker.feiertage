@@ -6,10 +6,10 @@
   "contributors": [
     "pix"
   ],
-  "homepage": "https://github.com/ioBroker/ioBroker.feiertage",
+  "homepage": "https://github.com/Pix---/ioBroker.feiertage",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ioBroker/ioBroker.feiertage"
+    "url": "https://github.com/Pix---/ioBroker.feiertage"
   },
   "license": "MIT",
   "keywords": [
@@ -34,7 +34,7 @@
     "chai": "^3.4.1"
   },
   "bugs": {
-    "url": "https://github.com/ioBroker/ioBroker.feiertage/issues"
+    "url": "https://github.com/Pix---/ioBroker.feiertage/issues"
   },
   "main": "feiertage.js",
   "scripts": {
