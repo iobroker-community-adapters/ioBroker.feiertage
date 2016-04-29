@@ -48,8 +48,10 @@
             },
             "Feiertage": 
             	{"en": "Holidays",                           "de": "Feiertage",                              "ru": "Пожалуйста, переводить"},
+            "Feiertage auswählen": 
+            	{"en": "Optin Holidays",                     "de": "Feiertage auswählen",                    "ru": "Пожалуйста, переводить"},
             "Auswahl": 
-            	{"en": "Optin",                              "de": "Auswahl",                                "ru": "Пожалуйста, переводить"},
+            	{"en": "Optin",                              "de": "Optin",                                  "ru": "Пожалуйста, переводить"},
             "Beschreibung": 
             	{"en": "Description",                        "de": "Beschreibung",                           "ru": "Пожалуйста, переводить"},
             "kirchlicher Feiertag": 
@@ -97,58 +99,51 @@
             "Silvester": 
             	{"en": "New Year's Eve",                    "de": "Silvester",                               "ru": "Пожалуйста, переводить"}
 	};
-    var onChange = null;
     
-function setValue(id, value) {
+    
+    function load(settings, onChange) {
         // example: select elements with id=key and class=value and insert value
-        if ($('#' + id + '.value').attr('type') == 'checkbox') {
-            $('#' + id + '.value').prop('checked', value).change(function() {
-                onChange();
-            });
-        } else {
-            $('#' + id + '.value').val(value).change(function() {
-                onChange();
-            }).keyup(function() {
-                $(this).trigger('change');
-            });
-        }
-    }
-	
-    function load(settings, _onChange) {
-        onChange = _onChange;
-        fillSelectIPs('#adapterAddress', settings.adapterAddress, false, true);
         for (var key in settings) {
-            setValue(key, settings[key]);
+            // example: select elements with id=key and class=value and insert value
+            if ($('#' + key + '.value').attr('type') == 'checkbox') {
+                $('#' + key + '.value').prop('checked', settings[key]).change(function () {
+                    onChange();
+                });
+            } else {
+                $('#' + key + '.value').val(settings[key]).change(function () {
+                    onChange();
+                }).keyup(function () {
+                    $(this).trigger('change');
+                });
+            }
         }
         onChange(false);
     }
-    
     function save(callback) {
-        callback(getSettings());
-    }
-    function getSettings() {
         var obj = {};
         $('.value').each(function () {
             var $this = $(this);
             var id = $this.attr('id');
             if ($this.attr('type') == 'checkbox') {
-                obj[$this.attr('id')] = $this.prop('checked');
+                obj[id] = $this.prop('checked');
             } else {
-                obj[$this.attr('id')] = $this.val();
+                obj[id] = $this.val();
             }
         });
-        return obj;
+        callback(obj);
     }
     
 </script>
 </head>
 <body>
 <div id="adapter-container">
-    <table><tr>
-        <td><img src="feiertage.png"></td>
-        <td style="padding-top: 20px;padding-left: 10px"><h3 class="translate">Deutsche Feiertage Adapter settings</h3></td>
-    </tr></table>
-    
+    <table>
+    	<tr>
+            <td><img src="feiertage.png"></td>
+            <td style="padding-top: 20px;padding-left: 10px"><h3 class="translate">Deutsche Feiertage Adapter settings</h3></td>
+        </tr>
+    </table>
+    <h4 class="translate">Feiertage auswählen</h4>
     <table id="config">
         <tr class="headline">
             <td class="translate">Auswahl</td>
