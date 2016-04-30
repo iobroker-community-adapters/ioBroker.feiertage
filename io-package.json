@@ -19,10 +19,9 @@
         "readme":                   "https://github.com/ioBroker/ioBroker.feiertage/blob/master/README.md",
         "icon":                     "feiertage.png",
         "extIcon":                  "https://raw.githubusercontent.com/ioBroker/ioBroker.feiertage/master/admin/feiertage.png",
-        "localLink":                "https://de.wikipedia.org/wiki/Gaußsche_Osterformel",
+        "localLink":                "https://raw.githubusercontent.com/ioBroker/ioBroker.feiertage",
 	"allowInit":                true,
-        "type":                     "schedule",
-        "enabled":                  true
+        "type":                     "schedule"
     },
     "native": {
         "enable_neujahr":           true,
