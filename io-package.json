@@ -19,7 +19,6 @@
         "readme":                   "https://github.com/ioBroker/ioBroker.feiertage/blob/master/README.md",
         "icon":                     "feiertage.png",
         "extIcon":                  "https://raw.githubusercontent.com/ioBroker/ioBroker.feiertage/master/admin/feiertage.png",
-        "localLink":                "https://raw.githubusercontent.com/ioBroker/ioBroker.feiertage",
 	"allowInit":                true,
         "type":                     "schedule"
     },
