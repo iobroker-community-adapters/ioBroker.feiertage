@@ -40,6 +40,9 @@ Deutsch  | English
 ------------- | -------------
 Feiertage, die bei der Befüllung der Datenpunkte berücksichtigt werden sollen, können ausgewählt werden. | Only selected holidays count in the process.
 
+![alt text](https://github.com/Pix---/ioBroker.feiertage/blob/master/admin/SettingScreenshot.jpg "Screenshot Settings")
+
+
 ## Aktivierung / Schedule
 Deutsch  | English
 ------------- | -------------
