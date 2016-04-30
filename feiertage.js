@@ -35,6 +35,48 @@ var adapter = utils.adapter({
     }
 });
  
+var neujahr,
+    dreikoenige,
+    maifeiertag,
+    mhimmelfahrt,
+    einheitstag,
+    reformationstag,
+    allerheiligen,
+    heiligabend,
+    weihnachtstag1,
+    weihnachtstag2,
+    silvester,
+    rosenmontag,
+    karfreitag,
+    ostersonntag,
+    ostermontag,
+    chimmelfahrt,
+    pfingssonntag,
+    pfingstmontag,
+    fronleichnam;
+ 
+function readSettings() {
+    neujahr =         adapter.config.enable_neujahr;
+    dreikoenige =     adapter.config.enable_dreikoenige;
+    maifeiertag =     adapter.config.enable_maifeiertag;
+    mhimmelfahrt =    adapter.config.enable_mhimmelfahrt;
+    einheitstag =     adapter.config.enable_einheitstag;
+    reformationstag = adapter.config.enable_reformationstag;
+    allerheiligen =   adapter.config.enable_,allerheiligen;
+    heiligabend =     adapter.config.enable_heiligabend;
+    weihnachtstag1 =  adapter.config.enable_weihnachtstag1;
+    weihnachtstag2 =  adapter.config.enable_weihnachtstag2;
+    silvester =       adapter.config.enable_silvester;
+    rosenmontag =     adapter.config.enable_rosenmontag;
+    karfreitag =      adapter.config.enable_karfreitag;
+    ostersonntag =    adapter.config.enable_ostersonntag;
+    ostermontag =     adapter.config.enable_ostermontag;
+    chimmelfahrt =    adapter.config.enable_chimmelfahrt;
+    pfingssonntag =   adapter.config.enable_pfingstsonntag;
+    pfingstmontag =   adapter.config.enable_pfingstmontag;
+    fronleichnam =    adapter.config.enable_fronleichnam;    
+} 
+
 // Script ermittelt, ob heute oder morgen ein Feiertag ist
 var sj;                 // Schaltjahr
 var ostern;             // Ostersonntag: Tag im Jahr
@@ -42,26 +84,26 @@ var ostern;             // Ostersonntag: Tag im Jahr
 // Regional nicht relevante Feiertage auskommentieren oder löschen !!
 function feiertag(day) {
     var Name = '';
-         if (day == 1        && adapter.config.enable_neujahr)           Name = 'Neujahr';
-    else if (day == 6        && adapter.config.enable_dreikoenige)       Name = 'Heilige Drei Könige (BW,BY,ST)';
-    else if (day == sj + 121 && adapter.config.enable_maifeiertag)       Name = 'Maifeiertag';
-    else if (day == sj + 227 && adapter.config.enable_mhimmelfahrt)      Name = 'Maria Himmelfahrt (BY (nicht überall), SL)';
-    else if (day == sj + 276 && adapter.config.enable_einheitstag)       Name = 'Tag der dt. Einheit';
-    else if (day == sj + 304 && adapter.config.enable_reformationstag)   Name = 'Reformationstag (BB, MV, SA, ST,TH)';
-    else if (day == sj + 305 && adapter.config.enable_allerheiligen)     Name = 'Allerheiligen (BW, BY, NW, RP, SL)';
-    else if (day == sj + 358 && adapter.config.enable_heiligabend)       Name = 'Heiligabend';
-    else if (day == sj + 359 && adapter.config.enable_weihnachtstag1)    Name = '1. Weihnachtstag';
-    else if (day == sj + 360 && adapter.config.enable_weihnachtstag2)    Name = '2. Weihnachtstag';
-    else if (day == sj + 365 && adapter.config.enable_silvester)         Name = 'Silvester';
+         if (day == 1        && neujahr)           Name = 'Neujahr';
+    else if (day == 6        && dreikoenige)       Name = 'Heilige Drei Könige (BW,BY,ST)';
+    else if (day == sj + 121 && maifeiertag)       Name = 'Maifeiertag';
+    else if (day == sj + 227 && mhimmelfahrt)      Name = 'Maria Himmelfahrt (BY (nicht überall), SL)';
+    else if (day == sj + 276 && einheitstag)       Name = 'Tag der dt. Einheit';
+    else if (day == sj + 304 && reformationstag)   Name = 'Reformationstag (BB, MV, SA, ST,TH)';
+    else if (day == sj + 305 && allerheiligen)     Name = 'Allerheiligen (BW, BY, NW, RP, SL)';
+    else if (day == sj + 358 && heiligabend)       Name = 'Heiligabend';
+    else if (day == sj + 359 && weihnachtstag1)    Name = '1. Weihnachtstag';
+    else if (day == sj + 360 && weihnachtstag2)    Name = '2. Weihnachtstag';
+    else if (day == sj + 365 && silvester)         Name = 'Silvester';
      
-    else if (day == ostern - 48 && adapter.config.enable_rosenmontag)    Name = 'Rosenmontag';
-    else if (day == ostern -  2 && adapter.config.enable_karfreitag)     Name = 'Karfreitag';
-    else if (day == ostern      && adapter.config.enable_ostersonntag)   Name = 'Ostersonntag';
-    else if (day == ostern +  1 && adapter.config.enable_ostermontag)    Name = 'Ostermontag';
-    else if (day == ostern + 39 && adapter.config.enable_chimmelfahrt)   Name = 'Christi Himmelfahrt';
-    else if (day == ostern + 49 && adapter.config.enable_pfingstsonntag) Name = 'Pfingstsonntag';
-    else if (day == ostern + 50 && adapter.config.enable_pfingstmontag)  Name = 'Pfingstmontag';
-    else if (day == ostern + 60 && adapter.config.enable_fronleichnam)   Name = 'Fronleichnam (BW, BY, HE, NW, RP, SL (SA, TH nicht überall))';
+    else if (day == ostern - 48 && rosenmontag)    Name = 'Rosenmontag';
+    else if (day == ostern -  2 && karfreitag)     Name = 'Karfreitag';
+    else if (day == ostern      && ostersonntag)   Name = 'Ostersonntag';
+    else if (day == ostern +  1 && ostermontag)    Name = 'Ostermontag';
+    else if (day == ostern + 39 && chimmelfahrt)   Name = 'Christi Himmelfahrt';
+    else if (day == ostern + 49 && pfingstsonntag) Name = 'Pfingstsonntag';
+    else if (day == ostern + 50 && pfingstmontag)  Name = 'Pfingstmontag';
+    else if (day == ostern + 60 && fronleichnam)   Name = 'Fronleichnam (BW, BY, HE, NW, RP, SL (SA, TH nicht überall))';
     else Name = '';
     return (Name);
 } 
@@ -80,7 +122,8 @@ function tagdesjahresZudatum (day) {
 
 // auf Feiertag testen
 function checkHolidays() {
-    log(adapter.config.enable_maifeiertag);
+    readSettings();
+    adapter.log.info('testlog: ' + maifeiertag);
     // checkVariables();
     var jetzt = new Date();
     var Jahr = jetzt.getFullYear();
