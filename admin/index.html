@@ -127,6 +127,12 @@
     }
     
     function save(callback) {
+    	
+    	callback({
+    	    enable_neujahr: $('#enable_neujahr').val().trim(), 
+    	    enable_maifeiertag: $('#enable_maifeiertag').val().trim() }
+    	);
+    	/*
         var obj = {};
         $('.value').each(function () {
             var $this = $(this);
@@ -137,7 +143,7 @@
                 obj[id] = $this.val();
             }
         });
-        callback(obj);
+        callback(obj);*/
     }
     
 </script>
