@@ -100,7 +100,7 @@
             	{"en": "New Year's Eve",                    "de": "Silvester",                               "ru": "Пожалуйста, переводить"}
 	};
 	
-	
+/*	
     function load(settings, onChange) {
         // example: select elements with id=key and class=value and insert value
         for (var key in settings) {
@@ -119,6 +119,13 @@
         }
         onChange(false);
     }
+    
+    */
+    function load(settings, onChange) {
+        $('#enable_neujahr').val(settings['enable_neujahr']);
+        $('#enable_maifeiertag').val(settings['enable_maifeiertag']);
+    }
+    
     function save(callback) {
         var obj = {};
         $('.value').each(function () {
