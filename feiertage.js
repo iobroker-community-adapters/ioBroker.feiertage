@@ -5,9 +5,6 @@
 
 var utils   = require(__dirname + '/lib/utils'); // Get common adapter utils
 
-var channels = [];
-var iopkg;
-
 var adapter = utils.adapter({
     name: 'feiertage',
     useFormatDate: true,
