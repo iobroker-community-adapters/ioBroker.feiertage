@@ -84,26 +84,26 @@ var ostern;             // Ostersonntag: Tag im Jahr
 // Regional nicht relevante Feiertage auskommentieren oder löschen !!
 function feiertag(day) {
     var Name = '';
-         if (day == 1        && neujahr)           Name = 'Neujahr';
-    else if (day == 6        && dreikoenige)       Name = 'Heilige Drei Könige (BW,BY,ST)';
-    else if (day == sj + 121 && maifeiertag)       Name = 'Maifeiertag';
-    else if (day == sj + 227 && mhimmelfahrt)      Name = 'Maria Himmelfahrt (BY (nicht überall), SL)';
-    else if (day == sj + 276 && einheitstag)       Name = 'Tag der dt. Einheit';
-    else if (day == sj + 304 && reformationstag)   Name = 'Reformationstag (BB, MV, SA, ST,TH)';
-    else if (day == sj + 305 && allerheiligen)     Name = 'Allerheiligen (BW, BY, NW, RP, SL)';
-    else if (day == sj + 358 && heiligabend)       Name = 'Heiligabend';
-    else if (day == sj + 359 && weihnachtstag1)    Name = '1. Weihnachtstag';
-    else if (day == sj + 360 && weihnachtstag2)    Name = '2. Weihnachtstag';
-    else if (day == sj + 365 && silvester)         Name = 'Silvester';
+         if (day == 1        /* && neujahr */)           Name = 'Neujahr';
+    else if (day == 6        /* && dreikoenige*/)       Name = 'Heilige Drei Könige (BW,BY,ST)';
+    else if (day == sj + 121 /* && maifeiertag*/)       Name = 'Maifeiertag';
+    else if (day == sj + 227 /* && mhimmelfahrt*/)      Name = 'Maria Himmelfahrt (BY (nicht überall), SL)';
+    else if (day == sj + 276 /* && einheitstag*/)       Name = 'Tag der dt. Einheit';
+    else if (day == sj + 304 /* && reformationstag*/)   Name = 'Reformationstag (BB, MV, SA, ST,TH)';
+    else if (day == sj + 305 /* && allerheiligen*/)     Name = 'Allerheiligen (BW, BY, NW, RP, SL)';
+    else if (day == sj + 358 /* && heiligabend*/)       Name = 'Heiligabend';
+    else if (day == sj + 359 /* && weihnachtstag1*/)    Name = '1. Weihnachtstag';
+    else if (day == sj + 360 /* && weihnachtstag2*/)    Name = '2. Weihnachtstag';
+    else if (day == sj + 365 /* && silvester*/)         Name = 'Silvester';
      
-    else if (day == ostern - 48 && rosenmontag)    Name = 'Rosenmontag';
-    else if (day == ostern -  2 && karfreitag)     Name = 'Karfreitag';
-    else if (day == ostern      && ostersonntag)   Name = 'Ostersonntag';
-    else if (day == ostern +  1 && ostermontag)    Name = 'Ostermontag';
-    else if (day == ostern + 39 && chimmelfahrt)   Name = 'Christi Himmelfahrt';
-    else if (day == ostern + 49 && pfingstsonntag) Name = 'Pfingstsonntag';
-    else if (day == ostern + 50 && pfingstmontag)  Name = 'Pfingstmontag';
-    else if (day == ostern + 60 && fronleichnam)   Name = 'Fronleichnam (BW, BY, HE, NW, RP, SL (SA, TH nicht überall))';
+    else if (day == ostern - 48 /* && rosenmontag*/)    Name = 'Rosenmontag';
+    else if (day == ostern -  2 /* && karfreitag*/)     Name = 'Karfreitag';
+    else if (day == ostern      /* && ostersonntag*/)   Name = 'Ostersonntag';
+    else if (day == ostern +  1 /* && ostermontag*/)    Name = 'Ostermontag';
+    else if (day == ostern + 39 /* && chimmelfahrt*/)   Name = 'Christi Himmelfahrt';
+    else if (day == ostern + 49 /* && pfingstsonntag*/) Name = 'Pfingstsonntag';
+    else if (day == ostern + 50 /* && pfingstmontag*/)  Name = 'Pfingstmontag';
+    else if (day == ostern + 60 /* && fronleichnam*/)   Name = 'Fronleichnam (BW, BY, HE, NW, RP, SL (SA, TH nicht überall))';
     else Name = '';
     return (Name);
 } 
