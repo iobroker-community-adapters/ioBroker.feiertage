@@ -44,7 +44,7 @@ function feiertag(day) {
     var Name = '';
          if (day == 1        && adapter.config.enable_neujahr)           Name = 'Neujahr';
     else if (day == 6        && adapter.config.enable_dreikoenige)       Name = 'Heilige Drei Könige (BW,BY,ST)';
-    else if (sj + 121 == day && adapter.config.enable_maifeiertag)       Name = 'Maifeiertag';
+    else if (day == sj + 121 && adapter.config.enable_maifeiertag)       Name = 'Maifeiertag';
     else if (day == sj + 227 && adapter.config.enable_mhimmelfahrt)      Name = 'Maria Himmelfahrt (BY (nicht überall), SL)';
     else if (day == sj + 276 && adapter.config.enable_einheitstag)       Name = 'Tag der dt. Einheit';
     else if (day == sj + 304 && adapter.config.enable_reformationstag)   Name = 'Reformationstag (BB, MV, SA, ST,TH)';
@@ -64,7 +64,6 @@ function feiertag(day) {
     else if (day == ostern + 60 && adapter.config.enable_fronleichnam)   Name = 'Fronleichnam (BW, BY, HE, NW, RP, SL (SA, TH nicht überall))';
     else Name = '';
     return (Name);
-    
 } 
 
 function tagdesjahresZudatum (day) {
@@ -73,7 +72,6 @@ function tagdesjahresZudatum (day) {
     var Jahr = jetzt.getFullYear();
     var neujahr = new Date(Jahr,0,1,0,0,0,0);                                   // Dies Jahr Neujahr Mitternacht
     var neujahr_ms = neujahr.getTime();
-    
     var datum = new Date();
     datum.setTime(neujahr_ms + day_ms);                                         // Addition Neujahr in ms plus Tag des Jahres in ms = gesuchtes Datum in ms
     return(datum);    
@@ -147,9 +145,10 @@ function checkHolidays() {
 
 function checkVariables() {
     adapter.log.info("init conditions objects (checkVariables)");
+    //heute
     adapter.setObjectNotExists('heute', {
-        type: 'channel',
-        role: 'weather',
+        type: 'channel'/*,
+        role: 'day',*/
         common: {name: 'heute'},
         native: {}
     });
@@ -158,6 +157,108 @@ function checkVariables() {
         common: {name: 'Feiertag heute - Name',
                 desc:  "Welcher Feiertag ist heute?",
                 type: "string",
+                read: true,
+                write: false
+        },
+        native: {}
+    });
+    adapter.setObjectNotExists('heute.boolean', {
+        type: 'state',
+        common: {name: 'Feiertag heute?',
+                desc:  "Ist heute ein Feiertag?",
+                type: "string",
+                read: true,
+                write: false
+        },
+        native: {}
+    });
+    //morgen
+    adapter.setObjectNotExists('morgen', {
+        type: 'channel'/*,
+        role: 'day',*/
+        common: {name: 'morgen'},
+        native: {}
+    });
+    adapter.setObjectNotExists('morgen.Name', {
+        type: 'state',
+        common: {name: 'Feiertag morgen - Name',
+                desc:  "Welcher Feiertag ist morgen?",
+                type: "string",
+                read: true,
+                write: false
+        },
+        native: {}
+    });
+    adapter.setObjectNotExists('morgen.boolean', {
+        type: 'state',
+        common: {name: 'Feiertag morgen?',
+                desc:  "Ist morgen ein Feiertag?",
+                type: "string",
+                read: true,
+                write: false
+        },
+        native: {}
+    });
+    //übermorgen
+    adapter.setObjectNotExists('uebermorgen', {
+        type: 'channel'/*,
+        role: 'day',*/
+        common: {name: 'uebermorgen'},
+        native: {}
+    });
+    adapter.setObjectNotExists('uebermorgen.Name', {
+        type: 'state',
+        common: {name: 'Feiertag übermorgen - Name',
+                desc:  "Welcher Feiertag ist übermorgen?",
+                type: "string",
+                read: true,
+                write: false
+        },
+        native: {}
+    });
+    adapter.setObjectNotExists('uebermorgen.boolean', {
+        type: 'state',
+        common: {name: 'Feiertag übermorgen?',
+                desc:  "Ist übermorgen ein Feiertag?",
+                type: "string",
+                read: true,
+                write: false
+        },
+        native: {}
+    });
+    //nächster
+    adapter.setObjectNotExists('naechster', {
+        type: 'channel'/*,
+        role: 'day',*/
+        common: {name: 'naechster'},
+        native: {}
+    });
+    adapter.setObjectNotExists('naechster.Name', {
+        type: 'state',
+        common: {name: 'naechster Feiertag - Name',
+                desc:  "Welcher ist der nächste Feiertag?",
+                type: "string",
+                read: true,
+                write: false
+        },
+        native: {}
+    });
+    adapter.setObjectNotExists('naechster.Datum', {
+        type: 'state',
+        common: {name: 'Naechster Feiertag - Datum?',
+                desc:  "Wann ist der naechste Feiertag?",
+                type: "datetime", // ggf. string
+                read: true,
+                write: false
+        },
+        native: {}
+    });
+    adapter.setObjectNotExists('naechster.Dauer', {
+        type: 'state',
+        common: {name: 'Naechster Feiertag - Dauer bis dahin',
+                desc:  "Zahl der Tage bis zum nächsten Feiertag",
+                type: "number",
+                unit: "Tage", // ggf übersetzen
                 read: true,
                 write: false
         },
