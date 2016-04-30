@@ -123,15 +123,50 @@
     */
     function load(settings, onChange) {
         $('#enable_neujahr').val(settings['enable_neujahr']);
+        $('#enable_dreikoenige').val(settings['enable_dreikoenige']);
+        $('#enable_rosenmontag').val(settings['enable_rosenmontag']);
+        $('#enable_karfreitag').val(settings['enable_karfreitag']);
+        $('#enable_ostersonntag').val(settings['enable_ostersonntag']);
+        $('#enable_ostermontag').val(settings['enable_ostermontag']);
         $('#enable_maifeiertag').val(settings['enable_maifeiertag']);
+        $('#enable_chimmelfahrt').val(settings['enable_chimmelfahrt']);
+        $('#enable_pfingstsonntag').val(settings['enable_pfingstsonntag']);
+        $('#enable_pfingstmontag').val(settings['enable_pfingstmontag']);
+        $('#enable_fronleichnam').val(settings['enable_fronleichnam']);
+        $('#enable_mhimmelfahrt').val(settings['enable_mhimmelfahrt']);
+        $('#enable_einheitstag').val(settings['enable_einheitstag']);
+        $('#enable_reformationstag').val(settings['enable_reformationstag']);
+        $('#enable_allerheiligen').val(settings['enable_allerheiligen']);
+        $('#enable_heiligabend').val(settings['enable_heiligabend']);
+        $('#enable_weihnachtstag1').val(settings['enable_weihnachtstag1']);
+        $('#enable_weihnachtstag2').val(settings['enable_weihnachtstag2']);
+        $('#enable_silvester').val(settings['enable_silvester']);
     }
     
     function save(callback) {
     	
     	callback({
-    	    enable_neujahr: $('#enable_neujahr').val().trim(), 
-    	    enable_maifeiertag: $('#enable_maifeiertag').val().trim() }
-    	);
+    	    enable_neujahr:         $('#enable_neujahr').val(), 
+    	    enable_dreikoenige:     $('#enable_dreikoenige').val(),
+    	    enable_rosenmontag:     $('#enable_rosenmontag').val(),
+    	    enable_karfreitag:      $('#enable_karfreitag').val(),
+    	    enable_ostersonntag:    $('#enable_ostersonntag').val(),
+    	    enable_ostermontag:     $('#enable_ostermontag').val(),
+    	    enable_maifeiertag:     $('#enable_maifeiertag').val(),
+    	    enable_chimmelfahrt:    $('#enable_chimmelfahrt').val(),
+    	    enable_pfingstsonntag:  $('#enable_pfingstsonntag').val(), 
+    	    enable_pfingstmontag:   $('#enable_pfingstmontag').val(),
+    	    enable_fronleichnam:    $('#enable_fronleichnam').val(),
+    	    enable_mhimmelfahrt:    $('#enable_mhimmelfahrt').val(),
+    	    enable_einheitstag:     $('#enable_einheitstag').val(),
+    	    enable_reformationstag: $('#enable_reformationstag').val(),
+    	    enable_allerheiligen:   $('#enable_allerheiligen').val(),
+    	    enable_heiligabend:     $('#enable_heiligabend').val(),
+    	    enable_weihnachtstag1:  $('#enable_weihnachtstag1').val(),
+    	    enable_weihnachtstag2:  $('#enable_weihnachtstag2').val(),
+    	    enable_silvester:       $('#enable_silvester').val()
+    	 }
+    );
     	/*
         var obj = {};
         $('.value').each(function () {
