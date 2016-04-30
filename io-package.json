@@ -5,7 +5,7 @@
         "desc": {                   "en": "German Holidays calculates religous, political and calendarial Holidays",
                                     "de": "Deutsche Feiertage berechnet nach der Formel von Heiner Lichtenberg beruhend auf der Gaußschen Osterformel",
                                     "ru": "Deutsche Feiertage - translate to russian, please"},
-        "version":                  "0.0.6",
+        "version":                  "0.0.7",
         "mode":                     "schedule",
         "schedule":                 "0 0 * * *",
         "platform":                 "javascript/Node.js",
@@ -13,7 +13,7 @@
         "keywords":                 ["calendar", "Kalender", "Feiertag", "Feiertage", "Woche", "Jahr", "Tag", "Monat", "holiday"],
         "main":                     "feiertage.js",
         "authors": [
-            "pix"
+            "Pix", "Bluefox"
         ],
         "license":                  "MIT",
         "readme":                   "https://github.com/ioBroker/ioBroker.feiertage/blob/master/README.md",
