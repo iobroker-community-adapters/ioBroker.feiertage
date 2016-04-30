@@ -81,6 +81,7 @@ function tagdesjahresZudatum (day) {
 
 // auf Feiertag testen
 function checkHolidays() {
+    checkVariables():
    var jetzt = new Date();
    var Jahr = jetzt.getFullYear();
    sj = (Jahr % 4 === 0) ? 1 : 0;
@@ -141,4 +142,24 @@ function checkHolidays() {
            adapter.setState("naechster.Dauer", {ack: true, val: noch});
        }
    }
+}
+
+function checkVariables() {
+    adapter.log.info("init conditions objects (checkVariables)");
+    adapter.setObjectNotExists('heute', {
+        type: 'channel',
+        role: 'weather',
+        common: {name: 'heute'},
+        native: {}
+    });
+    adapter.setObjectNotExists('heute.Name', {
+        type: 'state',
+        common: {name: 'Feiertag heute - Name',
+                desc:  "Welcher Feiertag ist heute?",
+                type: "string",
+                read: true,
+                write: false
+        },
+        native: {}
+    });
 }
