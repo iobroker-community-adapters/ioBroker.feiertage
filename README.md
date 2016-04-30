@@ -11,7 +11,7 @@
 ## Beschreibung / Description
 Deutsch  | English
 ------------- | -------------
-Dieser Adapter liefert das Datum und den Namen des nächsten deutschen Feiertages und gibt Auskunft, ob heute, morgen oder übermorgen ein Feiertag ist.  | This adapter delivers date and name of the next German holiday. Furthermore it tells if today, tommorw or the day after tommorow is a holiday in Germany.
+Dieser Adapter liefert das Datum, die Dauer bis zu diesem Datum in Tagen und den Namen des nächsten deutschen Feiertages und gibt Auskunft, ob heute, morgen oder übermorgen ein Feiertag ist.  | This adapter delivers date, distance in days to this date and name of the next German holiday. Furthermore it tells if today, tommorw or the day after tommorow is a holiday in Germany.
 
 
 
@@ -38,7 +38,7 @@ Feiertag __naechster.Dauer__  (z.B. "*2 Tage*")
 ## Einstellungen / Configuration
 Deutsch  | English
 ------------- | -------------
-Es können keine Einstellungen am Adapter vorgenommen werden.  | There is nothing to setup.
+Feiertage, die bei der Befüllung der Datenpunkte berücksichtigt werden sollen, können ausgewählt werden. | Only selected holidays count in the process.
 
 ## Aktivierung / Schedule
 Deutsch  | English
@@ -46,6 +46,14 @@ Deutsch  | English
 Der Adapter startet jeden Tag um Mitternacht. Ein häufigeres Starten ist nicht erforderlich. | The adapter starts daily at midnight. Due to the nature of the subject, no higher frequency is required.
 
 ## Changelog
+### 0.0.7 (2016-04-30)
+* (bluefox) Settings structure optimized
+* (bluefox) Translations
+
+### 0.0.6 (2016-04-29)
+* (pix) Corrections on appearance of settings window
+* (pix) Readme
+
 ### 0.0.5 (2016-04-29)
 * (pix) Selectable Holidays in settings
 
