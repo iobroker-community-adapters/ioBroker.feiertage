@@ -2,7 +2,7 @@
 /*jslint node: true */
 
 "use strict";
-
+adapter.log.info(adapter.config.enable_maifeiertag);
 var utils   = require(__dirname + '/lib/utils'); // Get common adapter utils
 
 var adapter = utils.adapter({
