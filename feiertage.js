@@ -139,8 +139,8 @@ function checkHolidays() {
            adapter.setState("naechster.Datum", {ack: true, val: next_ft});
            // Ende Workaround
            
-           //adapter.setState("naechster.Datum", formatDate(datum_tdj));
-           //adapter.log.info('Nächster Feiertag: '  + feiertag(tag) + ' in ' + noch + ' Tagen am ' + formatDate(datum_tdj));
+           //adapter.setState("naechster.Datum", adapter.formatDate(datum_tdj));
+           //adapter.log.info('Nächster Feiertag: '  + feiertag(tag) + ' in ' + noch + ' Tagen am ' + adapter.formatDate(datum_tdj));
            adapter.setState("naechster.Dauer", {ack: true, val: noch});
        }
    }
