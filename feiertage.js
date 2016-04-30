@@ -8,7 +8,7 @@ var utils   = require(__dirname + '/lib/utils'); // Get common adapter utils
 var adapter = utils.adapter({
     name: 'feiertage',
     useFormatDate: true,
-    /*
+    
     unload: function (callback) {
         adapter.log.info("adapter feiertage is unloading");
     },
@@ -20,7 +20,7 @@ var adapter = utils.adapter({
     },
     uninstall: function (callback) {
         adapter.log.info("adapter feiertage UN-installed");
-    }, */
+    },
     ready: function () {
         adapter.log.debug("Adapter feiertage got 'Ready' Signal");
         adapter.log.debug("adapter feiertage initializing objects");
