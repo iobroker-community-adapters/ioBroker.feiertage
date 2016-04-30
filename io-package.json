@@ -19,8 +19,14 @@
         "readme":                   "https://github.com/ioBroker/ioBroker.feiertage/blob/master/README.md",
         "icon":                     "feiertage.png",
         "extIcon":                  "https://raw.githubusercontent.com/ioBroker/ioBroker.feiertage/master/admin/feiertage.png",
-	"allowInit":                true,
-        "type":                     "schedule"
+	    "allowInit":                true,
+        "type":                     "schedule",
+        "config": {
+            "width": 650,
+            "height": 650,
+            "minWidth": 650,
+            "minHeight": 650
+        }
     },
     "native": {
         "enable_neujahr":           true,
