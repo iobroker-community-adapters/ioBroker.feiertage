@@ -80,7 +80,7 @@ function tagdesjahresZudatum (day) {
 
 // auf Feiertag testen
 function checkHolidays() {
-    checkVariables();
+    // checkVariables();
     var jetzt = new Date();
     var Jahr = jetzt.getFullYear();
     sj = (Jahr % 4 === 0) ? 1 : 0;
@@ -142,7 +142,7 @@ function checkHolidays() {
        }
    }
 }
-
+/*
 function checkVariables() {
     adapter.log.info("init conditions objects (checkVariables)");
     //heute
@@ -265,3 +265,4 @@ function checkVariables() {
         native: {}
     });
 }
+*/
