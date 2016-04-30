@@ -21,7 +21,8 @@
         "extIcon":                  "https://raw.githubusercontent.com/ioBroker/ioBroker.feiertage/master/admin/feiertage.png",
         "localLink":                "https://de.wikipedia.org/wiki/Gaußsche_Osterformel",
 	"allowInit":                true,
-        "type":                     "schedule"
+        "type":                     "schedule",
+        "enabled":                  true
     },
     "native": {
         "enable_neujahr":           true,
