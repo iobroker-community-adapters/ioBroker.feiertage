@@ -80,6 +80,7 @@ function tagdesjahresZudatum (day) {
 
 // auf Feiertag testen
 function checkHolidays() {
+    log(adapter.config.enable_maifeiertag);
     // checkVariables();
     var jetzt = new Date();
     var Jahr = jetzt.getFullYear();
