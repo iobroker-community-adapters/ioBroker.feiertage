@@ -147,8 +147,8 @@ function checkVariables() {
     adapter.log.info("init conditions objects (checkVariables)");
     //heute
     adapter.setObjectNotExists('heute', {
-        type: 'channel'/*,
-        role: 'day',*/
+        type: 'channel',
+        //role: 'day',
         common: {name: 'heute'},
         native: {}
     });
@@ -174,8 +174,8 @@ function checkVariables() {
     });
     //morgen
     adapter.setObjectNotExists('morgen', {
-        type: 'channel'/*,
-        role: 'day',*/
+        type: 'channel',
+        //role: 'day',
         common: {name: 'morgen'},
         native: {}
     });
@@ -201,8 +201,8 @@ function checkVariables() {
     });
     //übermorgen
     adapter.setObjectNotExists('uebermorgen', {
-        type: 'channel'/*,
-        role: 'day',*/
+        type: 'channel',
+        //role: 'day',
         common: {name: 'uebermorgen'},
         native: {}
     });
@@ -228,8 +228,8 @@ function checkVariables() {
     });
     //nächster
     adapter.setObjectNotExists('naechster', {
-        type: 'channel'/*,
-        role: 'day',*/
+        type: 'channel',
+        //role: 'day',
         common: {name: 'naechster'},
         native: {}
     });
