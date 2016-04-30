@@ -80,10 +80,10 @@ function tagdesjahresZudatum (day) {
 
 // auf Feiertag testen
 function checkHolidays() {
-    checkVariables():
-   var jetzt = new Date();
-   var Jahr = jetzt.getFullYear();
-   sj = (Jahr % 4 === 0) ? 1 : 0;
+    checkVariables();
+    var jetzt = new Date();
+    var Jahr = jetzt.getFullYear();
+    sj = (Jahr % 4 === 0) ? 1 : 0;
 
 // Die modifizierte Gauss-Formel nach Lichtenberg, gültig bis 2048
     var A = 120 + (19 * (Jahr % 19) + 24) % 30;
