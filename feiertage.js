@@ -159,7 +159,7 @@ function checkHolidays() {
    
    // nächster Feiertag
    var noch = 0;
-   tag = tag - 2; // zurück setzen auf heute
+   tag = tag - 1; // zurück setzen auf morgen, da morgen erst nächster Tag
    while (feiertag(tag).length < 2) {
        tag = tag + 1;
        noch = noch + 1;
