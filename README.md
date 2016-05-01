@@ -49,7 +49,10 @@ Deutsch  | English
 Der Adapter startet jeden Tag um Mitternacht. Ein häufigeres Starten ist nicht erforderlich. | The adapter starts daily at midnight. Due to the nature of the subject, no higher frequency is required.
 
 ## Changelog
-### 0.1.0 (2016-04-30)
+### 0.1.1 (2016-04-30)
+* (pix) Next holiday calculation corrected
+
+* ### 0.1.0 (2016-04-30)
 * (pix) Holidays can be opted out now
 
 ### 0.0.7 (2016-04-30)
