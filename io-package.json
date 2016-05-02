@@ -16,9 +16,9 @@
             "Pix", "Bluefox"
         ],
         "license":                  "MIT",
-        "readme":                   "https://github.com/ioBroker/ioBroker.feiertage/blob/master/README.md",
+        "readme":                   "https://github.com/Pix---/ioBroker.feiertage/blob/master/README.md",
         "icon":                     "feiertage.png",
-        "extIcon":                  "https://raw.githubusercontent.com/ioBroker/ioBroker.feiertage/master/admin/feiertage.png",
+        "extIcon":                  "https://raw.githubusercontent.com/Pix---/ioBroker.feiertage/master/admin/feiertage.png",
 	    "allowInit":                true,
         "type":                     "schedule",
         "config": {
