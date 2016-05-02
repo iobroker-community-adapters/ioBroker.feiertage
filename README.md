@@ -40,7 +40,7 @@ Deutsch  | English
 ------------- | -------------
 Feiertage, die bei der Befüllung der Datenpunkte berücksichtigt werden sollen, können ausgewählt werden. | Only selected holidays count in the process.
 
-![alt text](https://github.com/Pix---/ioBroker.feiertage/blob/master/admin/SettingScreenshot.jpg "Screenshot Settings")
+![alt text](img/SettingScreenshot.jpg "Screenshot Settings")
 
 
 ## Aktivierung / Schedule
@@ -49,8 +49,8 @@ Deutsch  | English
 Der Adapter startet jeden Tag um Mitternacht. Ein häufigeres Starten ist nicht erforderlich. | The adapter starts daily at midnight. Due to the nature of the subject, no higher frequency is required.
 
 ## Changelog
-### 0.1.2 (2016-05-02)
-* (bluefox) Corrections on terminating adapter
+### 0.2.0 (2016-05-02)
+* (bluefox) use common file for holidays
 
 ### 0.1.1 (2016-04-30)
 * (pix) Next holiday calculation corrected
