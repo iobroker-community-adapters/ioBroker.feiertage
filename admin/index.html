@@ -12,6 +12,7 @@
 <link rel="stylesheet" type="text/css" href="../../css/adapter.css"/>
 <script type="text/javascript" src="../../js/translate.js"></script>
 <script type="text/javascript" src="../../js/adapter-settings.js"></script>
+<script type="text/javascript" src="holidays.js"></script>
 
 <style>
     #config {
@@ -77,44 +78,6 @@
             	{"en": "calendrical holiday",                "de": "kalendarischer Feiertag",                "ru": "календарный праздник"},
             "politischer Feiertag": 
             	{"en": "political holiday",                  "de": "politischer Feiertag",                   "ru": "политический праздник"},
-            "Neujahr": 
-            	{"en": "New Year's Day",                     "de": "Neujahr",                                "ru": "Новый Год"},
-            "Heilige Drei Könige": 
-            	{"en": "Epiphany",                           "de": "Dreikönigstag",                          "ru": "День трёх Королей"},
-            "Rosenmontag": 
-            	{"en": "Rose Monday",                        "de": "Rosenmontag",                            "ru": "Розовый понедельник"},
-            "Karfreitag": 
-            	{"en": "Good Friday",                        "de": "Karfreitag",                             "ru": "Великая пятница"},
-            "Ostersonntag": 
-            	{"en": "Easter Sunday",                      "de": "Ostersonntag",                           "ru": "Католическая пасха - Воскресение"},
-            "Ostermontag": 
-            	{"en": "Easter Monday",                      "de": "Ostermontag",                            "ru": "Католическая пасха - Понедельник"},
-            "Maifeiertag": 
-            	{"en": "May Day",                            "de": "Maifeiertag - Tag der Arbeit",           "ru": "День Труда"},
-            "Christi Himmelfahrt": 
-            	{"en": "Ascension of Christ",                "de": "Christi Himmelfahrt",                    "ru": "Католическое Вознесение "},
-            "Pfingstsonntag": 
-            	{"en": "Whitsunday",                         "de": "Pfingstsonntag",                         "ru": "Католическая Троица - Воскресение"},
-            "Pfingstmontag": 
-            	{"en": "Whit Monday",                        "de": "Pfingstmontag",                          "ru": "Католическая Троица - Понедельник"},
-            "Fronleichnam": 
-            	{"en": "Corpus Christi",                     "de": "Fronleichnam",                           "ru": "Праздник Тела и Крови Христовых"},
-            "Mariä Himmelfahrt":
-            	{"en": "Assumption of Mary",                 "de": "Mariä Himmelfahrt",                      "ru": "Вознесение Девы Марии"},
-            "Tag der deutschen Einheit":
-            	{"en": "Day of German unity",                "de": "Tag der deutschen Einheit",              "ru": "День объединения Германии"},
-            "Reformationstag":
-            	{"en": "Reformation Day",                    "de": "Reformationstag",                        "ru": "День Реформации (Хэллоуин)"},
-            "Allerheiligen":
-            	{"en": "All Saints' Day",                    "de": "Allerheiligen",                          "ru": "День всех святых (Хэллоуин)"},
-            "Heiligabend":
-            	{"en": "Christmas Eve",                      "de": "Heiligabend",                            "ru": "Католическое Рождество"},
-            "1. Weihnachtstag":
-            	{"en": "Christmas Day",                      "de": "1. Weihnachtstag",                       "ru": "Католическое Рождество - Первый день"},
-            "2. Weihnachtstag":
-            	{"en": "2nd Christmas Day",                  "de": "2. Weihnachtstag",                       "ru": "Католическое Рождество - Второй день"},
-            "Silvester":
-            	{"en": "ew Year's Eve",                      "de": "Silvester",                              "ru": "Новый год"},
             "(BW, BY, ST)":
                 {"en": "(BW, BY, ST)",                       "de": "(BW, BY, ST)",                           "ru": "(BW, BY, ST)"},
             "(BW, BY, HE, NW, RP, SL (SA, TH nicht überall))":
@@ -127,38 +90,18 @@
                 {"en": "(BW, BY, NW, RP, SL)",               "de": "(BW, BY, NW, RP, SL)",                   "ru": "(BW, BY, NW, RP, SL)"}
 	};
 
-    var holidays = {
-        neujahr:        {de: "Neujahr",               desc: "kalendarischer Feiertag",    date: "01.01"},
-        dreikoenige:    {de: "Heilige Drei Könige",   desc: "kirchlicher Feiertag",       date: "06.01", comment: "(BW, BY, ST)"},
-        rosenmontag:    {de: "Rosenmontag",           desc: "kalendarischer Feiertag"},
-        karfreitag:     {de: "Karfreitag",            desc: "kirchlicher Feiertag"},
-        ostersonntag:   {de: "Ostersonntag",          desc: "kirchlicher Feiertag"},
-        ostermontag:    {de: "Ostermontag",           desc: "kirchlicher Feiertag"},
-        maifeiertag:    {de: "Maifeiertag",           desc: "politischer Feiertag",       date: "01.05"},
-        chimmelfahrt:   {de: "Christi Himmelfahrt",   desc: "kirchlicher Feiertag"},
-        pfingstsonntag: {de: "Pfingstsonntag",        desc: "kirchlicher Feiertag"},
-        pfingstmontag:  {de: "Pfingstmontag",         desc: "kirchlicher Feiertag"},
-        fronleichnam:   {de: "Fronleichnam",          desc: "kirchlicher Feiertag",                      comment: "(BW, BY, HE, NW, RP, SL (SA, TH nicht überall))"},
-        mhimmelfahrt:   {de: "Mariä Himmelfahrt",     desc: "kirchlicher Feiertag",       date: "15.08", comment: "(BY (nicht überall), SL)"},
-        einheitstag:    {de: "Tag der deutschen Einheit", desc: "politischer Feiertag",   date: "03.10"},
-        reformationstag:{de: "Reformationstag",       desc: "kirchlicher Feiertag",       date: "31.10", comment: "(BB, MV, SA, ST, TH)"},
-        allerheiligen:  {de: "Allerheiligen",         desc: "kirchlicher Feiertag",       date: "01.11", comment: "(BW, BY, NW, RP, SL)"},
-        heiligabend:    {de: "Heiligabend",           desc: "kirchlicher Feiertag",       date: "24.12"},
-        weihnachtstag1: {de: "1. Weihnachtstag",      desc: "kirchlicher Feiertag",       date: "25.12"},
-        weihnachtstag2: {de: "2. Weihnachtstag",      desc: "kirchlicher Feiertag",       date: "26.12"},
-        silvester:      {de: "Silvester",             desc: "kalendarischer Feiertag",    date: "31.12"}
-    };
-
     function load(settings, onChange) {
         var text = '';
         for (var d in holidays) {
             text += '<tr>\n';
             text += '    <td class="td-center"><input type="checkbox" id="enable_' + d + '" class="value"></td>\n';
             text += '    <td class="td-center">' + (holidays[d].date || '') + '</td>\n';
-            text += '    <td>' + _(holidays[d].de) + ' <span class="loc">' + (holidays[d].comment ? _(holidays[d].comment) : '') + '</span></td>\n';
+            text += '    <td>' + _(holidays[d][systemLang]) + ' <span class="loc">' + (holidays[d].comment ? _(holidays[d].comment) : '') + '</span></td>\n';
             text += '    <td class="typ_ft">' + _(holidays[d].desc) + '</td>\n';
             text += '</tr>\n';
+            if (settings['enable_' + d] === undefined) settings['enable_' + d] = holidays[d].enabled;
         }
+
         $('#config').append(text);
 
         for (var key in settings) {
