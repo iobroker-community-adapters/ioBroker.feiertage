@@ -17,7 +17,7 @@ var holidays = {
     heiligabend:    {enabled: true,  "en": "Christmas Eve",       "de": "Heiligabend",                  "ru": "Католическое Рождество",                 desc: "kirchlicher Feiertag",       date: "24.12", offset: 358, leap: true},
     weihnachtstag1: {enabled: false, "en": "Christmas Day",       "de": "1. Weihnachtstag",             "ru": "Католическое Рождество - Первый день",   desc: "kirchlicher Feiertag",       date: "25.12", offset: 359, leap: true},
     weihnachtstag2: {enabled: true,  "en": "2nd Christmas Day",   "de": "2. Weihnachtstag",             "ru": "Католическое Рождество - Второй день",   desc: "kirchlicher Feiertag",       date: "26.12", offset: 360, leap: true},
-    silvester:      {enabled: true,  "en": "ew Year's Eve",       "de": "Silvester",                    "ru": "Новый год",                              desc: "kalendarischer Feiertag",    date: "31.12", offset: 365, leap: true}
+    silvester:      {enabled: true,  "en": "New Year's Eve",      "de": "Silvester",                    "ru": "Новый год",                              desc: "kalendarischer Feiertag",    date: "31.12", offset: 365, leap: true}
 };
 
 if (typeof module !== 'undefined' && module.parent) {
