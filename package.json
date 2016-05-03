@@ -1,7 +1,7 @@
 {
   "name": "iobroker.feiertage",
   "description": "Deutsche Feiertage",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "author": "pix",
   "contributors": [
     "pix", "Bluefox"
@@ -36,7 +36,7 @@
   "bugs": {
     "url": "https://github.com/Pix---/ioBroker.feiertage/issues"
   },
-  "main": "feiertage.js",
+  "main": "main.js",
   "scripts": {
     "test": "node node_modules/mocha/bin/mocha"
   },
