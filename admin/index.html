@@ -57,37 +57,19 @@
 <!-- you have to define 2 functions in the global scope: -->
 <script type="text/javascript">
 	systemDictionary = {
-            "Deutsche Feiertage Adapter settings": {
+            "German Holidays Adapter settings": {
                 "en": "German Holidays Adapter settings",
                 "de": "Deutsche Feiertage Adapter Einstellungen",
                 "ru": "Настройки Deutsche Feiertage Adapter"
             },
-            "Feiertage": 
-            	{"en": "Holidays",                           "de": "Feiertage",                              "ru": "Праздники"},
-            "Feiertage auswählen": 
-            	{"en": "Select holidays",                    "de": "Feiertage auswählen",                    "ru": "Выбрать праздники"},
-            "Auswahl": 
-            	{"en": "Select",                             "de": "Auswahl",                                "ru": "Выбрать"},
-            "Datum":
-                {"en": "Date",                               "de": "Datum",                                  "ru": "Дата"},
-            "Beschreibung": 
-            	{"en": "Description",                        "de": "Beschreibung",                           "ru": "Описание"},
-            "kirchlicher Feiertag": 
-            	{"en": "religous holiday",                   "de": "kirchlicher Feiertag",                   "ru": "религиозный праздник"},
-            "kalendarischer Feiertag": 
-            	{"en": "calendrical holiday",                "de": "kalendarischer Feiertag",                "ru": "календарный праздник"},
-            "politischer Feiertag": 
-            	{"en": "political holiday",                  "de": "politischer Feiertag",                   "ru": "политический праздник"},
-            "(BW, BY, ST)":
-                {"en": "(BW, BY, ST)",                       "de": "(BW, BY, ST)",                           "ru": "(BW, BY, ST)"},
-            "(BW, BY, HE, NW, RP, SL (SA, TH nicht überall))":
-                {"en": "(BW, BY, HE, NW, RP, SL (SA, TH not everywhere))", "de": "(BW, BY, HE, NW, RP, SL (SA, TH nicht überall))", "ru": "(BW, BY, HE, NW, RP, SL (SA, TH не везде))"},
-            "(BY (nicht überall), SL)":
-                {"en": "(BY (not everywhere), SL)",          "de": "(BY (nicht überall), SL)",               "ru": "(BY (не везде), SL)"},
-            "(BB, MV, SA, ST, TH)":
-                {"en": "(BB, MV, SA, ST, TH)",               "de": "(BB, MV, SA, ST, TH)",                   "ru": "(BB, MV, SA, ST, TH)"},
-            "(BW, BY, NW, RP, SL)":
-                {"en": "(BW, BY, NW, RP, SL)",               "de": "(BW, BY, NW, RP, SL)",                   "ru": "(BW, BY, NW, RP, SL)"}
+            "Holidays":       	{"en": "Holidays",                           "de": "Feiertage",                              "ru": "Праздники"},
+            "Select holidays":	{"en": "Select holidays",                    "de": "Feiertage auswählen",                    "ru": "Выбрать праздники"},
+            "Select":          	{"en": "Select",                             "de": "Auswahl",                                "ru": "Выбрать"},
+            "Date":             {"en": "Date",                               "de": "Datum",                                  "ru": "Дата"},
+            "Description":     	{"en": "Description",                        "de": "Beschreibung",                           "ru": "Описание"},
+            "religion":        	{"en": "religous holiday",                   "de": "kirchlicher Feiertag",                   "ru": "религиозный праздник"},
+            "calender":        	{"en": "calendrical holiday",                "de": "kalendarischer Feiertag",                "ru": "календарный праздник"},
+            "political":       	{"en": "political holiday",                  "de": "politischer Feiertag",                   "ru": "политический праздник"}
 	};
 
     function load(settings, onChange) {
@@ -140,16 +122,16 @@
     <table style="width: 100%">
     	<tr>
             <td><img src="feiertage.png"></td>
-            <td style="padding-top: 20px;padding-left: 10px"><h3 class="translate">Deutsche Feiertage Adapter settings</h3></td>
+            <td style="padding-top: 20px;padding-left: 10px"><h3 class="translate">German Holidays Adapter settings</h3></td>
         </tr>
     </table>
-    <h4 class="translate" style="width: calc(100% - 10px)">Feiertage auswählen</h4>
+    <h4 class="translate" style="width: calc(100% - 10px)">Select holidays</h4>
     <table id="config" style="width: calc(100% - 5px)">
         <tr class="headline">
-            <th class="translate td-center">Auswahl</th>
-            <th class="translate td-center">Datum</th>
-            <th class="translate">Feiertage</th>
-            <th class="translate">Beschreibung</th>
+            <th class="translate td-center">Select</th>
+            <th class="translate td-center">Date</th>
+            <th class="translate">Holidays</th>
+            <th class="translate">Description</th>
         </tr>
     </table>
 </div>

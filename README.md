@@ -15,7 +15,7 @@ Dieser Adapter liefert das Datum, die Dauer bis zu diesem Datum in Tagen und den
 
 
 
-## Datenpunkte / Datapoints
+##  Datenpunkte
 
 Feiertag __heute.booelan__  (*false/true*)
 
@@ -35,6 +35,26 @@ Feiertag __naechster.Datum__  (z.B. "*01.05.2016*")
 
 Feiertag __naechster.Dauer__  (z.B. "*2 Tage*")
 
+##  Datapoints
+
+Holiday __today.booelan__  (*false/true*)
+
+Holiday __today.name__  (e.g. "*Christmas Day*")
+
+Holiday __tomorrow.booelan__  (*false/true*)
+
+Holiday __tomorrow.name__  (e.g. "*2nd Christmas Day*")
+
+Holiday __aftertomorrow.booelan__  (*false/true*)
+
+Holiday __aftertomorrow.name__  (e.g. "")
+
+Holiday __next.Name__  (e.g. "*New Year's Day*")
+
+Holiday __next.Datum__  (e.g. "*01.05.2016*")
+
+Holiday __next.Dauer__  (e.g. "*4 days*")
+
 ## Einstellungen / Configuration
 Deutsch  | English
 ------------- | -------------
@@ -49,6 +69,9 @@ Deutsch  | English
 Der Adapter startet jeden Tag um Mitternacht. Ein häufigeres Starten ist nicht erforderlich. | The adapter starts daily at midnight. Due to the nature of the subject, no higher frequency is required.
 
 ## Changelog
+### 0.3.0 (2016-05-03)
+* (bluefox) add english objects
+
 ### 0.2.0 (2016-05-02)
 * (bluefox) use common file for holidays
 
