@@ -11,7 +11,7 @@
         "platform":                 "javascript/Node.js",
         "loglevel":                 "info",
         "keywords":                 ["calendar", "Kalender", "Feiertag", "Feiertage", "Woche", "Jahr", "Tag", "Monat", "holiday"],
-        "main":                     "feiertage.js",
+        "main":                     "main.js",
         "authors": [
             "Pix", "Bluefox"
         ],
