@@ -1,7 +1,7 @@
 {
   "name": "iobroker.feiertage",
   "description": "Deutsche Feiertage",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "author": "pix",
   "contributors": [
     "pix", "Bluefox"

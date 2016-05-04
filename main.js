@@ -94,7 +94,7 @@ function checkHolidays() {
     // tomorrow
     day = day + 1;
     if (day > 365 + isLeap) day = 1;
-    hd = getHoliday(day, easter);
+    hd = getHoliday(day, isLeap, easter);
     adapter.setState('morgen.Name',      {ack: true, val: getHoliday(day, isLeap, easter, 'de')});
     adapter.setState('morgen.boolean',   {ack: true, val: !!hd});
     adapter.setState('tomorrow.name',    {ack: true, val: hd});

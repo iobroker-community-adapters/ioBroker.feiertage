@@ -69,6 +69,9 @@ Deutsch  | English
 Der Adapter startet jeden Tag um Mitternacht. Ein häufigeres Starten ist nicht erforderlich. | The adapter starts daily at midnight. Due to the nature of the subject, no higher frequency is required.
 
 ## Changelog
+### 0.3.1 (2016-05-04)
+* (bluefox) fix error with tomorrow holiday
+
 ### 0.3.0 (2016-05-03)
 * (bluefox) add english objects
 
