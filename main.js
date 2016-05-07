@@ -130,8 +130,8 @@ function readFeed (x) {
 
 function main() {
     readSettings();
-    readFeed(0); // Tipps
-    setTimeout(readFeed(1), 3000); // jetzt
+    readFeed(0); // jetzt
+    setTimeout(readFeed(1), 3000); // Tipps
     adapter.stop();
 }
 main();
