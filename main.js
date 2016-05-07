@@ -86,7 +86,7 @@ var rss_options = {
 
 function readFeed (x) {
     var link = rss_options[x].url;
-    adapter.log.info(link);
+    adapter.log.info('RSS Feed wird eingelesen: ' + link);
     request(link, function (error, response, body) {
         if (!error && response.statusCode == 200) {
     
