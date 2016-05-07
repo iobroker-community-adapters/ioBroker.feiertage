@@ -31,9 +31,12 @@ adapter.on('ready', function () {
 });
  
 function readSettings() {
+    var isOneEnabled = false;
     for (var h in holidays) {
-        holidays[h].enabled = adapter.config['enable_' + h];
+        holidays[h].enabled = (adapter.config['enable_' + h] !== undefined) ? (adapter.config['enable_' + h] === true || adapter.config['enable_' + h] === 'true') : holidays[h].enabled;
+        if (holidays[h].enabled) isOneEnabled = true;
     }
+    return isOneEnabled;
 } 
 
 // Get the name of holiday for the day of the year
@@ -67,7 +70,11 @@ function getDateFromYearsDay(day, isLeap) {
 
 // check the holidays
 function checkHolidays() {
-    readSettings();
+    if (!readSettings()) {
+        adapter.log.error('No one holiday is enabled');
+        adapter.stop();
+        return;
+    }
     var now    = new Date();
     var year   = now.getFullYear();
     var isLeap = (year % 4 === 0) ? 1 : 0;

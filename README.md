@@ -69,6 +69,9 @@ Deutsch  | English
 Der Adapter startet jeden Tag um Mitternacht. Ein häufigeres Starten ist nicht erforderlich. | The adapter starts daily at midnight. Due to the nature of the subject, no higher frequency is required.
 
 ## Changelog
+### 0.3.2 (2016-05-07)
+* (bluefox) fix first start of adapter
+
 ### 0.3.1 (2016-05-07)
 * (pix) Start file fixed
 
