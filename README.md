@@ -17,15 +17,15 @@ Dieser Adapter liefert das Datum, die Dauer bis zu diesem Datum in Tagen und den
 
 ##  Datenpunkte
 
-Feiertag __heute.booelan__  (*false/true*)
+Feiertag __heute.boolean__  (*false/true*)
 
 Feiertag __heute.Name__  (z.B. "*1. Weihnachtsfeiertag*")
 
-Feiertag __morgen.booelan__  (*false/true*)
+Feiertag __morgen.boolean__  (*false/true*)
 
 Feiertag __morgen.Name__  (z.B. "*2. Weihnachtsfeiertag*")
 
-Feiertag __uebermorgen.booelan__  (*false/true*)
+Feiertag __uebermorgen.boolean__  (*false/true*)
 
 Feiertag __uebermorgen.Name__  (z.B. "")
 
@@ -37,15 +37,15 @@ Feiertag __naechster.Dauer__  (z.B. "*2 Tage*")
 
 ##  Datapoints
 
-Holiday __today.booelan__  (*false/true*)
+Holiday __today.boolean__  (*false/true*)
 
 Holiday __today.name__  (e.g. "*Christmas Day*")
 
-Holiday __tomorrow.booelan__  (*false/true*)
+Holiday __tomorrow.boolean__  (*false/true*)
 
 Holiday __tomorrow.name__  (e.g. "*2nd Christmas Day*")
 
-Holiday __aftertomorrow.booelan__  (*false/true*)
+Holiday __aftertomorrow.boolean__  (*false/true*)
 
 Holiday __aftertomorrow.name__  (e.g. "")
 
