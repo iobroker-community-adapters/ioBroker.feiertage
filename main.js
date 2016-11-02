@@ -88,15 +88,16 @@ function checkHolidays() {
     // Easter sunday: day of the year
     var easter = A - B - 33 + isLeap;
 
-    // 4th advent (sunday before first christmas day)
-    var christmas1 = new Date(year, 11, 25, 12, 0, 0);
-    var advent4 = new Date(christmas1.getTime() - (((christmas1.getDay() == 0) ? 7 : christmas1.getDay()) * 86400*1000));
-
     // Day of the year
     var todayStart = new Date(now.setHours(0, 0, 0, 0));
     var newYear    = new Date(year, 0, 1);
     var diffDays   = (todayStart - newYear) / (24 * 60 * 60 * 1000) + 1;
     var day        = Math.ceil(diffDays);
+
+    // 4th advent (sunday before first christmas day)
+    var christmas1 = new Date(year, 11, 25, 12, 0, 0);
+    var advent4date = new Date(christmas1.getTime() - (((christmas1.getDay() == 0) ? 7 : christmas1.getDay()) * (24 * 60 * 60 * 1000)));
+    var advent4 = Math.ceil((advent4date.setHours(0, 0, 0, 0) - newYear) / (24 * 60 * 60 * 1000) + 1);
 
     // today
     var hd = getHoliday(day, isLeap, easter, advent4);
