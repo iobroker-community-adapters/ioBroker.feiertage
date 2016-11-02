@@ -40,7 +40,7 @@ function readSettings() {
 } 
 
 // Get the name of holiday for the day of the year
-function getHoliday(day, isLeap, easter, _lang) {
+function getHoliday(day, isLeap, easter, advent4, _lang) {
     _lang = _lang || lang;
 
     for (var h in holidays) {
@@ -49,6 +49,9 @@ function getHoliday(day, isLeap, easter, _lang) {
                 return holidays[h][_lang] + (holidays[h]['comment_' + _lang] ? ' ' + holidays[h]['comment_' + _lang] : '');
             }
             if (holidays[h].easterOffset && (easter + holidays[h].easterOffset) == day) {
+                return holidays[h][_lang] + (holidays[h]['comment_' + _lang] ? ' ' + holidays[h]['comment_' + _lang] : '');
+            }
+            if (holidays[h].advent4Offset && (advent4 + holidays[h].advent4Offset) == day) {
                 return holidays[h][_lang] + (holidays[h]['comment_' + _lang] ? ' ' + holidays[h]['comment_' + _lang] : '');
             }
         }
@@ -85,6 +88,10 @@ function checkHolidays() {
     // Easter sunday: day of the year
     var easter = A - B - 33 + isLeap;
 
+    // 4th advent (sunday before first christmas day)
+    var christmas1 = new Date(year, 11, 25, 12, 0, 0);
+    var advent4 = new Date(christmas1.getTime() - (((christmas1.getDay() == 0) ? 7 : christmas1.getDay()) * 86400*1000));
+
     // Day of the year
     var todayStart = new Date(now.setHours(0, 0, 0, 0));
     var newYear    = new Date(year, 0, 1);
@@ -92,8 +99,8 @@ function checkHolidays() {
     var day        = Math.ceil(diffDays);
 
     // today
-    var hd = getHoliday(day, isLeap, easter);
-    adapter.setState('heute.Name',    {ack: true, val: getHoliday(day, isLeap, easter, 'de')});
+    var hd = getHoliday(day, isLeap, easter, advent4);
+    adapter.setState('heute.Name',    {ack: true, val: getHoliday(day, isLeap, easter, advent4, 'de')});
     adapter.setState('heute.boolean', {ack: true, val: !!hd});
     adapter.setState('today.name',    {ack: true, val: hd});
     adapter.setState('today.boolean', {ack: true, val: !!hd});
@@ -101,8 +108,8 @@ function checkHolidays() {
     // tomorrow
     day = day + 1;
     if (day > 365 + isLeap) day = 1;
-    hd = getHoliday(day, isLeap, easter);
-    adapter.setState('morgen.Name',      {ack: true, val: getHoliday(day, isLeap, easter, 'de')});
+    hd = getHoliday(day, isLeap, easter, advent4);
+    adapter.setState('morgen.Name',      {ack: true, val: getHoliday(day, isLeap, easter, advent4, 'de')});
     adapter.setState('morgen.boolean',   {ack: true, val: !!hd});
     adapter.setState('tomorrow.name',    {ack: true, val: hd});
     adapter.setState('tomorrow.boolean', {ack: true, val: !!hd});
@@ -110,8 +117,8 @@ function checkHolidays() {
     // the day after tomorrow
     day = day + 1;
     if (day > 365 + isLeap) day = 1;
-    hd = getHoliday(day, isLeap, easter);
-    adapter.setState('uebermorgen.Name',      {ack: true, val: getHoliday(day, isLeap, easter, 'de')});
+    hd = getHoliday(day, isLeap, easter, advent4);
+    adapter.setState('uebermorgen.Name',      {ack: true, val: getHoliday(day, isLeap, easter, advent4, 'de')});
     adapter.setState('uebermorgen.boolean',   {ack: true, val: !!hd});
     adapter.setState('aftertomorrow.name',    {ack: true, val: hd});
     adapter.setState('aftertomorrow.boolean', {ack: true, val: !!hd});
@@ -123,11 +130,11 @@ function checkHolidays() {
         day = day + 1;
         if (day > 365 + isLeap) day = 1;
         duration = duration + 1;
-        hd = getHoliday(day, isLeap, easter);
+        hd = getHoliday(day, isLeap, easter, advent4);
 
         if (hd) {
             var date = getDateFromYearsDay(day, isLeap);
-            adapter.setState('naechster.Name', {ack: true, val: getHoliday(day, isLeap, easter, 'de')});
+            adapter.setState('naechster.Name', {ack: true, val: getHoliday(day, isLeap, easter, advent4, 'de')});
             adapter.setState('next.name',      {ack: true, val: hd});
 
             var nextHoliday = adapter.formatDate(date);
