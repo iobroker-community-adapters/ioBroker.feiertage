@@ -78,7 +78,7 @@
             text += '<tr>\n';
             text += '    <td class="td-center"><input type="checkbox" id="enable_' + d + '" class="value"></td>\n';
             text += '    <td class="td-center">' + (holidays[d].date || '') + '</td>\n';
-            text += '    <td>' + _(holidays[d][systemLang]) + ' <span class="loc">' + (holidays[d].comment ? _(holidays[d].comment) : '') + '</span></td>\n';
+            text += '    <td>' + _(holidays[d][systemLang]) + ' <span class="loc">' + (holidays[d]['comment_' + systemLang] ? _(holidays[d]['comment_' + systemLang]) : '') + '</span></td>\n';
             text += '    <td class="typ_ft">' + _(holidays[d].desc) + '</td>\n';
             text += '</tr>\n';
             if (settings['enable_' + d] === undefined) settings['enable_' + d] = holidays[d].enabled;
