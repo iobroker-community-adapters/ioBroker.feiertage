@@ -70,8 +70,8 @@ Der Adapter startet jeden Tag um Mitternacht. Ein häufigeres Starten ist nicht 
 
 ## Changelog
 ### 0.3.3 (2016-11-08)
-* (jensmaus) added advent ѕundays, "Buß- und Bettag" and many more german holidays
-* (jensmaus) code fix (multilingual reference)
+* (jens-maus) added advent ѕundays, "Buß- und Bettag" and many more german holidays
+* (jens-maus) code fix (multilingual reference)
 
 ### 0.3.2 (2016-05-07)
 * (bluefox) fix first start of adapter
