@@ -145,7 +145,7 @@ function checkHolidays() {
 
     // next holiday
     var duration = 0;
-    day = day - 1; // shift back to "tomorrow", because tomorrow is the next day
+    day = day - 2; // shift back to "today" so that we calculate everything relative to it
     do {
         day = day + 1;
         if (day > 365 + isLeap) day = 1;

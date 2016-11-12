@@ -69,6 +69,9 @@ Deutsch  | English
 Der Adapter startet jeden Tag um Mitternacht. Ein häufigeres Starten ist nicht erforderlich. | The adapter starts daily at midnight. Due to the nature of the subject, no higher frequency is required.
 
 ## Changelog
+### 0.3.4 (2016-11-10)
+* (jens-maus) fixed calculation of "next holiday" which was shifted by one day. Thus on the day before a holiday it already showed the next one.
+
 ### 0.3.3 (2016-11-08)
 * (jens-maus) added advent ѕundays, "Buß- und Bettag" and many more german holidays
 * (jens-maus) code fix (multilingual reference)
