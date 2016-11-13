@@ -15,45 +15,9 @@ Dieser Adapter liefert das Datum, die Dauer bis zu diesem Datum in Tagen und den
 
 
 
-##  Datenpunkte
+##  Datenpunkte / Datapoints
 
-Feiertag __heute.boolean__  (*false/true*)
-
-Feiertag __heute.Name__  (z.B. "*1. Weihnachtsfeiertag*")
-
-Feiertag __morgen.boolean__  (*false/true*)
-
-Feiertag __morgen.Name__  (z.B. "*2. Weihnachtsfeiertag*")
-
-Feiertag __uebermorgen.boolean__  (*false/true*)
-
-Feiertag __uebermorgen.Name__  (z.B. "")
-
-Feiertag __naechster.Name__  (z.B. "*Maifeiertag*")
-
-Feiertag __naechster.Datum__  (z.B. "*01.05.2016*")
-
-Feiertag __naechster.Dauer__  (z.B. "*2 Tage*")
-
-##  Datapoints
-
-Holiday __today.boolean__  (*false/true*)
-
-Holiday __today.name__  (e.g. "*Christmas Day*")
-
-Holiday __tomorrow.boolean__  (*false/true*)
-
-Holiday __tomorrow.name__  (e.g. "*2nd Christmas Day*")
-
-Holiday __aftertomorrow.boolean__  (*false/true*)
-
-Holiday __aftertomorrow.name__  (e.g. "")
-
-Holiday __next.Name__  (e.g. "*New Year's Day*")
-
-Holiday __next.Datum__  (e.g. "*01.05.2016*")
-
-Holiday __next.Dauer__  (e.g. "*4 days*")
+![alt text](img/DatapointsScreenshot.jpg "Screenshot Datapoints")
 
 ## Einstellungen / Configuration
 Deutsch  | English
@@ -69,6 +33,10 @@ Deutsch  | English
 Der Adapter startet jeden Tag um Mitternacht. Ein häufigeres Starten ist nicht erforderlich. | The adapter starts daily at midnight. Due to the nature of the subject, no higher frequency is required.
 
 ## Changelog
+### 0.3.5 (2016-11-13)
+* (pix) fixed version issue
+* updated screenshots in readme
+
 ### 0.3.4 (2016-11-10)
 * (jens-maus) fixed calculation of "next holiday" which was shifted by one day. Thus on the day before a holiday it already showed the next one.
 

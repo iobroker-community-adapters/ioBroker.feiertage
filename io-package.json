@@ -5,7 +5,7 @@
         "desc": {                   "en": "German Holidays calculates religous, political and calendarial Holidays",
                                     "de": "Deutsche Feiertage berechnet nach der Formel von Heiner Lichtenberg beruhend auf der Gaußschen Osterformel",
                                     "ru": "Deutsche Feiertage - translate to russian, please"},
-        "version":                  "0.3.3",
+        "version":                  "0.3.5",
         "mode":                     "schedule",
         "schedule":                 "0 0 * * *",
         "platform":                 "javascript/Node.js",
