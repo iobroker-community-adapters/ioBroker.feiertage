@@ -45,16 +45,16 @@ function getHoliday(day, isLeap, easter, advent4, year, _lang) {
 
     for (var h in holidays) {
         if (holidays[h].enabled) {
-            if (holidays[h].offset && (holidays[h].offset + (holidays[h].leap ? isLeap : 0)) == day) {
+            if (holidays[h].offset !== 'undefined' && (holidays[h].offset + (holidays[h].leap ? isLeap : 0)) == day) {
                 return holidays[h][_lang] + (holidays[h]['comment_' + _lang] ? ' ' + holidays[h]['comment_' + _lang] : '');
             }
-            if (holidays[h].easterOffset && (easter + holidays[h].easterOffset) == day) {
+            if (holidays[h].easterOffset !== 'undefined' && (easter + holidays[h].easterOffset) == day) {
                 return holidays[h][_lang] + (holidays[h]['comment_' + _lang] ? ' ' + holidays[h]['comment_' + _lang] : '');
             }
-            if (holidays[h].advent4Offset && (advent4 + holidays[h].advent4Offset) == day) {
+            if (holidays[h].advent4Offset !== 'undefined' && (advent4 + holidays[h].advent4Offset) == day) {
                 return holidays[h][_lang] + (holidays[h]['comment_' + _lang] ? ' ' + holidays[h]['comment_' + _lang] : '');
             }
-            if (holidays[h].april30Offset) {
+            if (holidays[h].april30Offset !== 'undefined') {
                 var newYear = new Date(year, 0, 1);
                 var april30date = new Date(year, 3, 30, 0, 0, 0);
                 var april30num = Math.ceil((april30date - newYear) / (24 * 60 * 60 * 1000) + 1);
@@ -64,7 +64,7 @@ function getHoliday(day, isLeap, easter, advent4, year, _lang) {
                   return holidays[h][_lang] + (holidays[h]['comment_' + _lang] ? ' ' + holidays[h]['comment_' + _lang] : '');
                 }
             }
-            if (holidays[h].michaelisOffset) {
+            if (holidays[h].michaelisOffset !== 'undefined') {
                 var newYear = new Date(year, 0, 1);
                 var michaelisDate = new Date(year, 8, 29, 0, 0, 0);
                 var michaelisNum = Math.ceil((michaelisDate - newYear) / (24 * 60 * 60 * 1000) + 1);
