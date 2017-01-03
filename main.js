@@ -45,7 +45,7 @@ function getHoliday(day, isLeap, easter, advent4, year, _lang) {
 
     for (var h in holidays) {
         if (holidays[h].enabled) {
-            if (holidays[h].offset !== 'undefined' && (holidays[h].offset + (holidays[h].leap ? isLeap : 0)) == day) {
+            if (holidays[h].offset !== 'undefined' && (1 + holidays[h].offset + (holidays[h].offset >= 59 ? isLeap : 0)) == day) {
                 return holidays[h][_lang] + (holidays[h]['comment_' + _lang] ? ' ' + holidays[h]['comment_' + _lang] : '');
             }
             if (holidays[h].easterOffset !== 'undefined' && (easter + holidays[h].easterOffset) == day) {
@@ -78,10 +78,8 @@ function getHoliday(day, isLeap, easter, advent4, year, _lang) {
     return '';
 } 
 
-function getDateFromYearsDay(day, isLeap) {
-    var dayMs     = (day - isLeap) * 24 * 60 * 60 * 1000; // Day of the year in ms from 01.01 00:00:00
-    var now       = new Date();
-    var year      = now.getFullYear();
+function getDateFromYearsDay(day, year) {
+    var dayMs     = (day-1) * 24 * 60 * 60 * 1000; // Day of the year in ms from 01.01 00:00:00
     var newYear   = new Date(year, 0, 1, 0, 0, 0, 0);     // This year 01.01 00:00:00
     var newYearMs = newYear.getTime();
     var date      = new Date();
@@ -99,7 +97,7 @@ function checkHolidays() {
     }
     var now    = new Date();
     var year   = now.getFullYear();
-    var isLeap = (year % 4 === 0) ? 1 : 0;
+    var isLeap = ((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0) ? 1 : 0;
 
     // THe modified Gauss-Formula to calculate catholic eastern, valid till 2048
     var A = 120 + (19 * (year % 19) + 24) % 30;
@@ -153,7 +151,7 @@ function checkHolidays() {
         hd = getHoliday(day, isLeap, easter, advent4, year);
 
         if (hd) {
-            var date = getDateFromYearsDay(day, isLeap);
+            var date = getDateFromYearsDay(day, year);
             adapter.setState('naechster.Name', {ack: true, val: getHoliday(day, isLeap, easter, advent4, year, 'de')});
             adapter.setState('next.name',      {ack: true, val: hd});
 
