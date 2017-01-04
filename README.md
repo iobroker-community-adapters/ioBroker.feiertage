@@ -33,6 +33,9 @@ Deutsch  | English
 Der Adapter startet jeden Tag um Mitternacht. Ein häufigeres Starten ist nicht erforderlich. | The adapter starts daily at midnight. Due to the nature of the subject, no higher frequency is required.
 
 ## Changelog
+### 0.3.6 (2017-01-04)
+* (jens-maus) offset fix in non-leap years
+
 ### 0.3.5 (2016-11-13)
 * (pix) fixed version issue
 * updated screenshots in readme
