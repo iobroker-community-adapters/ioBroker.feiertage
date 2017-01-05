@@ -128,6 +128,55 @@ describe('Test ' + adapterShortName + ' adapter', function() {
 
     You can also use "sendTo" method to send messages to the started adapter
 */
+    it('feiertage: next holiday must be set', function (done) { // nur deutsche Bezeichnungen
+        this.timeout(20000);
+        states.getState('feiertage.0.naechster.Name', function (err, fileName) {
+            expect(err).to.be.not.ok;
+            expect(fileName).to.be.ok;
+            expect(fileName.ack).to.be.true;
+            states.getState('feiertage.0.naechster.Datum', function (err, fileName) {
+                expect(err).to.be.not.ok;
+                expect(fileName).to.be.ok;
+                expect(fileName.ack).to.be.true;
+                states.getState('feiertage.0.naechster.Dauer', function (err, fileName) {
+                    expect(err).to.be.not.ok;
+                    expect(fileName).to.be.ok;
+                    expect(fileName.ack).to.be.true;
+                    states.getState('feiertage.0.heute.Name', function (err, fileName) {
+                        expect(err).to.be.not.ok;
+                        expect(fileName).to.be.ok;
+                        expect(fileName.ack).to.be.true;
+                        states.getState('feiertage.0.heute.boolean', function (err, fileName) {
+                            expect(err).to.be.not.ok;
+                            expect(fileName).to.be.ok;
+                            expect(fileName.ack).to.be.true;
+                            states.getState('feiertage.0.morgen.Name', function (err, fileName) {
+                                expect(err).to.be.not.ok;
+                                expect(fileName).to.be.ok;
+                                expect(fileName.ack).to.be.true;
+                                states.getState('feiertage.0.morgen.boolean', function (err, fileName) {
+                                    expect(err).to.be.not.ok;
+                                    expect(fileName).to.be.ok;
+                                    expect(fileName.ack).to.be.true;
+                                    states.getState('feiertage.0.uebermorgen.Name', function (err, fileName) {
+                                        expect(err).to.be.not.ok;
+                                        expect(fileName).to.be.ok;
+                                        expect(fileName.ack).to.be.true;
+                                         states.getState('feiertage.0.uebermorgen.boolean', function (err, fileName) {
+                                            expect(err).to.be.not.ok;
+                                            expect(fileName).to.be.ok;
+                                            expect(fileName.ack).to.be.true;
+                                            done();
+                                        });
+                                    });
+                                });
+                            });
+                        });
+                    });
+                });
+            });
+        });
+    });
 
     after('Test ' + adapterShortName + ' adapter: Stop js-controller', function (done) {
         this.timeout(10000);
