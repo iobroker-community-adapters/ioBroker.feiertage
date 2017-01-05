@@ -9,7 +9,7 @@
 [![NPM](https://nodei.co/npm/iobroker.feiertage.png?downloads=true)](https://nodei.co/npm/iobroker.feiertage/)
 
 **Tests:** Linux/Mac: [![Travis-CI](http://img.shields.io/travis/Pix---/ioBroker.feiertage/master.svg)](https://travis-ci.org/Pix---/ioBroker.feiertage)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/Pix---/ioBroker.feiertage?branch=master&svg=true)](https://ci.appveyor.com/project/Pix---/ioBroker.feiertage/)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/Pix---/ioBroker-feiertage?branch=master&svg=true)](https://ci.appveyor.com/project/Pix---/ioBroker-feiertage/)
 
 
 ## Beschreibung / Description
