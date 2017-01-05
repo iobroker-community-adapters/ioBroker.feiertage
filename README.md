@@ -38,7 +38,7 @@ Der Adapter startet jeden Tag um Mitternacht. Ein häufigeres Starten ist nicht 
 
 ## Changelog
 ### 0.4.0 (2017-01-05)
-* (pix) Travis CI testing supported
+* (pix) Travis CI and appveyor Windows testing supported
 
 ### 0.3.6 (2017-01-04)
 * (jens-maus) offset fix in non-leap years
