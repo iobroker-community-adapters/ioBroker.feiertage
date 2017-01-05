@@ -4,7 +4,7 @@
 
 [![NPM version](http://img.shields.io/npm/v/iobroker.feiertage.svg)](https://www.npmjs.com/package/iobroker.feiertage)
 [![Downloads](https://img.shields.io/npm/dm/iobroker.feiertage.svg)](https://www.npmjs.com/package/iobroker.feiertage)
-[![Tests](https://travis-ci.org/ioBroker/ioBroker.feiertage.svg?branch=master)](https://travis-ci.org/ioBroker/ioBroker.feiertage)
+[![Tests](https://travis-ci.org/Pix---/ioBroker.feiertage.svg?branch=master)](https://travis-ci.org/Pix---/ioBroker.feiertage)
 
 [![NPM](https://nodei.co/npm/iobroker.feiertage.png?downloads=true)](https://nodei.co/npm/iobroker.feiertage/)
 
@@ -33,6 +33,9 @@ Deutsch  | English
 Der Adapter startet jeden Tag um Mitternacht. Ein häufigeres Starten ist nicht erforderlich. | The adapter starts daily at midnight. Due to the nature of the subject, no higher frequency is required.
 
 ## Changelog
+### 0.4.0 (2017-01-05)
+* (pix) Travis CI testing supported
+
 ### 0.3.6 (2017-01-04)
 * (jens-maus) offset fix in non-leap years
 
