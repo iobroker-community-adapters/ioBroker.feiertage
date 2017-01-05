@@ -6,6 +6,13 @@
                                     "de": "Deutsche Feiertage berechnet nach der Formel von Heiner Lichtenberg beruhend auf der Gaußschen Osterformel",
                                     "ru": "Deutsche Feiertage - translate to russian, please"},
         "version":                  "0.4.0",
+	"news": {
+	                            "0.4.0": {
+                                        "en": "Travis CI and Appveyor testing supported",
+                                        "de": "Travis CI und Appveyor Test Unterstützung",
+                                        "ru": "Travis CI и Appveyor тестирование при поддержке"
+				    }
+	},
         "mode":                     "schedule",
         "schedule":                 "0 0 * * *",
         "platform":                 "javascript/Node.js",
