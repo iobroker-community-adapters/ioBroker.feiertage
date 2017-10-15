@@ -136,4 +136,4 @@ SOFTWARE.
 ---
 *Logo is crafted by CHALLENGER*
 
-*Thank you, paul53, for the inspiration!*
+*Thanks to paul53 for the inspiration and thanks to jens-maus for his support!*
