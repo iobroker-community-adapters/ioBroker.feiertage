@@ -5,7 +5,7 @@
 [![NPM version](http://img.shields.io/npm/v/iobroker.feiertage.svg)](https://www.npmjs.com/package/iobroker.feiertage)
 [![Downloads](https://img.shields.io/npm/dm/iobroker.feiertage.svg)](https://www.npmjs.com/package/iobroker.feiertage)
 [![Tests](https://travis-ci.org/Pix---/ioBroker.feiertage.svg?branch=master)](https://travis-ci.org/Pix---/ioBroker.feiertage)
-[![OPen Issues](http://githubbadges.herokuapp.com/Pix---/ioBroker.feiertage/issues.svg)](http://githubbadges.herokuapp.com/Pix---/ioBroker.feiertage/issues)
+[![Open Issues](http://githubbadges.herokuapp.com/Pix---/ioBroker.feiertage/issues.svg)](http://githubbadges.herokuapp.com/Pix---/ioBroker.feiertage/issues)
 
 [![NPM](https://nodei.co/npm/iobroker.feiertage.png?downloads=true)](https://nodei.co/npm/iobroker.feiertage/)
 
