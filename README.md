@@ -37,6 +37,9 @@ Deutsch  | English
 Der Adapter startet jeden Tag um Mitternacht. Ein häufigeres Starten ist nicht erforderlich. | The adapter starts daily at midnight. Due to the nature of the subject, no higher frequency is required.
 
 ## Changelog
+### 1.0.0 (2017-10-15)
+* (pix) End of Beta. Nodejs 4 or higher required
+
 ### 0.4.1 (2017-06-08)
 * (jens-maus) added "Kid's Day" for 01.06. and added "Vatertag" beside "Christi Himmelfahrt"
 
