@@ -19,7 +19,8 @@
     "Kalender",
     "Feiertage",
     "Holidays",
-    "home automation"
+    "home automation",
+    "pix"
   ],
   "dependencies": {
     "request": "^2.72.0"
