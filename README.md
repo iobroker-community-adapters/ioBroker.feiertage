@@ -1,6 +1,5 @@
 ![Logo](admin/feiertage.png)
 # ioBroker.feiertage
-=================
 
 [![NPM version](http://img.shields.io/npm/v/iobroker.feiertage.svg)](https://www.npmjs.com/package/iobroker.feiertage)
 [![Downloads](https://img.shields.io/npm/dm/iobroker.feiertage.svg)](https://www.npmjs.com/package/iobroker.feiertage)
