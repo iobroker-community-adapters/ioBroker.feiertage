@@ -1,33 +1,46 @@
 {
     "common": {
-        "name":                     "feiertage",
-        "title":                    "Deutsche Feiertage",
-        "desc": {                   "en": "German Holidays calculates religous, political and calendarial Holidays",
-                                    "de": "Deutsche Feiertage berechnet nach der Formel von Heiner Lichtenberg beruhend auf der Gaußschen Osterformel",
-                                    "ru": "Deutsche Feiertage - translate to russian, please"},
-        "version":                  "0.4.0",
-	"news": {
-	                            "0.4.0": {
-                                        "en": "Travis CI and Appveyor testing supported",
-                                        "de": "Travis CI und Appveyor Test Unterstützung",
-                                        "ru": "Travis CI и Appveyor тестирование при поддержке"
-				    }
-	},
-        "mode":                     "schedule",
-        "schedule":                 "0 0 * * *",
-        "platform":                 "javascript/Node.js",
-        "loglevel":                 "info",
-        "keywords":                 ["calendar", "Kalender", "Feiertag", "Feiertage", "Woche", "Jahr", "Tag", "Monat", "holiday"],
-        "main":                     "main.js",
-        "authors": [
-            "Pix", "Bluefox"
+        "name": "feiertage",
+        "title": "Deutsche Feiertage",
+        "desc": {
+            "en": "German Holidays calculates religous, political and calendarial Holidays",
+            "de": "Deutsche Feiertage berechnet nach der Formel von Heiner Lichtenberg beruhend auf der Gaußschen Osterformel",
+            "ru": "Deutsche Feiertage - translate to russian, please"
+        },
+        "version": "0.4.0",
+        "news": {
+            "0.4.0": {
+                "en": "Travis CI and Appveyor testing supported",
+                "de": "Travis CI und Appveyor Test Unterstützung",
+                "ru": "Travis CI и Appveyor тестирование при поддержке"
+            }
+        },
+        "mode": "schedule",
+        "schedule": "0 0 * * *",
+        "platform": "javascript/Node.js",
+        "loglevel": "info",
+        "keywords": [
+            "calendar",
+            "Kalender",
+            "Feiertag",
+            "Feiertage",
+            "Woche",
+            "Jahr",
+            "Tag",
+            "Monat",
+            "holiday"
         ],
-        "license":                  "MIT",
-        "readme":                   "https://github.com/Pix---/ioBroker.feiertage/blob/master/README.md",
-        "icon":                     "feiertage.png",
-        "extIcon":                  "https://raw.githubusercontent.com/Pix---/ioBroker.feiertage/master/admin/feiertage.png",
-	    "allowInit":                true,
-        "type":                     "schedule",
+        "main": "main.js",
+        "authors": [
+            "Pix",
+            "Bluefox"
+        ],
+        "license": "MIT",
+        "readme": "https://github.com/Pix---/ioBroker.feiertage/blob/master/README.md",
+        "icon": "feiertage.png",
+        "extIcon": "https://raw.githubusercontent.com/Pix---/ioBroker.feiertage/master/admin/feiertage.png",
+        "allowInit": true,
+        "type": "date-and-time",
         "config": {
             "width": 650,
             "height": 680,
@@ -35,12 +48,11 @@
             "minHeight": 300
         }
     },
-    "native": {
-    },
+    "native": {},
     "objects": [],
     "instanceObjects": [
         {
-            "_id":  "heute",
+            "_id": "heute",
             "type": "channel",
             "common": {
                 "role": "day",
@@ -49,31 +61,31 @@
             "native": {}
         },
         {
-            "_id":  "heute.Name",
+            "_id": "heute.Name",
             "type": "state",
             "common": {
-                "name":  "Feiertag heute - Name",
-                "desc":  "Welcher Feiertag ist heute?",
-                "type":  "string",
-                "read":  true,
+                "name": "Feiertag heute - Name",
+                "desc": "Welcher Feiertag ist heute?",
+                "type": "string",
+                "read": true,
                 "write": false
             },
             "native": {}
         },
         {
-            "_id":  "heute.boolean",
+            "_id": "heute.boolean",
             "type": "state",
             "common": {
-                "name":  "Feiertag heute?",
-                "desc":  "Ist heute ein Feiertag?",
-                "type":  "boolean",
-                "read":  true,
+                "name": "Feiertag heute?",
+                "desc": "Ist heute ein Feiertag?",
+                "type": "boolean",
+                "read": true,
                 "write": false
             },
             "native": {}
         },
         {
-            "_id":  "morgen",
+            "_id": "morgen",
             "type": "channel",
             "common": {
                 "role": "day",
@@ -82,31 +94,31 @@
             "native": {}
         },
         {
-            "_id":  "morgen.Name",
+            "_id": "morgen.Name",
             "type": "state",
             "common": {
-                "name":  "Feiertag morgen - Name",
-                "desc":  "Welcher Feiertag ist morgen?",
-                "type":  "string",
-                "read":  true,
+                "name": "Feiertag morgen - Name",
+                "desc": "Welcher Feiertag ist morgen?",
+                "type": "string",
+                "read": true,
                 "write": false
             },
             "native": {}
         },
         {
-            "_id":  "morgen.boolean",
+            "_id": "morgen.boolean",
             "type": "state",
             "common": {
-                "name":  "Feiertag morgen?",
-                "desc":  "Ist morgen ein Feiertag?",
-                "type":  "boolean",
-                "read":  true,
+                "name": "Feiertag morgen?",
+                "desc": "Ist morgen ein Feiertag?",
+                "type": "boolean",
+                "read": true,
                 "write": false
             },
             "native": {}
         },
         {
-            "_id":  "uebermorgen",
+            "_id": "uebermorgen",
             "type": "channel",
             "common": {
                 "role": "day",
@@ -115,31 +127,31 @@
             "native": {}
         },
         {
-            "_id":  "uebermorgen.Name",
+            "_id": "uebermorgen.Name",
             "type": "state",
             "common": {
-                "name":  "Feiertag übermorgen - Name",
-                "desc":  "Welcher Feiertag ist übermorgen?",
-                "type":  "string",
-                "read":  true,
+                "name": "Feiertag übermorgen - Name",
+                "desc": "Welcher Feiertag ist übermorgen?",
+                "type": "string",
+                "read": true,
                 "write": false
             },
             "native": {}
         },
         {
-            "_id":  "uebermorgen.boolean",
+            "_id": "uebermorgen.boolean",
             "type": "state",
             "common": {
-                "name":  "Feiertag übermorgen?",
-                "desc":  "Ist übermorgen ein Feiertag?",
-                "type":  "boolean",
-                "read":  true,
+                "name": "Feiertag übermorgen?",
+                "desc": "Ist übermorgen ein Feiertag?",
+                "type": "boolean",
+                "read": true,
                 "write": false
             },
             "native": {}
         },
         {
-            "_id":  "naechster",
+            "_id": "naechster",
             "type": "channel",
             "common": {
                 "role": "day",
@@ -148,46 +160,46 @@
             "native": {}
         },
         {
-            "_id":  "naechster.Name",
+            "_id": "naechster.Name",
             "type": "state",
             "common": {
-                "name":  "naechster Feiertag - Name",
-                "desc":  "Welcher ist der naechste Feiertag?",
-                "type":  "string",
-                "read":  true,
+                "name": "naechster Feiertag - Name",
+                "desc": "Welcher ist der naechste Feiertag?",
+                "type": "string",
+                "read": true,
                 "write": false
             },
             "native": {}
         },
         {
-            "_id":  "naechster.Datum",
+            "_id": "naechster.Datum",
             "type": "state",
             "common": {
-                "name":  "Naechster Feiertag - Datum?",
-                "desc":  "Wann ist der naechste Feiertag?",
-                "type":  "string",
-                "role":  "value.date",
-                "read":  true,
+                "name": "Naechster Feiertag - Datum?",
+                "desc": "Wann ist der naechste Feiertag?",
+                "type": "string",
+                "role": "value.date",
+                "read": true,
                 "write": false
             },
             "native": {}
         },
         {
-            "_id":  "naechster.Dauer",
+            "_id": "naechster.Dauer",
             "type": "state",
             "common": {
-                "name":  "Naechster Feiertag - Dauer bis dahin",
-                "desc":  "Zahl der Tage bis zum nächsten Feiertag",
-                "type":  "number",
-                "unit":  "Tage",
-                "role":  "value.interval.days",
-                "read":  true,
+                "name": "Naechster Feiertag - Dauer bis dahin",
+                "desc": "Zahl der Tage bis zum nächsten Feiertag",
+                "type": "number",
+                "unit": "Tage",
+                "role": "value.interval.days",
+                "read": true,
                 "write": false
             },
             "native": {}
         },
         {
-            "_id":  "today",
+            "_id": "today",
             "type": "channel",
             "common": {
                 "role": "day",
@@ -196,33 +208,33 @@
             "native": {}
         },
         {
-            "_id":  "today.name",
+            "_id": "today.name",
             "type": "state",
             "common": {
-                "name":  "Holiday today - Name",
-                "desc":  "What the holiday is today?",
-                "type":  "string",
-                "role":  "state",
-                "read":  true,
+                "name": "Holiday today - Name",
+                "desc": "What the holiday is today?",
+                "type": "string",
+                "role": "state",
+                "read": true,
                 "write": false
             },
             "native": {}
         },
         {
-            "_id":  "today.boolean",
+            "_id": "today.boolean",
             "type": "state",
             "common": {
-                "name":  "Holiday today?",
-                "desc":  "Is the holiday today?",
-                "type":  "boolean",
-                "role":  "state",
-                "read":  true,
+                "name": "Holiday today?",
+                "desc": "Is the holiday today?",
+                "type": "boolean",
+                "role": "state",
+                "read": true,
                 "write": false
             },
             "native": {}
         },
         {
-            "_id":  "tomorrow",
+            "_id": "tomorrow",
             "type": "channel",
             "common": {
                 "role": "day",
@@ -231,33 +243,33 @@
             "native": {}
         },
         {
-            "_id":  "tomorrow.name",
+            "_id": "tomorrow.name",
             "type": "state",
             "common": {
-                "name":  "Holiday tomorrow - Name",
-                "desc":  "What the holiday is tomorrow?",
-                "type":  "string",
-                "role":  "state",
-                "read":  true,
+                "name": "Holiday tomorrow - Name",
+                "desc": "What the holiday is tomorrow?",
+                "type": "string",
+                "role": "state",
+                "read": true,
                 "write": false
             },
             "native": {}
         },
         {
-            "_id":  "tomorrow.boolean",
+            "_id": "tomorrow.boolean",
             "type": "state",
             "common": {
-                "name":  "Holiday tomorrow?",
-                "desc":  "Is the holiday tomorrow?",
-                "type":  "boolean",
-                "role":  "state",
-                "read":  true,
+                "name": "Holiday tomorrow?",
+                "desc": "Is the holiday tomorrow?",
+                "type": "boolean",
+                "role": "state",
+                "read": true,
                 "write": false
             },
             "native": {}
         },
         {
-            "_id":  "aftertomorrow",
+            "_id": "aftertomorrow",
             "type": "channel",
             "common": {
                 "role": "day",
@@ -266,33 +278,33 @@
             "native": {}
         },
         {
-            "_id":  "aftertomorrow.name",
+            "_id": "aftertomorrow.name",
             "type": "state",
             "common": {
-                "name":  "Holiday after tomorrow - Name",
-                "desc":  "What the holiday is in the day after tomorrow?",
-                "type":  "string",
-                "role":  "state",
-                "read":  true,
+                "name": "Holiday after tomorrow - Name",
+                "desc": "What the holiday is in the day after tomorrow?",
+                "type": "string",
+                "role": "state",
+                "read": true,
                 "write": false
             },
             "native": {}
         },
         {
-            "_id":  "aftertomorrow.boolean",
+            "_id": "aftertomorrow.boolean",
             "type": "state",
             "common": {
-                "name":  "Holiday in the day after tomorrow?",
-                "desc":  "Is the holiday in the day after tomorrow?",
-                "type":  "boolean",
-                "role":  "state",
-                "read":  true,
+                "name": "Holiday in the day after tomorrow?",
+                "desc": "Is the holiday in the day after tomorrow?",
+                "type": "boolean",
+                "role": "state",
+                "read": true,
                 "write": false
             },
             "native": {}
         },
         {
-            "_id":  "next",
+            "_id": "next",
             "type": "channel",
             "common": {
                 "role": "day",
@@ -301,41 +313,41 @@
             "native": {}
         },
         {
-            "_id":  "next.name",
+            "_id": "next.name",
             "type": "state",
             "common": {
-                "name":  "Next holiday - Name",
-                "desc":  "What the holiday is next?",
-                "type":  "string",
-                "role":  "state",
-                "read":  true,
+                "name": "Next holiday - Name",
+                "desc": "What the holiday is next?",
+                "type": "string",
+                "role": "state",
+                "read": true,
                 "write": false
             },
             "native": {}
         },
         {
-            "_id":  "next.date",
+            "_id": "next.date",
             "type": "state",
             "common": {
-                "name":  "Next holiday - date?",
-                "desc":  "When is the next holiday?",
-                "type":  "string",
-                "role":  "value.date",
-                "read":  true,
+                "name": "Next holiday - date?",
+                "desc": "When is the next holiday?",
+                "type": "string",
+                "role": "value.date",
+                "read": true,
                 "write": false
             },
             "native": {}
         },
         {
-            "_id":  "next.duration",
+            "_id": "next.duration",
             "type": "state",
             "common": {
-                "name":  "Duration till next holiday",
-                "desc":  "Number of days till next holiday",
-                "type":  "number",
-                "role":  "value.interval.days",
-                "unit":  "days",
-                "read":  true,
+                "name": "Duration till next holiday",
+                "desc": "Number of days till next holiday",
+                "type": "number",
+                "role": "value.interval.days",
+                "unit": "days",
+                "read": true,
                 "write": false
             },
             "native": {}
