@@ -1,36 +1,29 @@
 {
     "common": {
-        "name": "feiertage",
-        "title": "Deutsche Feiertage",
-        "desc": {
-            "en": "German Holidays calculates religous, political and calendarial Holidays",
-            "de": "Deutsche Feiertage berechnet nach der Formel von Heiner Lichtenberg beruhend auf der Gaußschen Osterformel",
-            "ru": "Deutsche Feiertage - translate to russian, please"
-        },
-        "version": "0.4.0",
-        "news": {
-            "0.4.0": {
-                "en": "Travis CI and Appveyor testing supported",
-                "de": "Travis CI und Appveyor Test Unterstützung",
-                "ru": "Travis CI и Appveyor тестирование при поддержке"
-            }
-        },
-        "mode": "schedule",
-        "schedule": "0 0 * * *",
-        "platform": "javascript/Node.js",
-        "loglevel": "info",
-        "keywords": [
-            "calendar",
-            "Kalender",
-            "Feiertag",
-            "Feiertage",
-            "Woche",
-            "Jahr",
-            "Tag",
-            "Monat",
-            "holiday"
-        ],
-        "main": "main.js",
+        "name":                     "feiertage",
+        "title":                    "Deutsche Feiertage",
+        "desc": {                   "en": "German Holidays calculates religous, political and calendarial Holidays",
+                                    "de": "Deutsche Feiertage berechnet nach der Formel von Heiner Lichtenberg beruhend auf der Gaußschen Osterformel",
+                                    "ru": "Deutsche Feiertage - translate to russian, please"},
+        "version":                  "1.0.0",
+	"news": {
+	        "1.0.0": {
+		       "en": "End of beta, nodejs 4 or higher required",
+                       "de": "Ende der Beta Phase. Nodejs 4 oder höher nötig",
+                       "ru": "End of beta, nodejs 4 or higher required"
+	        },
+		"0.4.1": {
+                       "en": "Added Kid's Day (01.06) and 'Vatertag'",
+                       "de": "Kindertag (01.06) und 'Vatertag' hinzugefügt",
+                       "ru": "Added Kid's Day (01.06) and 'Vatertag'"
+		}
+	},
+        "mode":                     "schedule",
+        "schedule":                 "0 0 * * *",
+        "platform":                 "javascript/Node.js",
+        "loglevel":                 "info",
+        "keywords":                 ["calendar", "Kalender", "Feiertag", "Feiertage", "Woche", "Jahr", "Tag", "Monat", "holiday"],
+        "main":                     "main.js",
         "authors": [
             "Pix",
             "Bluefox"

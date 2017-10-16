@@ -1,10 +1,10 @@
 ![Logo](admin/feiertage.png)
 # ioBroker.feiertage
-=================
 
 [![NPM version](http://img.shields.io/npm/v/iobroker.feiertage.svg)](https://www.npmjs.com/package/iobroker.feiertage)
 [![Downloads](https://img.shields.io/npm/dm/iobroker.feiertage.svg)](https://www.npmjs.com/package/iobroker.feiertage)
 [![Tests](https://travis-ci.org/Pix---/ioBroker.feiertage.svg?branch=master)](https://travis-ci.org/Pix---/ioBroker.feiertage)
+[![Open Issues](http://githubbadges.herokuapp.com/Pix---/ioBroker.feiertage/issues.svg)](http://github.com/Pix---/ioBroker.feiertage/issues)
 
 [![NPM](https://nodei.co/npm/iobroker.feiertage.png?downloads=true)](https://nodei.co/npm/iobroker.feiertage/)
 
@@ -37,6 +37,12 @@ Deutsch  | English
 Der Adapter startet jeden Tag um Mitternacht. Ein häufigeres Starten ist nicht erforderlich. | The adapter starts daily at midnight. Due to the nature of the subject, no higher frequency is required.
 
 ## Changelog
+### 1.0.0 (2017-10-15)
+* (pix) End of Beta. Nodejs 4 or higher required
+
+### 0.4.1 (2017-06-08)
+* (jens-maus) added "Kid's Day" for 01.06. and added "Vatertag" beside "Christi Himmelfahrt"
+
 ### 0.4.0 (2017-01-05)
 * (pix) Travis CI and appveyor Windows testing supported
 
@@ -130,4 +136,4 @@ SOFTWARE.
 ---
 *Logo is crafted by CHALLENGER*
 
-*Thank you, paul53, for the inspiration!*
+*Thanks to paul53 for the inspiration and thanks to jens-maus for his support!*
