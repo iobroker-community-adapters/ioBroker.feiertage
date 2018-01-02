@@ -7,7 +7,7 @@ var holidays = require(__dirname + '/admin/holidays').holidays; // Get common ad
 
 var lang = 'de';
 
-var adapter = utils.adapter({
+var adapter = utils.Adapter({
     name:           'feiertage',
     useFormatDate:  true
 });
