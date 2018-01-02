@@ -4,7 +4,9 @@
   "version": "1.0.0",
   "author": "pix",
   "contributors": [
-    "pix", "Bluefox", "jens-maus"
+    "pix",
+    "Bluefox",
+    "jens-maus"
   ],
   "homepage": "https://github.com/Pix---/ioBroker.feiertage",
   "repository": {
@@ -28,18 +30,18 @@
   "devDependencies": {
     "grunt": "^1.0.1",
     "grunt-replace": "^1.0.1",
-    "grunt-contrib-jshint": "^1.0.0",
-    "grunt-jscs": "^2.8.0",
-    "grunt-http": "^2.0.1",
-    "mocha": "^2.4.5",
-    "chai": "^3.5.0"
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-jscs": "^3.0.1",
+    "grunt-http": "^2.2.0",
+    "mocha": "^4.1.0",
+    "chai": "^4.1.2"
   },
   "bugs": {
     "url": "https://github.com/Pix---/ioBroker.feiertage/issues"
   },
   "main": "main.js",
   "scripts": {
-    "test": "node node_modules/mocha/bin/mocha"
+    "test": "node node_modules/mocha/bin/mocha --exit"
   },
   "maintainers": [
     "pix"
