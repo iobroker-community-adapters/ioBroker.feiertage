@@ -4,7 +4,9 @@
   "version": "1.0.1",
   "author": "pix",
   "contributors": [
-    "pix", "Bluefox", "jens-maus"
+    "pix",
+    "Bluefox",
+    "jens-maus"
   ],
   "homepage": "https://github.com/Pix---/ioBroker.feiertage",
   "repository": {
@@ -35,7 +37,7 @@
   },
   "main": "main.js",
   "scripts": {
-    "test": "node node_modules/mocha/bin/mocha"
+    "test": "node node_modules/mocha/bin/mocha --exit"
   },
   "maintainers": [
     "pix"
