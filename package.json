@@ -1,7 +1,7 @@
 {
   "name": "iobroker.feiertage",
   "description": "Deutsche Feiertage",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "pix",
   "contributors": [
     "pix", "Bluefox", "jens-maus"
@@ -26,13 +26,9 @@
     "request": "^2.72.0"
   },
   "devDependencies": {
-    "grunt": "^1.0.1",
-    "grunt-replace": "^1.0.1",
-    "grunt-contrib-jshint": "^1.0.0",
-    "grunt-jscs": "^2.8.0",
-    "grunt-http": "^2.0.1",
-    "mocha": "^2.4.5",
-    "chai": "^3.5.0"
+    "gulp": "^3.9.1",
+    "mocha": "^4.1.0",
+    "chai": "^4.1.2"
   },
   "bugs": {
     "url": "https://github.com/Pix---/ioBroker.feiertage/issues"

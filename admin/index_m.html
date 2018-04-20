@@ -1,0 +1,122 @@
+<html>
+
+<link rel="stylesheet" type="text/css" href="../../css/adapter.css"/>
+<link rel="stylesheet" type="text/css" href="../../lib/css/materialize.css">
+
+<script type="text/javascript" src="../../lib/js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="../../socket.io/socket.io.js"></script>
+
+<script type="text/javascript" src="../../js/translate.js"></script>
+<script type="text/javascript" src="../../lib/js/materialize.js"></script>
+<script type="text/javascript" src="../../js/adapter-settings.js"></script>
+<script type="text/javascript" src="words.js"></script>
+
+<script type="text/javascript" src="holidays.js"></script>
+
+<style>
+    #config {
+        font-size: smaller;	
+    }
+    .table_header {
+        background-color: blue;
+        color: white;
+    }
+    .ip {
+        width: 150px;
+        text-align: right;
+    }
+    .loc {
+    	text-align: right;
+    	color: grey;
+    }
+    .headline {
+    	padding-bottom: 1em;
+    	text-align: left;
+    	font-weight: 600;
+    	text-decoration: underline;
+    }
+    .typ_ft {
+    	color: gray;
+    	font-style: italic;
+    	font-size: smaller;
+    }
+    col:first-child {
+    	background: darkgray;
+    }
+    tr:nth-child(even) {
+    	background-color: #CCCCCC;
+    }
+    tr:nth-child(odd) {
+    	background-color: #FFFFFF;
+    }
+    .td-center {
+        text-align: center;
+    }
+</style>
+<!-- you have to define 2 functions in the global scope: -->
+<script type="text/javascript">
+	
+    function load(settings, onChange) {
+        var text = '';
+        for (var d in holidays) {
+            text += '<tr>\n';
+            text += '    <td class="td-center"><input type="checkbox" id="enable_' + d + '" class="value"></td>\n';
+            text += '    <td class="td-center">' + (holidays[d].date || '') + '</td>\n';
+            text += '    <td>' + _(holidays[d][systemLang]) + ' <span class="loc">' + (holidays[d]['comment_' + systemLang] ? _(holidays[d]['comment_' + systemLang]) : '') + '</span></td>\n';
+            text += '    <td class="typ_ft">' + _(holidays[d].desc) + '</td>\n';
+            text += '</tr>\n';
+            if (settings['enable_' + d] === undefined) settings['enable_' + d] = holidays[d].enabled;
+        }
+
+        $('#config').append(text);
+
+        for (var key in settings) {
+            if ($('#' + key).attr('type') == 'checkbox') {
+                $('#' + key).prop('checked', settings[key]).change(function () {
+                    onChange();
+                });
+            } else {
+                $('#' + key).val(settings[key]).change(function () {
+                    onChange();
+                }).keyup(function () {
+                    $(this).trigger('change');
+                });
+            }
+        }
+        onChange(false);
+    }
+    
+    function save(callback) {
+        var obj = {};
+        $('.value').each(function () {
+            var $this = $(this);
+            var id = $this.attr('id');
+            if ($this.attr('type') == 'checkbox') {
+                obj[id] = $this.prop('checked');
+            } else {
+                obj[id] = $this.val();
+            }
+        });
+        callback(obj);
+    }
+    
+</script>
+
+<div class="m adapter-container">
+    <table style="width: 100%">
+    	<tr>
+            <td><img src="feiertage.png"></td>
+            <td style="padding-top: 20px;padding-left: 10px"><h3 class="translate">German Holidays Adapter settings</h3></td>
+        </tr>
+    </table>
+    <h4 class="translate" style="width: calc(100% - 10px)">Select holidays</h4>
+    <table id="config" style="width: calc(100% - 5px)">
+        <tr class="headline">
+            <th class="translate td-center">Select</th>
+            <th class="translate td-center">Date</th>
+            <th class="translate">Holidays</th>
+            <th class="translate">Description</th>
+        </tr>
+    </table>
+</div>
+</html>
