@@ -1,4 +1,4 @@
-![Logo](admin/feiertage.png)
+![Logo](../../admin/feiertage.png)
 # ioBroker.feiertage
 
 ## Beschreibung
