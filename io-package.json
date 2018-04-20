@@ -37,6 +37,17 @@
         },
         "version": "1.0.1",
 	    "news": {
+	        "1.0.2": {
+                "en": "Readme and Documentation structure",
+    	        "de": "Liesmich und Dokumentationsstruktur",
+    	        "ru": "Структура Readme и Documentation",
+    	        "pt": "Estrutura de Leia-me e Documentação",
+    	        "nl": "Readme en documentatie structuur",
+    	        "fr": "Lisez-moi et structure de documentation",
+    	        "it": "Struttura Leggimi e Documentazione",
+    	        "es": "Léame y estructura de documentación",
+    	        "pl": "Struktura Readme i Dokumentacja"
+            },
 	        "1.0.1": {
                 "en": "Translations to de, ru, pt, nl, fr, it, es and pl languages",
                 "de": "Übersetzungen in de, ru, pt, nl, fr, it, es und pl",

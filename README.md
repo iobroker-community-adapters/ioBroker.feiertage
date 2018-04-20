@@ -11,7 +11,28 @@
 **Tests:** Linux/Mac: [![Travis-CI](http://img.shields.io/travis/Pix---/ioBroker.feiertage/master.svg)](https://travis-ci.org/Pix---/ioBroker.feiertage)
 Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/Pix---/ioBroker.feiertage?branch=master&svg=true)](https://ci.appveyor.com/project/Pix---/ioBroker-feiertage/)
 
+:de: [Dokumentation](/docs/de/doc_feiertage_de.md)
+
+:uk: [Documentation](/docs/en/doc_feiertage_en.md)
+
+:ru: [Документация](/docs/en/doc_feiertage_en.md)
+
+:portugal: [Documentação](/docs/en/doc_feiertage_en.md)
+
+:netherlands: [Documentatie](/docs/en/doc_feiertage_en.md)
+
+:fr: [Documentation](/docs/en/doc_feiertage_en.md)
+
+:it: [Documentazione](/docs/en/doc_feiertage_en.md)
+
+:es: [Documentación](/docs/en/doc_feiertage_en.md)
+
+:poland: [Dokumentacja](/docs/en/doc_feiertage_en.md)
+
 ## Changelog
+### 1.0.2 (2018-04-20)
+* (pix) Readme/Documentation structure
+
 ### 1.0.1 (2018-04-20)
 * (pix) Translations to ru, pt, nl, fr, it, es and pl language
 * (pix) Admin 3 ready
