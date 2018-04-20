@@ -84,6 +84,7 @@ Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/Pix---/
 
 ## Roadmap
 * Erkennung Brückentage
+* Materialize code in settings window
 
 ## License
 
