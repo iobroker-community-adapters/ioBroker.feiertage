@@ -1,7 +1,7 @@
 {
   "name": "iobroker.feiertage",
   "description": "Deutsche Feiertage",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "pix",
   "contributors": [
     "pix",
@@ -28,11 +28,7 @@
     "request": "^2.72.0"
   },
   "devDependencies": {
-    "grunt": "^1.0.1",
-    "grunt-replace": "^1.0.1",
-    "grunt-contrib-jshint": "^1.1.0",
-    "grunt-jscs": "^3.0.1",
-    "grunt-http": "^2.2.0",
+    "gulp": "^3.9.1",
     "mocha": "^4.1.0",
     "chai": "^4.1.2"
   },

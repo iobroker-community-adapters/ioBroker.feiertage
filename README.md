@@ -11,32 +11,11 @@
 **Tests:** Linux/Mac: [![Travis-CI](http://img.shields.io/travis/Pix---/ioBroker.feiertage/master.svg)](https://travis-ci.org/Pix---/ioBroker.feiertage)
 Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/Pix---/ioBroker.feiertage?branch=master&svg=true)](https://ci.appveyor.com/project/Pix---/ioBroker-feiertage/)
 
-
-## Beschreibung / Description
-Deutsch  | English
-------------- | -------------
-Dieser Adapter liefert das Datum, die Dauer bis zu diesem Datum in Tagen und den Namen des nächsten deutschen Feiertages und gibt Auskunft, ob heute, morgen oder übermorgen ein Feiertag ist.  | This adapter delivers date, distance in days to this date and name of the next German holiday. Furthermore it tells if today, tommorw or the day after tommorow is a holiday in Germany.
-
-
-
-##  Datenpunkte / Datapoints
-
-![alt text](img/DatapointsScreenshot.jpg "Screenshot Datapoints")
-
-## Einstellungen / Configuration
-Deutsch  | English
-------------- | -------------
-Feiertage, die bei der Befüllung der Datenpunkte berücksichtigt werden sollen, können ausgewählt werden. | Only selected holidays count in the process.
-
-![alt text](img/SettingScreenshot.jpg "Screenshot Settings")
-
-
-## Aktivierung / Schedule
-Deutsch  | English
-------------- | -------------
-Der Adapter startet jeden Tag um Mitternacht. Ein häufigeres Starten ist nicht erforderlich. | The adapter starts daily at midnight. Due to the nature of the subject, no higher frequency is required.
-
 ## Changelog
+### 1.0.1 (2018-04-20)
+* (pix) Translations to ru, pt, nl, fr, it, es and pl language
+* (pix) Admin 3 ready
+
 ### 1.0.0 (2017-10-15)
 * (pix) End of Beta. Nodejs 4 or higher required
 
@@ -103,9 +82,6 @@ Der Adapter startet jeden Tag um Mitternacht. Ein häufigeres Starten ist nicht 
 ### 0.0.1 (2016-04-26)
 * (pix) Adapter created
 
-## Todo
-* Übersetzungen / Translation
-
 ## Roadmap
 * Erkennung Brückentage
 
@@ -113,7 +89,7 @@ Der Adapter startet jeden Tag um Mitternacht. Ein häufigeres Starten ist nicht 
 
 The MIT License (MIT)
 
-Copyright (c) 2016 pix
+Copyright (c) 2018 pix
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

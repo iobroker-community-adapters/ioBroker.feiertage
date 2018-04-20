@@ -1,27 +1,69 @@
 {
     "common": {
-        "name":                     "feiertage",
-        "title":                    "Deutsche Feiertage",
-        "desc": {                   "en": "German Holidays calculates religous, political and calendarial Holidays",
-                                    "de": "Deutsche Feiertage berechnet nach der Formel von Heiner Lichtenberg beruhend auf der Gaußschen Osterformel",
-                                    "ru": "Deutsche Feiertage - translate to russian, please"},
-        "version":                  "1.0.0",
-	"news": {
+        "name": "feiertage",
+        "title": "Deutsche Feiertage",
+        "titleLang": {
+            "en": "German holidays",
+            "de": "Deutsche Feiertage",
+            "ru": "Праздники Германии",
+            "pt": "Feriados alemães",
+            "nl": "Duitse feestdagen",
+            "fr": "Vacances allemandes",
+            "it": "Vacanze tedesche",
+            "es": "Vacaciones en Alemania",
+            "pl": "Niemieckie święta"
+        },
+        "desc": {
+            "en": "German Holidays calculates religous, political and calendarial Holidays",
+            "de": "German Holidays berechnet religiöse, politische und kalendarische Feiertage",
+            "ru": "Праздники Германии празднуют религиозные, политические и календарные праздники",
+            "pt": "Feriados alemães calcula feriados religiosos, políticos e do calendário",
+            "nl": "Duitse feestdagen berekent religieuze, politieke en kalendervakanties",
+            "fr": "Vacances allemandes calcule les fêtes religieuses, politiques et calendaires",
+            "it": "Le festività tedesche calcolano le festività religiose, politiche e di calendario",
+            "es": "Vacaciones en Alemania calcula vacaciones religiosas, políticas y de calendario",
+            "pl": "Święta niemieckie obliczają święta religijne, polityczne i kalendarzowe"
+        },
+        "docs": {
+            "en": "docs/en/doc_feiertage_en.md",
+            "de": "docs/de/doc_feiertage_de.md",
+            "ru": "docs/en/doc_feiertage_en.md",
+            "pt": "docs/en/doc_feiertage_en.md",
+            "nl": "docs/en/doc_feiertage_en.md",
+            "fr": "docs/en/doc_feiertage_en.md",
+            "it": "docs/en/doc_feiertage_en.md",
+            "es": "docs/en/doc_feiertage_en.md",
+            "pl": "docs/en/doc_feiertage_en.md"
+        },
+        "version": "1.0.1",
+	    "news": {
+	        "1.0.1": {
+                "en": "Translations to de, ru, pt, nl, fr, it, es and pl languages",
+                "de": "Übersetzungen in de, ru, pt, nl, fr, it, es und pl",
+                "ru": "Переводы на языки de, ru, pt, nl, fr, it, es и pl",
+                "pt": "Traduções para idiomas de, ru, pt, nl, fr, it e es",
+                "nl": "Vertalingen naar de, ru, pt, nl, fr, it, es en pl talen",
+                "fr": "Traductions aux langues de, ru, pt, nl, fr, it, es et pl",
+                "it": "Traduzioni in lingue de, ru, pt, nl, fr, it, es e pl",
+                "es": "Traducciones a de, ru, pt, nl, fr, it, es y pl languages",
+                "pl": "Tłumaczenia na języki de, ru, pt, nl, fr, it, es i pl"
+            },
 	        "1.0.0": {
-		       "en": "End of beta, nodejs 4 or higher required",
-                       "de": "Ende der Beta Phase. Nodejs 4 oder höher nötig",
-                       "ru": "End of beta, nodejs 4 or higher required"
+		        "en": "End of beta, nodejs 4 or higher required",
+                "de": "Ende der Beta Phase. Nodejs 4 oder höher nötig",
+                "ru": "End of beta, nodejs 4 or higher required"
 	        },
-		"0.4.1": {
-                       "en": "Added Kid's Day (01.06) and 'Vatertag'",
-                       "de": "Kindertag (01.06) und 'Vatertag' hinzugefügt",
-                       "ru": "Added Kid's Day (01.06) and 'Vatertag'"
-		}
-	},
+		    "0.4.1": {
+                "en": "Added Kid's Day (01.06) and 'Vatertag'",
+                "de": "Kindertag (01.06) und 'Vatertag' hinzugefügt",
+                "ru": "Added Kid's Day (01.06) and 'Vatertag'"
+		    }
+	    },
         "mode":                     "schedule",
         "schedule":                 "0 0 * * *",
         "platform":                 "javascript/Node.js",
         "loglevel":                 "info",
+        "materialize":              true,
         "keywords":                 ["calendar", "Kalender", "Feiertag", "Feiertage", "Woche", "Jahr", "Tag", "Monat", "holiday"],
         "main":                     "main.js",
         "authors": [
