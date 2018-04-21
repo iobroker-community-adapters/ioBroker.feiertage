@@ -35,7 +35,7 @@
             "es": "docs/en/doc_feiertage_en.md",
             "pl": "docs/en/doc_feiertage_en.md"
         },
-        "version": "1.0.1",
+        "version": "1.0.2",
 	    "news": {
 	        "1.0.2": {
                 "en": "Readme and Documentation structure",
