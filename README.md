@@ -30,6 +30,12 @@ Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/Pix---/
 :poland: [Dokumentacja](/docs/en/doc_feiertage_en.md)
 
 ## Changelog
+### 1.0.4 (2018-04-26)
+* (pix) versioning issues fixed
+
+### 1.0.3 (2018-04-22)
+* (pix) fixed input fields settings window
+
 ### 1.0.2 (2018-04-20)
 * (pix) Readme/Documentation structure
 
