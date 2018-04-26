@@ -35,8 +35,19 @@
             "es": "docs/en/doc_feiertage_en.md",
             "pl": "docs/en/doc_feiertage_en.md"
         },
-        "version": "1.0.3",
+        "version": "1.0.4",
 	    "news": {
+		"1.0.4": {
+                    "en": "versioning issues fixed",
+                    "de": "Versionierungsprobleme behoben",
+                    "ru": "исправлены проблемы с версией",
+                    "pt": "problemas de versão corrigidos",
+                    "nl": "versiebeheer problemen opgelost",
+                    "fr": "problèmes de versionnement corrigés",
+                    "it": "problemi di versione risolti",
+                    "es": "Problemas de versionado corregidos",
+                    "pl": "Naprawiono problemy z wersjami"
+                },
 		"1.0.3": {
                     "en": "changened english and spanish language",
                     "de": "geänderte englische und spanische Sprache",
