@@ -35,62 +35,73 @@
             "es": "docs/en/doc_feiertage_en.md",
             "pl": "docs/en/doc_feiertage_en.md"
         },
-        "version": "1.0.4",
+        "version": "1.0.5",
 	    "news": {
-		"1.0.4": {
-                    "en": "versioning issues fixed",
-                    "de": "Versionierungsprobleme behoben",
-                    "ru": "исправлены проблемы с версией",
-                    "pt": "problemas de versão corrigidos",
-                    "nl": "versiebeheer problemen opgelost",
-                    "fr": "problèmes de versionnement corrigés",
-                    "it": "problemi di versione risolti",
-                    "es": "Problemas de versionado corregidos",
-                    "pl": "Naprawiono problemy z wersjami"
-                },
-		"1.0.3": {
-                    "en": "changened english and spanish language",
-                    "de": "geänderte englische und spanische Sprache",
-                    "ru": "измененный английский и испанский язык",
-                    "pt": "língua inglesa e espanhola modificada",
-                    "nl": "veranderde Engelse en Spaanse taal",
-                    "fr": "Anglais et langue espagnole changés",
-                    "it": "lingua inglese e spagnola modificata",
-                    "es": "cambio de idioma inglés y español",
-                    "pl": "zmiana języka angielskiego i hiszpańskiego"
-                },
-	        "1.0.2": {
-                    "en": "Readme and Documentation structure",
-    	            "de": "Liesmich und Dokumentationsstruktur",
-    	            "ru": "Структура Readme и Documentation",
-    	            "pt": "Estrutura de Leia-me e Documentação",
-    	            "nl": "Readme en documentatie structuur",
-    	            "fr": "Lisez-moi et structure de documentation",
-    	            "it": "Struttura Leggimi e Documentazione",
-    	            "es": "Léame y estructura de documentación",
-    	            "pl": "Struktura Readme i Dokumentacja"
-                },
-	        "1.0.1": {
-                    "en": "Translations to de, ru, pt, nl, fr, it, es and pl languages",
-                    "de": "Übersetzungen in de, ru, pt, nl, fr, it, es und pl",
-                    "ru": "Переводы на языки de, ru, pt, nl, fr, it, es и pl",
-                    "pt": "Traduções para idiomas de, ru, pt, nl, fr, it e es",
-                    "nl": "Vertalingen naar de, ru, pt, nl, fr, it, es en pl talen",
-                    "fr": "Traductions aux langues de, ru, pt, nl, fr, it, es et pl",
-                    "it": "Traduzioni in lingue de, ru, pt, nl, fr, it, es e pl",
-                    "es": "Traducciones a de, ru, pt, nl, fr, it, es y pl languages",
-                    "pl": "Tłumaczenia na języki de, ru, pt, nl, fr, it, es i pl"
-                },
-	        "1.0.0": {
-		    "en": "End of beta, nodejs 4 or higher required",
-                    "de": "Ende der Beta Phase. Nodejs 4 oder höher nötig",
-                    "ru": "End of beta, nodejs 4 or higher required"
+			"1.0.5": {
+            	"en": "checkbox issue fixed",
+	            "de": "Checkbox-Problem behoben",
+    	        "ru": "проблема с флажком исправлена",
+        	    "pt": "problema na caixa de seleção",
+            	"nl": "checkbox probleem opgelost",
+	            "fr": "case à cocher problème résolu",
+    	        "it": "problema della casella di controllo corretto",
+        	    "es": "problema de casilla de verificación arreglado",
+            	"pl": "Naprawiono problem z checkboxem"
 	        },
-		"0.4.1": {
-                    "en": "Added Kid's Day (01.06) and 'Vatertag'",
-                    "de": "Kindertag (01.06) und 'Vatertag' hinzugefügt",
-                    "ru": "Added Kid's Day (01.06) and 'Vatertag'"
-		}
+			"1.0.4": {
+        	    "en": "versioning issues fixed",
+            	"de": "Versionierungsprobleme behoben",
+	            "ru": "исправлены проблемы с версией",
+    	        "pt": "problemas de versão corrigidos",
+        	    "nl": "versiebeheer problemen opgelost",
+            	"fr": "problèmes de versionnement corrigés",
+	            "it": "problemi di versione risolti",
+    	        "es": "Problemas de versionado corregidos",
+        	    "pl": "Naprawiono problemy z wersjami"
+	        },
+			"1.0.3": {
+	            "en": "changened english and spanish language",
+	            "de": "geänderte englische und spanische Sprache",
+    	        "ru": "измененный английский и испанский язык",
+        	    "pt": "língua inglesa e espanhola modificada",
+            	"nl": "veranderde Engelse en Spaanse taal",
+	            "fr": "Anglais et langue espagnole changés",
+    	        "it": "lingua inglese e spagnola modificata",
+        	    "es": "cambio de idioma inglés y español",
+	            "pl": "zmiana języka angielskiego i hiszpańskiego"
+	        },
+		    "1.0.2": {
+	            "en": "Readme and Documentation structure",
+	    	    "de": "Liesmich und Dokumentationsstruktur",
+	    	    "ru": "Структура Readme и Documentation",
+	    	    "pt": "Estrutura de Leia-me e Documentação",
+	    	    "nl": "Readme en documentatie structuur",
+	    	    "fr": "Lisez-moi et structure de documentation",
+ 		   	    "it": "Struttura Leggimi e Documentazione",
+    		    "es": "Léame y estructura de documentación",
+    	    	"pl": "Struktura Readme i Dokumentacja"
+        	},
+	    	"1.0.1": {
+        		"en": "Translations to de, ru, pt, nl, fr, it, es and pl languages",
+        		"de": "Übersetzungen in de, ru, pt, nl, fr, it, es und pl",
+        		"ru": "Переводы на языки de, ru, pt, nl, fr, it, es и pl",
+        		"pt": "Traduções para idiomas de, ru, pt, nl, fr, it e es",
+        		"nl": "Vertalingen naar de, ru, pt, nl, fr, it, es en pl talen",
+        		"fr": "Traductions aux langues de, ru, pt, nl, fr, it, es et pl",
+        		"it": "Traduzioni in lingue de, ru, pt, nl, fr, it, es e pl",
+        		"es": "Traducciones a de, ru, pt, nl, fr, it, es y pl languages",
+        		"pl": "Tłumaczenia na języki de, ru, pt, nl, fr, it, es i pl"
+        		},
+	    	"1.0.0": {
+		    	"en": "End of beta, nodejs 4 or higher required",
+            	"de": "Ende der Beta Phase. Nodejs 4 oder höher nötig",
+            	"ru": "End of beta, nodejs 4 or higher required"
+	    	},
+			"0.4.1": {
+            	"en": "Added Kid's Day (01.06) and 'Vatertag'",
+            	"de": "Kindertag (01.06) und 'Vatertag' hinzugefügt",
+            	"ru": "Added Kid's Day (01.06) and 'Vatertag'"
+			}
 	    },
         "mode":                     "schedule",
         "schedule":                 "0 0 * * *",
@@ -422,3 +433,4 @@
         }
     ]
 }
+	

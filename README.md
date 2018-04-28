@@ -30,6 +30,9 @@ Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/Pix---/
 :poland: [Dokumentacja](/docs/en/doc_feiertage_en.md)
 
 ## Changelog
+### 1.0.5 (2018-04-28)
+* (pix) checkbox issue fixed
+
 ### 1.0.4 (2018-04-26)
 * (pix) versioning issues fixed
 
