@@ -33,8 +33,7 @@
                     text += '            </td>\n';
                     text += '            <td>' + (holidays[d].date || '') + '</td>\n';
                     text += '            <td>' + _(holidays[d][systemLang]) + ' <span class="grey-text">' + (holidays[d]['comment_' + systemLang] ? _(holidays[d]['comment_' + systemLang]) : '') + '</span></td>\n';
-                    //text += '            <td>' + _(holidays[d].desc) + '</td>\n';
-                    text += '            <td class="translate">' + _(holidays[d].desc) + '</td>\n';
+                    text += '            <td class="translate">' + _(holidays[d].desc) + '</td>\n'; // Todo: wird nicht übersetzt (religion, political, ...)
                     text += '        </tr>\n';
                     
                     if (settings['enable_' + d] === undefined) settings['enable_' + d] = holidays[d].enabled;
@@ -103,7 +102,7 @@
                                         <th class="translate">Description</th>
                                      </tr>
                                 </thead>
-                                <tbody id="config">             
+                                <tbody id="config" class="translate">             
                                     <!-- Tabelle wird von Load-Funktion eingefügt -->
                                 </tbody>
                             <table>
