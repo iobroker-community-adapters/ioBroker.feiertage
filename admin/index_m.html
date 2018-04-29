@@ -71,6 +71,8 @@
                     // Checkbox Auswahl
                     text += '   <div class="col s3 m2">';
                     text += '       <input  class="value" type="checkbox" id="enable_' + d + '"/>';
+		    text += '       <label class="translate" for="enable_' + d + '">' + (holidays[d].date || '') + '</label>';
+			
                     text += '   </div>';
                     // Datum
                     text += '   <div class="col s2 m2">';
