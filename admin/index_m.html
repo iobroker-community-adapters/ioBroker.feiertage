@@ -29,10 +29,10 @@
                     text += '        <tr>\n';
                     text += '            <td>';
                     text += '                <input type="checkbox" id="enable_' + d + '" class="value">';
-                    text += '                <label class="translate" for="enable_' + d + '">' + (holidays[d].date || '') + '</label>';
+                    text += '                <label class="translate" for="enable_' + d + '"> '/* + (holidays[d].date || '') */+ '</label>';
                     text += '            </td>\n';
-                //  text += '            <td class="td-center">' + (holidays[d].date || '') + '</td>\n';
-                    text += '            <td>' + _(holidays[d][systemLang]) + ' <span class="loc">' + (holidays[d]['comment_' + systemLang] ? _(holidays[d]['comment_' + systemLang]) : '') + '</span></td>\n';
+                    text += '            <td>' + (holidays[d].date || '') + '</td>\n';
+                    text += '            <td>' + _(holidays[d][systemLang]) + ' <span>' + (holidays[d]['comment_' + systemLang] ? _(holidays[d]['comment_' + systemLang]) : '') + '</span></td>\n';
                     text += '            <td>' + _(holidays[d].desc) + '</td>\n';
                     text += '        </tr>\n';
                     
@@ -80,7 +80,7 @@
             <div class="row">
                 <div class="col s12">
                     <ul class="tabs">
-                        <li class="tab col s4 m4">
+                        <li class="tab col s4">
                             <a href="#tab-main" class="translate">Select holidays</a>
                         </li>
                         <!-- weitere Tabs hier einfügen -->
@@ -97,9 +97,10 @@
                             <table class="highlight">
                                 <thead>
                                     <tr>
-                                         <th class="translate">Date</th>
-                                         <th class="translate">Holidays</th>
-                                         <th class="translate">Description</th>
+                                        <th class="translate">Select</th>
+                                        <th class="translate">Date</th>
+                                        <th class="translate">Holidays</th>
+                                        <th class="translate">Description</th>
                                      </tr>
                                 </thead>
                                 <tbody id="config">             
