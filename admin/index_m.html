@@ -23,16 +23,8 @@
         <script type="text/javascript">
             	
             function load(settings, onChange) {
-                var text =  '<table class="striped">\n';
-                    text += '    <thead>\n';
-                    text += '        <tr>\n';
-                    text += '            <th class="translate">Date</th>\n';
-                    text += '            <th class="translate">Holidays</th>\n';
-                    text += '            <th class="translate">Description</th>\n';
-                    text += '        </tr>\n';
-                    text += '    </thead>\n';
-                    text += '    <tbody>\n';
-                
+                var text =  '';
+                    
                 for (var d in holidays) {
                     text += '        <tr>\n';
                     text += '            <td>';
@@ -46,8 +38,7 @@
                     
                     if (settings['enable_' + d] === undefined) settings['enable_' + d] = holidays[d].enabled;
                 }
-                text += '    </tbody>\n';
-                text += '<table>\n';
+                
                 
                 $('#config').append(text);
 
@@ -103,10 +94,21 @@
                     </div>
                     <div class="row">
                         <div class="col s12">
-                                                        
-                            <div id="config"> <!-- Tabelle wird von Funktion eingefügt -->
-                            </div>
+                            <table class="striped">
+                                <thead>
+                                    <tr>
+                                         <th class="translate">Date</th>
+                                         <th class="translate">Holidays</th>
+                                         <th class="translate">Description</th>
+                                     </tr>
+                                </thead>
+                                <tbody>             
                             
+                                    <div id="config"> <!-- Tabelle wird von Funktion eingefügt -->
+                                    </div>
+                            
+                                </tbody>
+                            <table>
                         </div>
                     </div>
                 </div> <!-- Ende tab -->
