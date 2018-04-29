@@ -35,8 +35,19 @@
             "es": "docs/en/doc_feiertage_en.md",
             "pl": "docs/en/doc_feiertage_en.md"
         },
-        "version": "1.0.5",
+        "version": "1.0.6",
 	    "news": {
+	        "1.0.6": {
+	            "en": "material design completed, Admin 3 ready",
+                "de": "Material Design fertig, Admin 3 fertig",
+                "ru": "подготовлен материал, администратор 3 готов",
+                "pt": "material de design concluído, Admin 3 pronto",
+                "nl": "materiaalontwerp voltooid, Admin 3 gereed",
+                "fr": "conception matérielle terminée, Admin 3 prêt",
+                "it": "completamento del materiale, Admin 3 pronto",
+                "es": "diseño material completado, Admin 3 listo",
+                "pl": "projekt materialny zakończony, Admin 3 gotowy"
+	        },
 			"1.0.5": {
             	"en": "checkbox issue fixed",
 	            "de": "Checkbox-Problem behoben",
