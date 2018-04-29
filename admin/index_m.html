@@ -69,19 +69,19 @@
                     text += '<div class="row">';
                     
                     // Checkbox Auswahl
-                    text += '   <div class="col s2 m1">';
+                    text += '   <div class="col s3 m2">';
                     text += '       <input  class="value" type="checkbox" id="enable_' + d + '"/>';
                     text += '   </div>';
                     // Datum
-                    text += '   <div class="col s2 m1">';
+                    text += '   <div class="col s3 m2">';
                     text += '       <div>' + (holidays[d].date || '') + '</div>';
                     text += '   </div>';
                     // Feiertage (Namen)
-                    text += '   <div class="col s5 m4">';
+                    text += '   <div class="col s4 m4">';
                     text += '       <div>' + _(holidays[d][systemLang]) + ' <span class="loc">' + (holidays[d]['comment_' + systemLang] ? _(holidays[d]['comment_' + systemLang]) : '') + '</span></div>';
                     text += '   </div>';
                     // Beschreibung
-                    text += '   <div class="col s3 m2">';
+                    text += '   <div class="col s3 m3">';
                     text += '       <div>' + _(holidays[d].desc) + '</div>';
                     text += '   </div>';
                     
@@ -145,10 +145,10 @@
                     <div class="row">
                         <div class="col s12">
                             <div class="row">
-                                <div class="col s2 m1 translate">Select</div>
-                                <div class="col s2 m1 translate">Date</div>
-                                <div class="col s5 m4 translate">Holidays</div>
-                                <div class="col s3 m2 translate">Description</div>
+                                <div class="col s3 m2 translate">Select</div>
+                                <div class="col s3 m2 translate">Date</div>
+                                <div class="col s4 m4 translate">Holidays</div>
+                                <div class="col s3 m3 translate">Description</div>
                     
                             </div>
                             
