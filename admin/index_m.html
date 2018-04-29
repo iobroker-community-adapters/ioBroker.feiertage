@@ -13,47 +13,6 @@
 
         <script type="text/javascript" src="holidays.js"></script>
 
-        <style> /* wird obsolet in material css */
-            #config {
-                font-size: smaller;	
-            }
-            .table_header {
-                background-color: blue;
-                color: white;
-            }
-            .ip {
-                width: 150px;
-                text-align: right;
-            }
-            .loc {
-            	text-align: right;
-            	color: grey;
-            }
-            .headline {
-            	padding-bottom: 1em;
-            	text-align: left;
-            	font-weight: 600;
-            	text-decoration: underline;
-            }
-            .typ_ft {
-            	color: gray;
-            	font-style: italic;
-            	font-size: smaller;
-            }
-            col:first-child {
-            	background: darkgray;
-            }
-            tr:nth-child(even) {
-            	background-color: #CCCCCC;
-            }
-            tr:nth-child(odd) {
-            	background-color: #FFFFFF;
-            }
-            .td-center {
-                text-align: center;
-            }
-        </style>
-
         <style>
             .adapter-body {
                 overflow: hidden !important;
@@ -64,44 +23,17 @@
         <script type="text/javascript">
             	
             function load(settings, onChange) {
-                var text = '';
-                
-                    text += '<table class="striped">\n';
+                var text += '<table class="striped">\n';
                     text += '    <thead>\n';
                     text += '        <tr>\n';
-                    text += '            <th>Name</th>\n';
-                    text += '            <th>Item Name</th>\n';
-                    text += '            <th>Item Price</th>\n';
+                    text += '            <th class="translate">Date</th>\n';
+                    text += '            <th class="translate">Holidays</th>\n';
+                    text += '            <th class="translate">Description/th>\n';
                     text += '        </tr>\n';
                     text += '    </thead>\n';
                     text += '    <tbody>\n';
+                
                 for (var d in holidays) {
-                /*    text += '<div class="row">';
-                    
-                    // Checkbox Auswahl
-                    text += '   <div class="col s3 m2">';
-                    text += '       <input  class="value" type="checkbox" id="enable_' + d + '"/>';
-		    text += '       <label class="translate" for="enable_' + d + '">' + (holidays[d].date || '') + '</label>';
-			
-                    text += '   </div>';
-                    // Datum
-                    text += '   <div class="col s2 m2">';
-                    text += '       <div>' + (holidays[d].date || '') + '</div>';
-                    text += '   </div>';
-                    // Feiertage (Namen)
-                    text += '   <div class="col s4 m4">';
-                    text += '       <div>' + _(holidays[d][systemLang]) + ' <span class="loc">' + (holidays[d]['comment_' + systemLang] ? _(holidays[d]['comment_' + systemLang]) : '') + '</span></div>';
-                    text += '   </div>';
-                    // Beschreibung
-                    text += '   <div class="col s3 m3">';
-                    text += '       <div>' + _(holidays[d].desc) + '</div>';
-                    text += '   </div>';
-                    
-                    text += '</div>';
-                    */
-
-
-                    
                     text += '        <tr>\n';
                     text += '            <td>';
                     text += '                <input type="checkbox" id="enable_' + d + '" class="value">';
@@ -171,16 +103,8 @@
                     </div>
                     <div class="row">
                         <div class="col s12">
-                            <div class="row">
-
-                                <div class="col s4 m3 l3 translate">Select</div>
-                                <!-- <div class="col s3 m3 l3 translate">Date</div> -->
-                                <div class="col s4 m3 l3 translate">Holidays</div>
-                                <div class="col s4 m3 l3 translate">Description</div>
-
-                            </div>
-                            
-                            <div id="config"> <!-- wird von Funktion eingefügt -->
+                                                        
+                            <div id="config"> <!-- Tabelle wird von Funktion eingefügt -->
                             </div>
                             
                         </div>
