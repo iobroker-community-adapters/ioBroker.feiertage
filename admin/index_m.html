@@ -62,11 +62,21 @@
 
         <!-- you have to define 2 functions in the global scope: -->
         <script type="text/javascript">
-	
+            	
             function load(settings, onChange) {
                 var text = '';
+                
+                    text += '<table class="striped">\n';
+                    text += '    <thead>\n';
+                    text += '        <tr>\n';
+                    text += '            <th>Name</th>\n';
+                    text += '            <th>Item Name</th>\n';
+                    text += '            <th>Item Price</th>\n';
+                    text += '        </tr>\n';
+                    text += '    </thead>\n';
+                    text += '    <tbody>\n';
                 for (var d in holidays) {
-                    text += '<div class="row">';
+                /*    text += '<div class="row">';
                     
                     // Checkbox Auswahl
                     text += '   <div class="col s3 m2">';
@@ -88,10 +98,25 @@
                     text += '   </div>';
                     
                     text += '</div>';
+                    */
+
+
+                    
+                    text += '        <tr>\n';
+                    text += '            <td>';
+                    text += '                <input type="checkbox" id="enable_' + d + '" class="value">';
+                    text += '                <label class="translate" for="enable_' + d + '">' + (holidays[d].date || '') + '</label>';
+                    text += '            </td>\n';
+                //  text += '            <td class="td-center">' + (holidays[d].date || '') + '</td>\n';
+                    text += '            <td>' + _(holidays[d][systemLang]) + ' <span class="loc">' + (holidays[d]['comment_' + systemLang] ? _(holidays[d]['comment_' + systemLang]) : '') + '</span></td>\n';
+                    text += '            <td>' + _(holidays[d].desc) + '</td>\n';
+                    text += '        </tr>\n';
                     
                     if (settings['enable_' + d] === undefined) settings['enable_' + d] = holidays[d].enabled;
                 }
-
+                text += '    </tbody>\n';
+                text += '<table>\n';
+                
                 $('#config').append(text);
 
                 for (var key in settings) {
@@ -147,11 +172,12 @@
                     <div class="row">
                         <div class="col s12">
                             <div class="row">
-                                <div class="col s3 m2 translate">Select</div>
-                                <div class="col s2 m2 translate">Date</div>
-                                <div class="col s4 m4 translate">Holidays</div>
-                                <div class="col s3 m3 translate">Description</div>
-                    
+
+                                <div class="col s3 m3 l3 translate">Select</div>
+                                <!-- <div class="col s3 m3 l3 translate">Date</div> -->
+                                <div class="col s3 m3 l3 translate">Holidays</div>
+                                <div class="col s3 m3 l3 translate">Description</div>
+
                             </div>
                             
                             <div id="config"> <!-- wird von Funktion eingefügt -->
