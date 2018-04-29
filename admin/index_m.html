@@ -32,13 +32,13 @@
                     text += '                <label class="translate" for="enable_' + d + '"> '/* + (holidays[d].date || '') */+ '</label>';
                     text += '            </td>\n';
                     text += '            <td>' + (holidays[d].date || '') + '</td>\n';
-                    text += '            <td>' + _(holidays[d][systemLang]) + ' <span>' + (holidays[d]['comment_' + systemLang] ? _(holidays[d]['comment_' + systemLang]) : '') + '</span></td>\n';
-                    text += '            <td>' + _(holidays[d].desc) + '</td>\n';
+                    text += '            <td>' + _(holidays[d][systemLang]) + ' <span class="grey-text">' + (holidays[d]['comment_' + systemLang] ? _(holidays[d]['comment_' + systemLang]) : '') + '</span></td>\n';
+                    //text += '            <td>' + _(holidays[d].desc) + '</td>\n';
+                    text += '            <td class="translate">' + _(holidays[d].desc) + '</td>\n';
                     text += '        </tr>\n';
                     
                     if (settings['enable_' + d] === undefined) settings['enable_' + d] = holidays[d].enabled;
                 }
-                
                 
                 $('#config').append(text);
 
@@ -104,10 +104,7 @@
                                      </tr>
                                 </thead>
                                 <tbody id="config">             
-                            <!--
-                                    <div >  Tabelle wird von Load-Funktion eingefügt 
-                                    </div>
-                            -->
+                                    <!-- Tabelle wird von Load-Funktion eingefügt -->
                                 </tbody>
                             <table>
                         </div>
