@@ -30,8 +30,11 @@ Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/Pix---/
 :poland: [Dokumentacja](/docs/en/doc_feiertage_en.md)
 
 ## Changelog
+### 1.0.7 (2018-08-03)
+* (BuZZy1337) design improvements settings window
+
 ### 1.0.6 (2018-04-29)
-* (pix) material design completed, Amin 3 ready
+* (pix) material design completed, Admin 3 ready
 
 ### 1.0.5 (2018-04-28)
 * (pix) checkbox issue fixed
