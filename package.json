@@ -1,12 +1,14 @@
 {
   "name": "iobroker.feiertage",
   "description": "Deutsche Feiertage",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "author": "pix",
   "contributors": [
     "pix",
     "Bluefox",
-    "jens-maus"
+    "jens-maus",
+    "Apollon77",
+    "BuZZy1337"
   ],
   "homepage": "https://github.com/Pix---/ioBroker.feiertage",
   "repository": {

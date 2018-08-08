@@ -35,84 +35,95 @@
             "es": "docs/en/doc_feiertage_en.md",
             "pl": "docs/en/doc_feiertage_en.md"
         },
-        "version": "1.0.6",
+        "version": "1.0.7",
 	    "news": {
+	        "1.0.7": {
+	             "en": "design improvements settings window",
+                     "de": "Design Verbesserungen Einstellungen Fenster",
+                     "ru": "окно настроек улучшений дизайна",
+                     "pt": "janela de configurações de melhorias de design",
+                     "nl": "ontwerp verbeteringen instellingen venster",
+                     "fr": "fenêtre des paramètres d'amélioration de la conception",
+                     "it": "finestra delle impostazioni dei miglioramenti di progettazione",
+                     "es": "ventana de configuración de mejoras de diseño",
+                     "pl": "okno ustawień udoskonaleń"
+	        },
 	        "1.0.6": {
 	            "en": "material design completed, Admin 3 ready",
-                "de": "Material Design fertig, Admin 3 fertig",
-                "ru": "подготовлен материал, администратор 3 готов",
-                "pt": "material de design concluído, Admin 3 pronto",
-                "nl": "materiaalontwerp voltooid, Admin 3 gereed",
-                "fr": "conception matérielle terminée, Admin 3 prêt",
-                "it": "completamento del materiale, Admin 3 pronto",
-                "es": "diseño material completado, Admin 3 listo",
-                "pl": "projekt materialny zakończony, Admin 3 gotowy"
+                    "de": "Material Design fertig, Admin 3 fertig",
+                    "ru": "подготовлен материал, администратор 3 готов",
+                    "pt": "material de design concluído, Admin 3 pronto",
+                    "nl": "materiaalontwerp voltooid, Admin 3 gereed",
+                    "fr": "conception matérielle terminée, Admin 3 prêt",
+                    "it": "completamento del materiale, Admin 3 pronto",
+                    "es": "diseño material completado, Admin 3 listo",
+                    "pl": "projekt materialny zakończony, Admin 3 gotowy"
 	        },
-			"1.0.5": {
-            	"en": "checkbox issue fixed",
+		"1.0.5": {
+            	    "en": "checkbox issue fixed",
 	            "de": "Checkbox-Problem behoben",
-    	        "ru": "проблема с флажком исправлена",
+    	            "ru": "проблема с флажком исправлена",
         	    "pt": "problema na caixa de seleção",
-            	"nl": "checkbox probleem opgelost",
+            	    "nl": "checkbox probleem opgelost",
 	            "fr": "case à cocher problème résolu",
-    	        "it": "problema della casella di controllo corretto",
+    	            "it": "problema della casella di controllo corretto",
         	    "es": "problema de casilla de verificación arreglado",
-            	"pl": "Naprawiono problem z checkboxem"
+            	    "pl": "Naprawiono problem z checkboxem"
 	        },
-			"1.0.4": {
+		"1.0.4": {
         	    "en": "versioning issues fixed",
-            	"de": "Versionierungsprobleme behoben",
+            	    "de": "Versionierungsprobleme behoben",
 	            "ru": "исправлены проблемы с версией",
-    	        "pt": "problemas de versão corrigidos",
+    	            "pt": "problemas de versão corrigidos",
         	    "nl": "versiebeheer problemen opgelost",
-            	"fr": "problèmes de versionnement corrigés",
+            	    "fr": "problèmes de versionnement corrigés",
 	            "it": "problemi di versione risolti",
-    	        "es": "Problemas de versionado corregidos",
+    	            "es": "Problemas de versionado corregidos",
         	    "pl": "Naprawiono problemy z wersjami"
 	        },
-			"1.0.3": {
+		"1.0.3": {
 	            "en": "changened english and spanish language",
 	            "de": "geänderte englische und spanische Sprache",
-    	        "ru": "измененный английский и испанский язык",
+    	            "ru": "измененный английский и испанский язык",
         	    "pt": "língua inglesa e espanhola modificada",
-            	"nl": "veranderde Engelse en Spaanse taal",
+            	    "nl": "veranderde Engelse en Spaanse taal",
 	            "fr": "Anglais et langue espagnole changés",
-    	        "it": "lingua inglese e spagnola modificata",
+    	            "it": "lingua inglese e spagnola modificata",
         	    "es": "cambio de idioma inglés y español",
 	            "pl": "zmiana języka angielskiego i hiszpańskiego"
 	        },
-		    "1.0.2": {
+		"1.0.2": {
 	            "en": "Readme and Documentation structure",
 	    	    "de": "Liesmich und Dokumentationsstruktur",
 	    	    "ru": "Структура Readme и Documentation",
 	    	    "pt": "Estrutura de Leia-me e Documentação",
 	    	    "nl": "Readme en documentatie structuur",
 	    	    "fr": "Lisez-moi et structure de documentation",
- 		   	    "it": "Struttura Leggimi e Documentazione",
+ 		    "it": "Struttura Leggimi e Documentazione",
     		    "es": "Léame y estructura de documentación",
-    	    	"pl": "Struktura Readme i Dokumentacja"
+    	    	    "pl": "Struktura Readme i Dokumentacja"
         	},
 	    	"1.0.1": {
-        		"en": "Translations to de, ru, pt, nl, fr, it, es and pl languages",
-        		"de": "Übersetzungen in de, ru, pt, nl, fr, it, es und pl",
-        		"ru": "Переводы на языки de, ru, pt, nl, fr, it, es и pl",
-        		"pt": "Traduções para idiomas de, ru, pt, nl, fr, it e es",
-        		"nl": "Vertalingen naar de, ru, pt, nl, fr, it, es en pl talen",
-        		"fr": "Traductions aux langues de, ru, pt, nl, fr, it, es et pl",
-        		"it": "Traduzioni in lingue de, ru, pt, nl, fr, it, es e pl",
-        		"es": "Traducciones a de, ru, pt, nl, fr, it, es y pl languages",
-        		"pl": "Tłumaczenia na języki de, ru, pt, nl, fr, it, es i pl"
-        		},
+        	    "en": "Translations to de, ru, pt, nl, fr, it, es and pl languages",
+        	    "de": "Übersetzungen in de, ru, pt, nl, fr, it, es und pl",
+        	    "ru": "Переводы на языки de, ru, pt, nl, fr, it, es и pl",
+        	    "pt": "Traduções para idiomas de, ru, pt, nl, fr, it e es",
+        	    "nl": "Vertalingen naar de, ru, pt, nl, fr, it, es en pl talen",
+        	    "fr": "Traductions aux langues de, ru, pt, nl, fr, it, es et pl",
+        	    "it": "Traduzioni in lingue de, ru, pt, nl, fr, it, es e pl",
+        	    "es": "Traducciones a de, ru, pt, nl, fr, it, es y pl languages",
+        	    "pl": "Tłumaczenia na języki de, ru, pt, nl, fr, it, es i pl"
+        	},
 	    	"1.0.0": {
-		    	"en": "End of beta, nodejs 4 or higher required",
-            	"de": "Ende der Beta Phase. Nodejs 4 oder höher nötig",
-            	"ru": "End of beta, nodejs 4 or higher required"
+		    "en": "End of beta, nodejs 4 or higher required",
+            	    "de": "Ende der Beta Phase. Nodejs 4 oder höher nötig",
+            	    "ru": "End of beta, nodejs 4 or higher required"
 	    	},
-			"0.4.1": {
-            	"en": "Added Kid's Day (01.06) and 'Vatertag'",
-            	"de": "Kindertag (01.06) und 'Vatertag' hinzugefügt",
-            	"ru": "Added Kid's Day (01.06) and 'Vatertag'"
-			}
+		"0.4.1": {
+            	    "en": "Added Kid's Day (01.06) and 'Vatertag'",
+            	    "de": "Kindertag (01.06) und 'Vatertag' hinzugefügt",
+            	    "ru": "Added Kid's Day (01.06) and 'Vatertag'"
+		}
 	    },
         "mode":                     "schedule",
         "schedule":                 "0 0 * * *",
