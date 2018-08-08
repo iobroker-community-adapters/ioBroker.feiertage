@@ -30,6 +30,9 @@ Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/Pix---/
 :poland: [Dokumentacja](/docs/en/doc_feiertage_en.md)
 
 ## Changelog
+### 1.0.8 (2018-08-08)
+* (BuZZy1337) firefox scrolling issue fixed
+
 ### 1.0.7 (2018-08-03)
 * (BuZZy1337) design improvements settings window
 
