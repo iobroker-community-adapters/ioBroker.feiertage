@@ -35,8 +35,19 @@
             "es": "docs/en/doc_feiertage_en.md",
             "pl": "docs/en/doc_feiertage_en.md"
         },
-        "version": "1.0.7",
+        "version": "1.0.8",
 	    "news": {
+	        "1.0.8": {
+                    "en": "firefox scrolling issue fixed",
+                    "de": "Firefox-Scroll-Problem behoben",
+                    "ru": "Исправлена ​​ошибка прокрутки firefox",
+                     "pt": "problema de rolagem firefox corrigido",
+                     "nl": "firefox scrolling probleem opgelost",
+                     "fr": "Problème de défilement de Firefox résolu",
+                     "it": "risolto il problema di scorrimento di Firefox",
+                     "es": "problema de desplazamiento de Firefox corregido",
+                     "pl": "Naprawiono problem z przewijaniem Firefoxa"
+	        },
 	        "1.0.7": {
 	             "en": "design improvements settings window",
                      "de": "Design Verbesserungen Einstellungen Fenster",
