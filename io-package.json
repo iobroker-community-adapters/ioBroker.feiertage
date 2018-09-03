@@ -35,8 +35,19 @@
             "es": "docs/en/doc_feiertage_en.md",
             "pl": "docs/en/doc_feiertage_en.md"
         },
-        "version": "1.0.8",
+        "version": "1.0.9",
 	    "news": {
+	        "1.0.9": {
+                    "en": "Austrian national day added",
+                    "de": "Österreichischer Nationalfeiertag hinzugefügt",
+                    "ru": "Добавлен австрийский национальный день",
+                    "pt": "Dia Nacional Austríaco adicionado",
+                    "nl": "Oostenrijkse nationale dag toegevoegd",
+                    "fr": "Journée nationale autrichienne ajoutée",
+                    "it": "Aggiunta giornata nazionale austriaca",
+                    "es": "Día nacional austríaco agregado",
+                    "pl": "Dodano austriacki dzień narodowy"
+	        },
 	        "1.0.8": {
                     "en": "firefox scrolling issue fixed",
                     "de": "Firefox-Scroll-Problem behoben",
