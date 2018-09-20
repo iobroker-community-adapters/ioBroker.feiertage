@@ -27,13 +27,13 @@ function getHoliday(day, isLeap, easter, advent4, year, _lang) {
 
     for (var h in holidays) {
         if (holidays[h].enabled) {
-            if (holidays[h].offset !== "undefined" && (1 + holidays[h].offset + (holidays[h].offset >= 59 ? isLeap : 0)) == day) {
+            if (holidays[h].offset !== "undefined" && (1 + holidays[h].offset + (holidays[h].offset >= 59 ? isLeap : 0)) === day) {
                 return holidays[h][_lang] + (holidays[h]["comment_" + _lang] ? " " + holidays[h]["comment_" + _lang] : "");
             }
-            if (holidays[h].easterOffset !== "undefined" && (easter + holidays[h].easterOffset) == day) {
+            if (holidays[h].easterOffset !== "undefined" && (easter + holidays[h].easterOffset) === day) {
                 return holidays[h][_lang] + (holidays[h]["comment_" + _lang] ? " " + holidays[h]["comment_" + _lang] : "");
             }
-            if (holidays[h].advent4Offset !== "undefined" && (advent4 + holidays[h].advent4Offset) == day) {
+            if (holidays[h].advent4Offset !== "undefined" && (advent4 + holidays[h].advent4Offset) === day) {
                 return holidays[h][_lang] + (holidays[h]["comment_" + _lang] ? " " + holidays[h]["comment_" + _lang] : "");
             }
             if (holidays[h].april30Offset !== "undefined") {
@@ -42,7 +42,7 @@ function getHoliday(day, isLeap, easter, advent4, year, _lang) {
                 var april30num = Math.ceil((april30date - newYear) / (24 * 60 * 60 * 1000) + 1);
                 var mday = april30num - april30date.getDay() + holidays[h].april30Offset;
 
-                if (mday == day) {
+                if (mday === day) {
                   return holidays[h][_lang] + (holidays[h]["comment_" + _lang] ? " " + holidays[h]["comment_" + _lang] : "");
                 }
             }
@@ -51,7 +51,7 @@ function getHoliday(day, isLeap, easter, advent4, year, _lang) {
                 var michaelisDate = new Date(year, 8, 29, 0, 0, 0);
                 var michaelisNum = Math.ceil((michaelisDate - newYear) / (24 * 60 * 60 * 1000) + 1);
 
-                if ((michaelisNum + (holidays[h].michaelisOffset - michaelisDate.getDay())) == day) {
+                if ((michaelisNum + (holidays[h].michaelisOffset - michaelisDate.getDay())) === day) {
                   return holidays[h][_lang] + (holidays[h]["comment_" + _lang] ? " " + holidays[h]["comment_" + _lang] : "");
                 }
             }
