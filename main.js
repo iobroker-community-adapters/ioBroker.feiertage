@@ -116,7 +116,7 @@ function checkHolidays() {
 
     // the day after tomorrow (datommo)
     let datommo = day + 2;
-    if (datommo > 365 + isLeap) day = 1;
+    if (datommo > 365 + isLeap) datommo = 1;
     hd = getHoliday(datommo, isLeap, easter, advent4, year);
     adapter.setState("uebermorgen.Name",      {ack: true, val: getHoliday(datommo, isLeap, easter, advent4, year, "de")});
     adapter.setState("uebermorgen.boolean",   {ack: true, val: !!hd});
