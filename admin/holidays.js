@@ -47,7 +47,7 @@ var holidays = {
     silvester:      {enabled: true,  "en": "New Year's Eve",      "de": "Silvester",                    "ru": "Новый год",                              desc: "calender",    date: "31.12", offset: 364}
 };
 
-if (typeof module !== 'undefined' && module.parent) {
+if (typeof module !== "undefined" && module.parent) {
     module.exports = {
         holidays: holidays
     };
