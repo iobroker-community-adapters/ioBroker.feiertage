@@ -98,34 +98,33 @@ function checkHolidays() {
     var advent4date = new Date(christmas1.getTime() - (((christmas1.getDay() === 0) ? 7 : christmas1.getDay()) * (24 * 60 * 60 * 1000)));
     var advent4 = Math.ceil((advent4date.setHours(0, 0, 0, 0) - newYear) / (24 * 60 * 60 * 1000) + 1);
 
-    // today
+    // today (day)
     var hd = getHoliday(day, isLeap, easter, advent4, year);
     adapter.setState("heute.Name",    {ack: true, val: getHoliday(day, isLeap, easter, advent4, year, "de")});
     adapter.setState("heute.boolean", {ack: true, val: !!hd});
     adapter.setState("today.name",    {ack: true, val: hd});
     adapter.setState("today.boolean", {ack: true, val: !!hd});
 
-    // tomorrow
-    day = day + 1;
-    if (day > 365 + isLeap) day = 1;
-    hd = getHoliday(day, isLeap, easter, advent4, year);
-    adapter.setState("morgen.Name",      {ack: true, val: getHoliday(day, isLeap, easter, advent4, year, "de")});
+    // tomorrow (tommo)
+    let tommo = day + 1; 
+    if (tommo > 365 + isLeap) tommo = 1;
+    hd = getHoliday(tommo, isLeap, easter, advent4, year);
+    adapter.setState("morgen.Name",      {ack: true, val: getHoliday(tommo, isLeap, easter, advent4, year, "de")});
     adapter.setState("morgen.boolean",   {ack: true, val: !!hd});
     adapter.setState("tomorrow.name",    {ack: true, val: hd});
     adapter.setState("tomorrow.boolean", {ack: true, val: !!hd});
 
-    // the day after tomorrow
-    day = day + 1;
-    if (day > 365 + isLeap) day = 1;
-    hd = getHoliday(day, isLeap, easter, advent4, year);
-    adapter.setState("uebermorgen.Name",      {ack: true, val: getHoliday(day, isLeap, easter, advent4, year, "de")});
+    // the day after tomorrow (datommo)
+    let datommo = day + 2;
+    if (datommo > 365 + isLeap) day = 1;
+    hd = getHoliday(datommo, isLeap, easter, advent4, year);
+    adapter.setState("uebermorgen.Name",      {ack: true, val: getHoliday(datommo, isLeap, easter, advent4, year, "de")});
     adapter.setState("uebermorgen.boolean",   {ack: true, val: !!hd});
     adapter.setState("aftertomorrow.name",    {ack: true, val: hd});
     adapter.setState("aftertomorrow.boolean", {ack: true, val: !!hd});
 
     // next holiday
     var duration = 0;
-    day = day - 2; // shift back to "today" so that we calculate everything relative to it
     do {
         day = day + 1;
         if (day > 365 + isLeap) day = 1;
