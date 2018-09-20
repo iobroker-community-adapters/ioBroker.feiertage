@@ -1,5 +1,5 @@
 /*global systemDictionary:true */
-'use strict';
+"use strict";
 
 systemDictionary = {
     "Date": {                            "en": "Date",                                            "de": "Datum",                                           "ru": "Дата",                                            "pt": "Encontro",                                        "nl": "Datum",                                           "fr": "Rendez-vous amoureux",                            "it": "Data",                                            "es": "Fecha",                                           "pl": "Data"},
