@@ -30,6 +30,9 @@ Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/Pix---/
 :poland: [Dokumentacja](/docs/en/doc_feiertage_en.md)
 
 ## Changelog
+### 1.0.10 (2018-10-16)
+* (modmax) Added reformation day for HB,HH,NI,SH
+
 ### 1.0.9 (2018-09-03)
 * (pix) Austrian national day added
 
