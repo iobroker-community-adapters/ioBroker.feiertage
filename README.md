@@ -31,7 +31,7 @@ Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/Pix---/
 
 ## Changelog
 ### 1.0.11 (2018-10-29)
-* (modmax) Added Mariä Empfängnis for AUT
+* (pix) Added Mariä Empfängnis for AUT
 
 ### 1.0.10 (2018-10-16)
 * (modmax) Added reformation day for HB,HH,NI,SH
