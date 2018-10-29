@@ -37,6 +37,7 @@ var holidays = {
     bussbettag:     {enabled: true,  "en": "Penance Day",         "de": "Buß- und Bettag",              "ru": "день покая́ния и моли́твы",                desc: "religion",    advent4Offset: -32,             comment_en: "(SA)", comment_de: "(SA)", comment_ru: "(SA)"},
     totensonntag:   {enabled: true,  "en": "Sunday of the Dead",  "de": "Totensonntag",                 "ru": "???",                                    desc: "religion",    advent4Offset: -28},
     nikolaustag:    {enabled: true,  "en": "St Nicholas' Day",    "de": "Nikolaustag",                  "ru": "День Свято́го Никола́я",                   desc: "religion",    date: "06.12", offset: 339},
+    mempfaengnis:   {enabled: true,  "en": "Feast of the Immaculate Conception",    "de": "Mariä Empfängnis",                  "ru": "Праздник Непорочного Зачатия",                   desc: "religion",    date: "08.12", offset: 341},
     advent1:        {enabled: false, "en": "1st Advent",          "de": "1. Advent",                    "ru": "1. адве́нт",                              desc: "religion",    advent4Offset: -21},
     advent2:        {enabled: false, "en": "2nd Advent",          "de": "2. Advent",                    "ru": "2. адве́нт",                              desc: "religion",    advent4Offset: -14},
     advent3:        {enabled: false, "en": "3rd Advent",          "de": "3. Advent",                    "ru": "3. адве́нт",                              desc: "religion",    advent4Offset: -7},
