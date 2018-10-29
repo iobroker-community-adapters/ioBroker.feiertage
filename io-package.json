@@ -35,8 +35,19 @@
             "es": "docs/en/doc_feiertage_en.md",
             "pl": "docs/en/doc_feiertage_en.md"
         },
-        "version": "1.0.10",
+        "version": "1.0.11",
 	    "news": {
+	        "1.0.11": {
+                    "en": "Feast of the Immaculate Conception",
+                    "de": "Mariä Empfängnis",
+                    "ru": "Праздник Непорочного Зачатия",
+                    "pt": "Festa da Imaculada Conceição",
+                    "nl": "Feest van de Onbevlekte Ontvangenis",
+                    "fr": "Fête de l'Immaculée Conception",
+                    "it": "Festa dell'Immacolata Concezione",
+                    "es": "Fiesta de la Inmaculada Concepción.",
+                    "pl": "Święto Niepokalanego Poczęcia"
+                },
 	        "1.0.10": {
                     "en": "Added reformation day for HB,HH,NI,SH",
                     "de": "Reformationstag für HB, HH, NI, SH hinzugefügt",
