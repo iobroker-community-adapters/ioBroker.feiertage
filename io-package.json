@@ -35,8 +35,20 @@
             "es": "docs/en/doc_feiertage_en.md",
             "pl": "docs/en/doc_feiertage_en.md"
         },
-        "version": "1.0.11",
+        "version": "1.0.12",
 	    "news": {
+		"1.0.12": {
+                    "en": "World Children's Day (Thuringia)",
+                    "de": "Weltkindertag (Thüringen)",
+                    "ru": "Всемирный день защиты детей (Тюрингия)",
+                    "pt": "Dia Mundial da Criança (Turíngia)",
+                    "nl": "Wereld Kinderdag (Thüringen)",
+                    "fr": "Journée mondiale des enfants (Thuringe)",
+                    "it": "Giornata mondiale dei bambini (Turingia)",
+                    "es": "Día mundial del niño (Turingia)",
+                    "pl": "Światowy Dzień Dziecka (Turyngia)",
+                    "zh-cn": "世界儿童节（图林根州）"
+                },
 	        "1.0.11": {
                     "en": "Feast of the Immaculate Conception",
                     "de": "Mariä Empfängnis",
