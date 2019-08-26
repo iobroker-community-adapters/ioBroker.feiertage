@@ -30,6 +30,9 @@ Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/Pix---/
 :poland: [Dokumentacja](/docs/en/doc_feiertage_en.md)
 
 ## Changelog
+### 1.0.12 (2019-08-26)
+* (pix) Added Weltkindertag (Thuringa)
+
 ### 1.0.11 (2018-10-29)
 * (pix) Added Mariä Empfängnis for AUT
 
@@ -132,13 +135,12 @@ Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/Pix---/
 
 ## Roadmap
 * Erkennung Brückentage
-* Materialize code in settings window
 
 ## License
 
-The MIT License (MIT)
-
 Copyright (c) 2019 pix
+
+The MIT License (MIT)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
