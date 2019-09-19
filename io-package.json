@@ -35,7 +35,7 @@
             "es": "docs/en/doc_feiertage_en.md",
             "pl": "docs/en/doc_feiertage_en.md"
         },
-        "version": "1.0.12",
+        "version": "1.0.13",
 	    "news": {
 		"1.0.12": {
                     "en": "World Children's Day (Thuringia)",
