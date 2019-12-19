@@ -35,8 +35,20 @@
             "es": "docs/en/doc_feiertage_en.md",
             "pl": "docs/en/doc_feiertage_en.md"
         },
-        "version": "1.0.13",
+        "version": "1.0.14",
 	    "news": {
+		"1.0.14": {
+                    "en": "National day in Switzerland added",
+                    "de": "Nationalfeiertag in der Schweiz hinzugefügt",
+                    "ru": "Добавлен национальный день в Швейцарии",
+                    "pt": "Dia nacional na Suíça adicionado",
+                    "nl": "Nationale dag in Zwitserland toegevoegd",
+                    "fr": "Ajout de la fête nationale en Suisse",
+                    "it": "Aggiunto il giorno nazionale in Svizzera",
+                    "es": "Día nacional en Suiza agregado",
+                    "pl": "Dodano święto narodowe w Szwajcarii",
+                    "zh-cn": "添加了瑞士的国庆日"
+                },
 		"1.0.13": {
                     "en": "Offsets corrected",
                     "de": "Offsets korrigiert",
