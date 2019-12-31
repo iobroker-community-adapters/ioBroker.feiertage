@@ -92,7 +92,7 @@ function checkHolidays() {
     var newYear    = new Date(year, 0, 1);
     var diffDays   = (todayStart - newYear) / (24 * 60 * 60 * 1000) + 1;
     var day        = Math.ceil(diffDays);
-    var todayIs .  = Math.ceil(diffDays);
+    var todayIs    = Math.ceil(diffDays);
 
     // 4th advent (sunday before first christmas day)
     var christmas1 = new Date(year, 11, 25, 12, 0, 0);
