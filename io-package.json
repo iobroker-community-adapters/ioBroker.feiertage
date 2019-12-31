@@ -37,6 +37,18 @@
         },
         "version": "1.0.14",
 	    "news": {
+		"1.0.15": {
+		    "en": "Fixed wrong year displayed if holiday is in next year",
+                    "de": "Das falsche Jahr wird angezeigt, wenn der Feiertag im nächsten Jahr liegt. Dieser Fehler wurde behoben",
+                    "ru": "Исправлено неверное отображение года, если в следующем году",
+                    "pt": "Corrigido ano errado exibido se o feriado for no próximo ano",
+                    "nl": "Verkeerd jaar weergegeven als vakantie in volgend jaar is",
+                    "fr": "Correction de la mauvaise année affichée si les vacances sont l'année prochaine",
+                    "it": "Risolto il problema con l'anno sbagliato visualizzato se l'anno prossimo è festivo",
+                    "es": "Se corrigió el año incorrecto que se muestra si las vacaciones son el próximo año",
+                    "pl": "Naprawiono błędny rok wyświetlany, jeśli wakacje są w przyszłym roku",
+                    "zh-cn": "修复了如果明年放假则显示错误的年份"
+		},
 		"1.0.14": {
                     "en": "National day in Switzerland added",
                     "de": "Nationalfeiertag in der Schweiz hinzugefügt",
