@@ -16,6 +16,7 @@ var holidays = {
     ostermontag:    {enabled: true,  "en": "Easter Monday",       "de": "Ostermontag",                  "ru": "Католическая пасха - Понедельник",       desc: "religion",    easterOffset: 1},
     walpurgisnacht: {enabled: false, "en": "Walpurgis Night",     "de": "Walpurgisnacht",               "ru": "???",                                    desc: "calender",    date: "30.04", offset: 119},
     maifeiertag:    {enabled: true,  "en": "Labour Day",          "de": "Tag der Arbeit", "ru": "День Труда",                             desc: "political",   date: "01.05", offset: 120},
+    tderbefreiung:  {enabled: false, "en": "Day of Freedom",      "de": "Tag der Befreiung",            "ru": "???",                                    desc: "political",   date: "08.05", offset: 127},
     chimmelfahrt:   {enabled: false, "en": "Ascension of Christ", "de": "Christi Himmelfahrt (Vatertag)", "ru": "Католическое Вознесение ",               desc: "religion",    easterOffset: 39},
     muttertag:      {enabled: false, "en": "Mother's Day",        "de": "Muttertag",                    "ru": "День ма́тери",                            desc: "calender",    april30Offset: 14},
     kindertag:      {enabled: false, "en": "Kid's Day",           "de": "Kindertag",                    "ru": "???",                                    desc: "calender",    date: "01.06", offset: 151},
