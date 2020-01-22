@@ -31,7 +31,7 @@ Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/Pix---/
 
 ## Changelog
 ### 1.0.17 (2020-01-22)
-* (kampfratte) Day of freedom added
+* (kampfratte) Day of Freedom added
 
 ### 1.0.16 (2020-01-22)
 * (pix) Minor fixes
