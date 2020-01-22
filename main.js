@@ -134,7 +134,7 @@ function checkHolidays() {
 
         if (hd) {
             if (day < todayIs) {
-                year = year + 1;
+                var year = year + 1;
                 }
             var date = getDateFromYearsDay(day, year);
             adapter.setState("naechster.Name", {ack: true, val: getHoliday(day, isLeap, easter, advent4, year, "de")});
