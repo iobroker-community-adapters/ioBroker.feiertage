@@ -30,6 +30,9 @@ Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/Pix---/
 :poland: [Dokumentacja](/docs/en/doc_feiertage_en.md)
 
 ## Changelog
+### 1.0.16 (2020-01-22)
+* (pix) Minor fixes
+
 ### 1.0.15 (2019-12-31)
 * (kampfratte) Fixed wrong year displayed if holiday is in next year
 

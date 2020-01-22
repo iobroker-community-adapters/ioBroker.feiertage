@@ -35,57 +35,69 @@
             "es": "docs/en/doc_feiertage_en.md",
             "pl": "docs/en/doc_feiertage_en.md"
         },
-        "version": "1.0.14",
-	    "news": {
-		"1.0.15": {
+        "version": "1.0.16",
+	      "news": {
+        "1.0.16": {
+    		    "en": "minor fixes",
+    		    "de": "Kleinere Korrekturen",
+    		    "ru": "мелкие исправления",
+    		    "pt": "pequenas correções",
+    		    "nl": "kleine aanpassingen",
+    		    "fr": "corrections mineures",
+    		    "it": "correzioni minori",
+    		    "es": "correcciones menores",
+    		    "pl": "drobne poprawki",
+    		    "zh-cn": "小修"
+    		},
+        "1.0.15": {
 		    "en": "Fixed wrong year displayed if holiday is in next year",
-                    "de": "Das falsche Jahr wird angezeigt, wenn der Feiertag im nächsten Jahr liegt. Dieser Fehler wurde behoben",
-                    "ru": "Исправлено неверное отображение года, если в следующем году",
-                    "pt": "Corrigido ano errado exibido se o feriado for no próximo ano",
-                    "nl": "Verkeerd jaar weergegeven als vakantie in volgend jaar is",
-                    "fr": "Correction de la mauvaise année affichée si les vacances sont l'année prochaine",
-                    "it": "Risolto il problema con l'anno sbagliato visualizzato se l'anno prossimo è festivo",
-                    "es": "Se corrigió el año incorrecto que se muestra si las vacaciones son el próximo año",
-                    "pl": "Naprawiono błędny rok wyświetlany, jeśli wakacje są w przyszłym roku",
-                    "zh-cn": "修复了如果明年放假则显示错误的年份"
-		},
-		"1.0.14": {
-                    "en": "National day in Switzerland added",
-                    "de": "Nationalfeiertag in der Schweiz hinzugefügt",
-                    "ru": "Добавлен национальный день в Швейцарии",
-                    "pt": "Dia nacional na Suíça adicionado",
-                    "nl": "Nationale dag in Zwitserland toegevoegd",
-                    "fr": "Ajout de la fête nationale en Suisse",
-                    "it": "Aggiunto il giorno nazionale in Svizzera",
-                    "es": "Día nacional en Suiza agregado",
-                    "pl": "Dodano święto narodowe w Szwajcarii",
-                    "zh-cn": "添加了瑞士的国庆日"
-                },
-		"1.0.13": {
-                    "en": "Offsets corrected",
-                    "de": "Offsets korrigiert",
-                    "ru": "Смещения исправлены",
-                    "pt": "Compensações corrigidas",
-                    "nl": "Offsets gecorrigeerd",
-                    "fr": "Compensation corrigée",
-                    "it": "Offset corretti",
-                    "es": "Desplazamientos corregidos",
-                    "pl": "Poprawione przesunięcia",
-                    "zh-cn": "偏移校正"
-                },
-		"1.0.12": {
-                    "en": "World Children's Day (Thuringia)",
-                    "de": "Weltkindertag (Thüringen)",
-                    "ru": "Всемирный день защиты детей (Тюрингия)",
-                    "pt": "Dia Mundial da Criança (Turíngia)",
-                    "nl": "Wereld Kinderdag (Thüringen)",
-                    "fr": "Journée mondiale des enfants (Thuringe)",
-                    "it": "Giornata mondiale dei bambini (Turingia)",
-                    "es": "Día mundial del niño (Turingia)",
-                    "pl": "Światowy Dzień Dziecka (Turyngia)",
-                    "zh-cn": "世界儿童节（图林根州"
-                },
-	        "1.0.11": {
+            "de": "Das falsche Jahr wird angezeigt, wenn der Feiertag im nächsten Jahr liegt. Dieser Fehler wurde behoben",
+            "ru": "Исправлено неверное отображение года, если в следующем году",
+            "pt": "Corrigido ano errado exibido se o feriado for no próximo ano",
+            "nl": "Verkeerd jaar weergegeven als vakantie in volgend jaar is",
+            "fr": "Correction de la mauvaise année affichée si les vacances sont l'année prochaine",
+            "it": "Risolto il problema con l'anno sbagliato visualizzato se l'anno prossimo è festivo",
+            "es": "Se corrigió el año incorrecto que se muestra si las vacaciones son el próximo año",
+            "pl": "Naprawiono błędny rok wyświetlany, jeśli wakacje są w przyszłym roku",
+            "zh-cn": "修复了如果明年放假则显示错误的年份"
+		    },
+		    "1.0.14": {
+            "en": "National day in Switzerland added",
+            "de": "Nationalfeiertag in der Schweiz hinzugefügt",
+            "ru": "Добавлен национальный день в Швейцарии",
+            "pt": "Dia nacional na Suíça adicionado",
+            "nl": "Nationale dag in Zwitserland toegevoegd",
+            "fr": "Ajout de la fête nationale en Suisse",
+            "it": "Aggiunto il giorno nazionale in Svizzera",
+            "es": "Día nacional en Suiza agregado",
+            "pl": "Dodano święto narodowe w Szwajcarii",
+            "zh-cn": "添加了瑞士的国庆日"
+        },
+		    "1.0.13": {
+            "en": "Offsets corrected",
+            "de": "Offsets korrigiert",
+            "ru": "Смещения исправлены",
+            "pt": "Compensações corrigidas",
+            "nl": "Offsets gecorrigeerd",
+            "fr": "Compensation corrigée",
+            "it": "Offset corretti",
+            "es": "Desplazamientos corregidos",
+            "pl": "Poprawione przesunięcia",
+            "zh-cn": "偏移校正"
+        },
+		    "1.0.12": {
+            "en": "World Children's Day (Thuringia)",
+            "de": "Weltkindertag (Thüringen)",
+            "ru": "Всемирный день защиты детей (Тюрингия)",
+            "pt": "Dia Mundial da Criança (Turíngia)",
+            "nl": "Wereld Kinderdag (Thüringen)",
+            "fr": "Journée mondiale des enfants (Thuringe)",
+            "it": "Giornata mondiale dei bambini (Turingia)",
+            "es": "Día mundial del niño (Turingia)",
+            "pl": "Światowy Dzień Dziecka (Turyngia)",
+            "zh-cn": "世界儿童节（图林根州"
+        },
+	      "1.0.11": {
                     "en": "Feast of the Immaculate Conception",
                     "de": "Mariä Empfängnis",
                     "ru": "Праздник Непорочного Зачатия",
@@ -547,4 +559,3 @@
         }
     ]
 }
-	
