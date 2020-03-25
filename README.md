@@ -30,6 +30,10 @@ Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/Pix---/
 :poland: [Dokumentacja](/docs/en/doc_feiertage_en.md)
 
 ## Changelog
+### 1.0.18 (2020-03-25)
+* (pix) Italy's Day of Liberation and Day of Republic added
+* (pix) Minor fixes
+
 ### 1.0.17 (2020-01-22)
 * (kampfratte) Day of Freedom added
 

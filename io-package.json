@@ -35,8 +35,20 @@
             "es": "docs/en/doc_feiertage_en.md",
             "pl": "docs/en/doc_feiertage_en.md"
         },
-        "version": "1.0.17",
+        "version": "1.0.18",
         "news": {
+            "1.0.18": {
+                "en": "two italian holidays added",
+                "de": "zwei italienische Feiertage hinzugefügt",
+                "ru": "добавлены два итальянских праздника",
+                "pt": "dois feriados italianos adicionados",
+                "nl": "twee Italiaanse feestdagen toegevoegd",
+                "fr": "deux vacances italiennes ajoutées",
+                "it": "aggiunte due festività italiane",
+                "es": "dos vacaciones italianas agregadas",
+                "pl": "dodano dwa włoskie święta",
+                "zh-cn": "添加了两个意大利假期"
+            },
             "1.0.17": {
                 "en": "day of freedom added",
                 "de": "Tag der Freiheit hinzugefügt",
