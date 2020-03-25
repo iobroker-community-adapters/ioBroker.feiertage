@@ -21,7 +21,7 @@ var holidays = {
     chimmelfahrt:       {enabled: false, "en": "Ascension of Christ",         "de": "Christi Himmelfahrt (Vatertag)", "ru": "Католическое Вознесение ",               desc: "religion",    easterOffset: 39},
     muttertag:          {enabled: false, "en": "Mother's Day",                "de": "Muttertag",                      "ru": "День ма́тери",                            desc: "calender",    april30Offset: 14},
     kindertag:          {enabled: false, "en": "Kid's Day",                   "de": "Kindertag",                      "ru": "???",                                    desc: "calender",    date: "01.06", offset: 151},
-    kindertag:          {enabled: false, "en": "National Day Italy",          "de": "Tag der Republik in Italien",    "ru": "Национальный день Италии",               desc: "calender",    date: "02.06", offset: 152},
+    itanationalday:     {enabled: false, "en": "National Day Italy",          "de": "Tag der Republik in Italien",    "ru": "Национальный день Италии",               desc: "calender",    date: "02.06", offset: 152},
     pfingstsonntag:     {enabled: true,  "en": "Whitsunday",                  "de": "Pfingstsonntag",                 "ru": "Католическая Троица - Воскресение",      desc: "religion",    easterOffset: 49},
     pfingstmontag:      {enabled: true,  "en": "Whit Monday",                 "de": "Pfingstmontag",                  "ru": "Католическая Троица - Понедельник",      desc: "religion",    easterOffset: 50},
     siebenschlaefer:    {enabled: false, "en": "St Swtithin's Day",           "de": "Siebenschläfertag",              "ru": "сеногно́й",                               desc: "calender",    date: "27.06", offset: 177},
