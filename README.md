@@ -9,9 +9,15 @@
 
 [![NPM](https://nodei.co/npm/iobroker.feiertage.png?downloads=true)](https://nodei.co/npm/iobroker.feiertage/)
 
-**Tests:** Linux/Mac: [![Travis-CI](http://img.shields.io/travis/Pix---/ioBroker.feiertage/master.svg)](https://travis-ci.org/Pix---/ioBroker.feiertage)
+**Tests:**
+
+Linux/Mac: [![Travis-CI](http://img.shields.io/travis/Pix---/ioBroker.feiertage/master.svg)](https://travis-ci.org/Pix---/ioBroker.feiertage)
+
 Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/Pix---/ioBroker.feiertage?branch=master&svg=true)](https://ci.appveyor.com/project/Pix---/ioBroker-feiertage/)
 
+NodeJS v10 oder höher wird vorausgesetzt.
+
+## Documentation
 :de: [Dokumentation](/docs/de/doc_feiertage_de.md)
 
 :uk: [Documentation](/docs/en/doc_feiertage_en.md)
@@ -31,6 +37,9 @@ Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/Pix---/
 :poland: [Dokumentacja](/docs/en/doc_feiertage_en.md)
 
 ## Changelog
+### 1.0.19 (2020-04-21)
+* (pix) NodeJS 10 or higher required
+
 ### 1.0.18 (2020-03-25)
 * (pix) Italy's Day of Liberation and Day of Republic added
 * (pix) Minor fixes
