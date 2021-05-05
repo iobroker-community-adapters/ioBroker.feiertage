@@ -37,6 +37,9 @@ NodeJS v10 oder höher wird vorausgesetzt.
 :poland: [Dokumentacja](/docs/en/doc_feiertage_en.md)
 
 ## Changelog
+### 1.0.20 (2021-05-05)
+* (pix) connectionType and dataSource added
+
 ### 1.0.19 (2020-04-21)
 * (pix) NodeJS 10 or higher required
 
