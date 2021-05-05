@@ -293,7 +293,7 @@
         "allowInit": true,
         "type": "date-and-time",
         "connectionType": "local",
-        "dataSource": "push“,
+        "dataSource": "push",
         "config": {
             "width": 650,
             "height": 680,
