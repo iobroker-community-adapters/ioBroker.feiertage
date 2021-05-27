@@ -4,14 +4,14 @@
 "use strict";
 var utils = require('@iobroker/adapter-core'); // Get common adapter utils
 var holidays = require(__dirname + "/admin/holidays").holidays; // Get common adapter utils
-
+var terminating_timer;
 var lang = "de";
 
 var adapter = utils.Adapter({
     name:           "feiertage",
     useFormatDate:  true
 });
- 
+
 function readSettings() {
     var isOneEnabled = false;
     for (var h in holidays) {
@@ -19,7 +19,7 @@ function readSettings() {
         if (holidays[h].enabled) isOneEnabled = true;
     }
     return isOneEnabled;
-} 
+}
 
 // Get the name of holiday for the day of the year
 function getHoliday(day, isLeap, easter, advent4, year, _lang) {
@@ -58,23 +58,23 @@ function getHoliday(day, isLeap, easter, advent4, year, _lang) {
         }
     }
     return "";
-} 
+}
 
 function getDateFromYearsDay(day, year) {
     var dayMs     = (day-1) * 24 * 60 * 60 * 1000; // Day of the year in ms from 01.01 00:00:00
     var newYear   = new Date(year, 0, 1, 0, 0, 0, 0);     // This year 01.01 00:00:00
     var newYearMs = newYear.getTime();
     var date      = new Date();
-    
+
     date.setTime(newYearMs + dayMs);                      // Add to current New year the ms
-    return date;    
+    return date;
 }
 
 // check the holidays
 function checkHolidays() {
     if (!readSettings()) {
         adapter.log.error("No one holiday is enabled");
-        adapter.stop();
+        stopAdapter();
         return;
     }
     var now    = new Date();
@@ -107,7 +107,7 @@ function checkHolidays() {
     adapter.setState("today.boolean", {ack: true, val: !!hd});
 
     // tomorrow (tommo)
-    let tommo = day + 1; 
+    let tommo = day + 1;
     if (tommo > 365 + isLeap) tommo = 1;
     hd = getHoliday(tommo, isLeap, easter, advent4, year);
     adapter.setState("morgen.Name",      {ack: true, val: getHoliday(tommo, isLeap, easter, advent4, year, "de")});
@@ -148,27 +148,32 @@ function checkHolidays() {
 
             adapter.setState("naechster.Dauer", duration, true);
             adapter.setState("next.duration",   duration, true, function () {
-                adapter.stop();
+                stopAdapter();
             });
             break;
         }
     } while (!hd);
+
+    adapter.log.info("adapter feiertage objects written");
+}
+
+function stopAdapter (isTimeout) {
+  clearTimeout(terminating_timer);
+  if (isTimeout) {
+    adapter.log.info("force terminating after 1 minute");
+  }
+  adapter.stop();
 }
 
 adapter.on("ready", function () {
-    adapter.getForeignObject("system.config", function (err, data) {
-        if (data && data.common) {
-            lang = data.common.language;
-        }
+  terminating_timer = setTimeout(() => stopAdapter(true), 60000);
 
-        adapter.log.debug("adapter feiertage initializing objects");
-        checkHolidays();
-        adapter.log.info("adapter feiertage objects written");
+  adapter.getForeignObject("system.config", function (err, data) {
+    if (data && data.common) {
+      lang = data.common.language;
+    }
 
-        setTimeout(function () {
-            adapter.log.info("force terminating after 1 minute");
-            adapter.stop();
-        }, 60000);
-
-    });
+    adapter.log.debug("adapter feiertage initializing objects");
+    checkHolidays();
+  });
 });
