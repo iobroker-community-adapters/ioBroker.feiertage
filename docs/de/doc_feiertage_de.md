@@ -2,7 +2,9 @@
 # ioBroker.feiertage
 
 ## Beschreibung
-Dieser Adapter liefert das Datum, die Dauer bis zu diesem Datum in Tagen und den Namen des nächsten deutschen Feiertages und gibt Auskunft, ob heute, morgen oder übermorgen ein Feiertag ist.  
+Dieser Adapter liefert das Datum, die Dauer bis zu diesem Datum in Tagen und den Namen des nächsten deutschen Feiertages und gibt Auskunft, ob heute, morgen oder übermorgen ein Feiertag ist.
+
+Brückentage, die jährlich fest am Freitag nach einem Feiertag stattfinden sind auswählbar.
 
 ##  Datenpunkte
 ![alt text](img/DatapointsScreenshot.jpg "Screenshot Datenpunkte")

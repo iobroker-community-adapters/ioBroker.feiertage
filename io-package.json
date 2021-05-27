@@ -35,8 +35,24 @@
             "es": "docs/en/doc_feiertage_en.md",
             "pl": "docs/en/doc_feiertage_en.md"
         },
-        "version": "1.0.20",
+        "version": "1.0.22",
         "news": {
+            "1.0.22": {
+                "en": "Fixed bridge days",
+                "de": "Feste Brückentage",
+                "ru": "Фиксированные дни моста",
+                "pt": "Dias de ponte fixos",
+                "nl": "Vaste brugdagen",
+                "fr": "Jours de pont fixes",
+                "it": "Giorni di bridge fissi",
+                "es": "Días de puente fijo",
+                "pl": "Naprawiono dni mostu",
+                "zh-cn": "固定桥梁天数"
+            },
+            "1.0.21": {
+                "en": "minor code changes, update news cleaned",
+                "de": "kleine Änderungen im Code, update Erläuterungen aufgeräumt"
+            },
             "1.0.19": {
                 "en": "NodeJS 10 or higher required",
                 "de": "NodeJS 10 oder höher erforderlich",
@@ -48,42 +64,6 @@
                 "es": "Nodo JS 10 o superior requerido",
                 "pl": "Wymagany NodeJS 10 lub wyższy",
                 "zh-cn": "需要NodeJS 10或更高版本"
-            },
-            "1.0.18": {
-                "en": "two italian holidays added",
-                "de": "zwei italienische Feiertage hinzugefügt",
-                "ru": "добавлены два итальянских праздника",
-                "pt": "dois feriados italianos adicionados",
-                "nl": "twee Italiaanse feestdagen toegevoegd",
-                "fr": "deux vacances italiennes ajoutées",
-                "it": "aggiunte due festività italiane",
-                "es": "dos vacaciones italianas agregadas",
-                "pl": "dodano dwa włoskie święta",
-                "zh-cn": "添加了两个意大利假期"
-            },
-            "1.0.17": {
-                "en": "day of freedom added",
-                "de": "Tag der Freiheit hinzugefügt",
-                "ru": "день свободы добавлен",
-                "pt": "dia de liberdade adicionado",
-                "nl": "dag van vrijheid toegevoegd",
-                "fr": "jour de liberté ajouté",
-                "it": "giorno della libertà aggiunto",
-                "es": "día de libertad agregado",
-                "pl": "dodano dzień wolności",
-                "zh-cn": "添加了自由日"
-            },
-            "1.0.16": {
-                "en": "minor fixes",
-                "de": "Kleinere Korrekturen",
-                "ru": "мелкие исправления",
-                "pt": "pequenas correções",
-                "nl": "kleine aanpassingen",
-                "fr": "corrections mineures",
-                "it": "correzioni minori",
-                "es": "correcciones menores",
-                "pl": "drobne poprawki",
-                "zh-cn": "小修"
             },
             "1.0.15": {
                 "en": "Fixed wrong year displayed if holiday is in next year",
@@ -97,18 +77,6 @@
                 "pl": "Naprawiono błędny rok wyświetlany, jeśli wakacje są w przyszłym roku",
                 "zh-cn": "修复了如果明年放假则显示错误的年份"
             },
-            "1.0.14": {
-                "en": "National day in Switzerland added",
-                "de": "Nationalfeiertag in der Schweiz hinzugefügt",
-                "ru": "Добавлен национальный день в Швейцарии",
-                "pt": "Dia nacional na Suíça adicionado",
-                "nl": "Nationale dag in Zwitserland toegevoegd",
-                "fr": "Ajout de la fête nationale en Suisse",
-                "it": "Aggiunto il giorno nazionale in Svizzera",
-                "es": "Día nacional en Suiza agregado",
-                "pl": "Dodano święto narodowe w Szwajcarii",
-                "zh-cn": "添加了瑞士的国庆日"
-            },
             "1.0.13": {
                 "en": "Offsets corrected",
                 "de": "Offsets korrigiert",
@@ -121,51 +89,6 @@
                 "pl": "Poprawione przesunięcia",
                 "zh-cn": "偏移校正"
             },
-            "1.0.12": {
-                "en": "World Children's Day (Thuringia)",
-                "de": "Weltkindertag (Thüringen)",
-                "ru": "Всемирный день защиты детей (Тюрингия)",
-                "pt": "Dia Mundial da Criança (Turíngia)",
-                "nl": "Wereld Kinderdag (Thüringen)",
-                "fr": "Journée mondiale des enfants (Thuringe)",
-                "it": "Giornata mondiale dei bambini (Turingia)",
-                "es": "Día mundial del niño (Turingia)",
-                "pl": "Światowy Dzień Dziecka (Turyngia)",
-                "zh-cn": "世界儿童节（图林根州"
-            },
-            "1.0.11": {
-                "en": "Feast of the Immaculate Conception",
-                "de": "Mariä Empfängnis",
-                "ru": "Праздник Непорочного Зачатия",
-                "pt": "Festa da Imaculada Conceição",
-                "nl": "Feest van de Onbevlekte Ontvangenis",
-                "fr": "Fête de l'Immaculée Conception",
-                "it": "Festa dell'Immacolata Concezione",
-                "es": "Fiesta de la Inmaculada Concepción.",
-                "pl": "Święto Niepokalanego Poczęcia"
-            },
-            "1.0.10": {
-                "en": "Added reformation day for HB,HH,NI,SH",
-                "de": "Reformationstag für HB, HH, NI, SH hinzugefügt",
-                "ru": "Добавлен день реформации для HB, HH, NI, SH",
-                "pt": "Adicionado dia de reforma para HB, HH, NI, SH",
-                "nl": "Hervormingsdag toegevoegd voor HB, HH, NI, SH",
-                "fr": "Jour de réforme ajouté pour HB, HH, NI, SH",
-                "it": "Aggiunto giorno di riforma per HB, HH, NI, SH",
-                "es": "Se agregó el día de la reforma para HB, HH, NI, SH",
-                "pl": "Dodano dzień reformowania dla HB, HH, NI, SH"
-            },
-            "1.0.9": {
-                "en": "Austrian national day added",
-                "de": "Österreichischer Nationalfeiertag hinzugefügt",
-                "ru": "Добавлен австрийский национальный день",
-                "pt": "Dia Nacional Austríaco adicionado",
-                "nl": "Oostenrijkse nationale dag toegevoegd",
-                "fr": "Journée nationale autrichienne ajoutée",
-                "it": "Aggiunta giornata nazionale austriaca",
-                "es": "Día nacional austríaco agregado",
-                "pl": "Dodano austriacki dzień narodowy"
-            },
             "1.0.8": {
                 "en": "firefox scrolling issue fixed",
                 "de": "Firefox-Scroll-Problem behoben",
@@ -177,17 +100,6 @@
                 "es": "problema de desplazamiento de Firefox corregido",
                 "pl": "Naprawiono problem z przewijaniem Firefoxa"
             },
-            "1.0.7": {
-                "en": "design improvements settings window",
-                "de": "Design Verbesserungen Einstellungen Fenster",
-                "ru": "окно настроек улучшений дизайна",
-                "pt": "janela de configurações de melhorias de design",
-                "nl": "ontwerp verbeteringen instellingen venster",
-                "fr": "fenêtre des paramètres d'amélioration de la conception",
-                "it": "finestra delle impostazioni dei miglioramenti di progettazione",
-                "es": "ventana de configuración de mejoras de diseño",
-                "pl": "okno ustawień udoskonaleń"
-            },
             "1.0.6": {
                 "en": "material design completed, Admin 3 ready",
                 "de": "Material Design fertig, Admin 3 fertig",
@@ -198,50 +110,6 @@
                 "it": "completamento del materiale, Admin 3 pronto",
                 "es": "diseño material completado, Admin 3 listo",
                 "pl": "projekt materialny zakończony, Admin 3 gotowy"
-            },
-            "1.0.5": {
-                "en": "checkbox issue fixed",
-                "de": "Checkbox-Problem behoben",
-                "ru": "проблема с флажком исправлена",
-                "pt": "problema na caixa de seleção",
-                "nl": "checkbox probleem opgelost",
-                "fr": "case à cocher problème résolu",
-                "it": "problema della casella di controllo corretto",
-                "es": "problema de casilla de verificación arreglado",
-                "pl": "Naprawiono problem z checkboxem"
-            },
-            "1.0.4": {
-                "en": "versioning issues fixed",
-                "de": "Versionierungsprobleme behoben",
-                "ru": "исправлены проблемы с версией",
-                "pt": "problemas de versão corrigidos",
-                "nl": "versiebeheer problemen opgelost",
-                "fr": "problèmes de versionnement corrigés",
-                "it": "problemi di versione risolti",
-                "es": "Problemas de versionado corregidos",
-                "pl": "Naprawiono problemy z wersjami"
-            },
-            "1.0.3": {
-                "en": "changened english and spanish language",
-                "de": "geänderte englische und spanische Sprache",
-                "ru": "измененный английский и испанский язык",
-                "pt": "língua inglesa e espanhola modificada",
-                "nl": "veranderde Engelse en Spaanse taal",
-                "fr": "Anglais et langue espagnole changés",
-                "it": "lingua inglese e spagnola modificata",
-                "es": "cambio de idioma inglés y español",
-                "pl": "zmiana języka angielskiego i hiszpańskiego"
-            },
-            "1.0.2": {
-                "en": "Readme and Documentation structure",
-                "de": "Liesmich und Dokumentationsstruktur",
-                "ru": "Структура Readme и Documentation",
-                "pt": "Estrutura de Leia-me e Documentação",
-                "nl": "Readme en documentatie structuur",
-                "fr": "Lisez-moi et structure de documentation",
-                "it": "Struttura Leggimi e Documentazione",
-                "es": "Léame y estructura de documentación",
-                "pl": "Struktura Readme i Dokumentacja"
             },
             "1.0.1": {
                 "en": "Translations to de, ru, pt, nl, fr, it, es and pl languages",
@@ -258,11 +126,6 @@
                 "en": "End of beta, nodejs 4 or higher required",
                 "de": "Ende der Beta Phase. Nodejs 4 oder höher nötig",
                 "ru": "End of beta, nodejs 4 or higher required"
-            },
-            "0.4.1": {
-                "en": "Added Kid's Day (01.06) and 'Vatertag'",
-                "de": "Kindertag (01.06) und 'Vatertag' hinzugefügt",
-                "ru": "Added Kid's Day (01.06) and 'Vatertag'"
             }
         },
         "mode": "schedule",

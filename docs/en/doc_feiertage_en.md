@@ -4,6 +4,8 @@
 ## Description
 This adapter delivers date, distance in days to this date and name of the next German holiday. Furthermore it tells if today, tommorw or the day after tommorow is a holiday in Germany.
 
+Fridays after holidays on Thursday can be selected.
+
 ## Datapoints
 ![alt text](img/DatapointsScreenshot.jpg "Screenshot Datapoints")
 

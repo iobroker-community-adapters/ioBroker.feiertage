@@ -37,6 +37,12 @@ NodeJS v10 oder höher wird vorausgesetzt.
 :poland: [Dokumentacja](/docs/en/doc_feiertage_en.md)
 
 ## Changelog
+### 1.0.22 (2021-05-27)
+* (pix) Fridays after holidays on Thursday can be selected (Brückentag)
+
+### 1.0.21 (2021-05-05)
+* (pix) minor code fixes, update news cleaned
+
 ### 1.0.20 (2021-05-05)
 * (pix) connectionType and dataSource added
 
@@ -166,7 +172,8 @@ NodeJS v10 oder höher wird vorausgesetzt.
 * (pix) Adapter created
 
 ## Roadmap
-* Erkennung Brückentage
+* Automatische Erkennung Brückentage
+* Add compact mode
 
 ## License
 
