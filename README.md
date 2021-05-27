@@ -38,7 +38,7 @@ NodeJS v10 oder höher wird vorausgesetzt.
 
 ## Changelog
 ### 1.0.23 (2021-05-27)
-* (pix, crycode) Code improved (timer)
+* (pix, crycode-de) Code improved (timer)
 
 ### 1.0.22 (2021-05-27)
 * (pix) Fridays after holidays on Thursday can be selected (Brückentag)
