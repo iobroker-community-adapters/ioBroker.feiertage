@@ -38,7 +38,7 @@ NodeJS v10 oder höher wird vorausgesetzt.
 
 ## Changelog
 ### 1.0.24 (2021-11-16)
-* (pix) Added Internationaler Frauentag (Berlin)
+* (pix) Added Internationaler Frauentag (Berlin) [#60](https://github.com/Pix---/ioBroker.feiertage/issues/60)
 
 ### 1.0.23 (2021-05-27)
 * (pix, crycode-de) Code improved (timer)
