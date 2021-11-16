@@ -37,18 +37,6 @@
         },
         "version": "1.0.24",
         "news": {
-            "1.0.24": {
-              "en": " Added International Women's Day (Berlin)",
-              "de": " Internationaler Frauentag (Berlin) hinzugefügt",
-              "ru": " Добавлен Международный женский день (Берлин)",
-              "pt": " Adicionado Dia Internacional da Mulher (Berlim)",
-              "nl": " Internationale Vrouwendag (Berlijn) toegevoegd",
-              "fr": " Ajout de la Journée internationale de la femme (Berlin)",
-              "it": " Aggiunta la Giornata internazionale della donna (Berlino)",
-              "es": " Añadido el Día Internacional de la Mujer (Berlín)",
-              "pl": " Dodano Międzynarodowy Dzień Kobiet (Berlin)",
-              "zh-cn": " 添加了国际妇女节（柏林）"
-            },
             "1.0.23": {
               "en": "Code improved (timer)",
               "de": "Code verbessert (Timer)",
