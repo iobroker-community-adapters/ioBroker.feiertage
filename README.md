@@ -41,7 +41,7 @@ NodeJS v10 oder höher wird vorausgesetzt.
 	### __WORK IN PROGRESS__
 -->
 ## Changelog
-### __WORK IN PROGRESS__
+### 1.1.0 (2021-12-26)
 * (bluefox) Formatting
 * (bluefox) fixed error with the events in the next year
 

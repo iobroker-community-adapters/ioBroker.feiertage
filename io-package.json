@@ -1,441 +1,453 @@
 {
-    "common": {
-        "name": "feiertage",
-        "title": "Deutsche Feiertage",
-        "titleLang": {
-            "en": "German holidays",
-            "de": "Deutsche Feiertage",
-            "ru": "Праздники Германии",
-            "pt": "Feriados alemães",
-            "nl": "Duitse feestdagen",
-            "fr": "Vacances allemandes",
-            "it": "Vacanze tedesche",
-            "es": "Vacaciones en Alemania",
-            "pl": "Niemieckie święta"
-        },
-        "desc": {
-            "en": "German Holidays calculates religous, political and calendarial Holidays",
-            "de": "German Holidays berechnet religiöse, politische und kalendarische Feiertage",
-            "ru": "Праздники Германии празднуют религиозные, политические и календарные праздники",
-            "pt": "Feriados alemães calcula feriados religiosos, políticos e do calendário",
-            "nl": "Duitse feestdagen berekent religieuze, politieke en kalendervakanties",
-            "fr": "Vacances allemandes calcule les fêtes religieuses, politiques et calendaires",
-            "it": "Le festività tedesche calcolano le festività religiose, politiche e di calendario",
-            "es": "Vacaciones en Alemania calcula vacaciones religiosas, políticas y de calendario",
-            "pl": "Święta niemieckie obliczają święta religijne, polityczne i kalendarzowe"
-        },
-        "docs": {
-            "en": "docs/en/doc_feiertage_en.md",
-            "de": "docs/de/doc_feiertage_de.md",
-            "ru": "docs/en/doc_feiertage_en.md",
-            "pt": "docs/en/doc_feiertage_en.md",
-            "nl": "docs/en/doc_feiertage_en.md",
-            "fr": "docs/en/doc_feiertage_en.md",
-            "it": "docs/en/doc_feiertage_en.md",
-            "es": "docs/en/doc_feiertage_en.md",
-            "pl": "docs/en/doc_feiertage_en.md"
-        },
-        "version": "1.0.23",
-        "news": {
-            "1.0.23": {
-              "en": "Code improved (timer)",
-              "de": "Code verbessert (Timer)",
-              "ru": "Код улучшен (таймер)",
-              "pt": "Código melhorado (cronômetro)",
-              "nl": "Code verbeterd (timer)",
-              "fr": "Code amélioré (minuterie)",
-              "it": "Codice migliorato (timer)",
-              "es": "Código mejorado (temporizador)",
-              "pl": "Kod poprawiony (timer)",
-              "zh-cn": "代码改进（计时器）"
-            },
-            "1.0.22": {
-                "en": "Fixed bridge days",
-                "de": "Feste Brückentage",
-                "ru": "Фиксированные дни моста",
-                "pt": "Dias de ponte fixos",
-                "nl": "Vaste brugdagen",
-                "fr": "Jours de pont fixes",
-                "it": "Giorni di bridge fissi",
-                "es": "Días de puente fijo",
-                "pl": "Naprawiono dni mostu",
-                "zh-cn": "固定桥梁天数"
-            },
-            "1.0.21": {
-                "en": "minor code changes, update news cleaned",
-                "de": "kleine Änderungen im Code, update Erläuterungen aufgeräumt"
-            },
-            "1.0.19": {
-                "en": "NodeJS 10 or higher required",
-                "de": "NodeJS 10 oder höher erforderlich",
-                "ru": "Требуется NodeJS 10 или выше",
-                "pt": "Necessário NodeJS 10 ou superior",
-                "nl": "NodeJS 10 of hoger vereist",
-                "fr": "NodeJS 10 ou supérieur requis",
-                "it": "Nodo JS 10 o superiore richiesto",
-                "es": "Nodo JS 10 o superior requerido",
-                "pl": "Wymagany NodeJS 10 lub wyższy",
-                "zh-cn": "需要NodeJS 10或更高版本"
-            },
-            "1.0.15": {
-                "en": "Fixed wrong year displayed if holiday is in next year",
-                "de": "Das falsche Jahr wird angezeigt, wenn der Feiertag im nächsten Jahr liegt. Dieser Fehler wurde behoben",
-                "ru": "Исправлено неверное отображение года, если в следующем году",
-                "pt": "Corrigido ano errado exibido se o feriado for no próximo ano",
-                "nl": "Verkeerd jaar weergegeven als vakantie in volgend jaar is",
-                "fr": "Correction de la mauvaise année affichée si les vacances sont l'année prochaine",
-                "it": "Risolto il problema con l'anno sbagliato visualizzato se l'anno prossimo è festivo",
-                "es": "Se corrigió el año incorrecto que se muestra si las vacaciones son el próximo año",
-                "pl": "Naprawiono błędny rok wyświetlany, jeśli wakacje są w przyszłym roku",
-                "zh-cn": "修复了如果明年放假则显示错误的年份"
-            },
-            "1.0.13": {
-                "en": "Offsets corrected",
-                "de": "Offsets korrigiert",
-                "ru": "Смещения исправлены",
-                "pt": "Compensações corrigidas",
-                "nl": "Offsets gecorrigeerd",
-                "fr": "Compensation corrigée",
-                "it": "Offset corretti",
-                "es": "Desplazamientos corregidos",
-                "pl": "Poprawione przesunięcia",
-                "zh-cn": "偏移校正"
-            }
-        },
-        "mode": "schedule",
-        "schedule": "0 0 * * *",
-        "platform": "Javascript/Node.js",
-        "loglevel": "info",
-        "materialize": true,
-        "keywords": [
-            "calendar",
-            "Kalender",
-            "Feiertag",
-            "Feiertage",
-            "Woche",
-            "Jahr",
-            "Tag",
-            "Monat",
-            "holiday"
-        ],
-        "main": "main.js",
-        "authors": [
-            "Pix",
-            "Bluefox"
-        ],
-        "license": "MIT",
-        "readme": "https://github.com/Pix---/ioBroker.feiertage/blob/master/README.md",
-        "icon": "feiertage.png",
-        "extIcon": "https://raw.githubusercontent.com/Pix---/ioBroker.feiertage/master/admin/feiertage.png",
-        "allowInit": true,
-        "type": "date-and-time",
-        "connectionType": "local",
-        "dataSource": "push",
-        "compact": true
+  "common": {
+    "name": "feiertage",
+    "title": "Deutsche Feiertage",
+    "titleLang": {
+      "en": "German holidays",
+      "de": "Deutsche Feiertage",
+      "ru": "Праздники Германии",
+      "pt": "Feriados alemães",
+      "nl": "Duitse feestdagen",
+      "fr": "Vacances allemandes",
+      "it": "Vacanze tedesche",
+      "es": "Vacaciones en Alemania",
+      "pl": "Niemieckie święta"
     },
-    "native": {},
-    "objects": [],
-    "instanceObjects": [
-        {
-            "_id": "heute",
-            "type": "channel",
-            "common": {
-                "role": "day",
-                "name": ""
-            },
-            "native": {}
-        },
-        {
-            "_id": "heute.Name",
-            "type": "state",
-            "common": {
-                "name": "Feiertag heute - Name",
-                "desc": "Welcher Feiertag ist heute?",
-                "type": "string",
-                "read": true,
-                "write": false
-            },
-            "native": {}
-        },
-        {
-            "_id": "heute.boolean",
-            "type": "state",
-            "common": {
-                "name": "Feiertag heute?",
-                "desc": "Ist heute ein Feiertag?",
-                "type": "boolean",
-                "read": true,
-                "write": false
-            },
-            "native": {}
-        },
-        {
-            "_id": "morgen",
-            "type": "channel",
-            "common": {
-                "role": "day",
-                "name": ""
-            },
-            "native": {}
-        },
-        {
-            "_id": "morgen.Name",
-            "type": "state",
-            "common": {
-                "name": "Feiertag morgen - Name",
-                "desc": "Welcher Feiertag ist morgen?",
-                "type": "string",
-                "read": true,
-                "write": false
-            },
-            "native": {}
-        },
-        {
-            "_id": "morgen.boolean",
-            "type": "state",
-            "common": {
-                "name": "Feiertag morgen?",
-                "desc": "Ist morgen ein Feiertag?",
-                "type": "boolean",
-                "read": true,
-                "write": false
-            },
-            "native": {}
-        },
-        {
-            "_id": "uebermorgen",
-            "type": "channel",
-            "common": {
-                "role": "day",
-                "name": ""
-            },
-            "native": {}
-        },
-        {
-            "_id": "uebermorgen.Name",
-            "type": "state",
-            "common": {
-                "name": "Feiertag übermorgen - Name",
-                "desc": "Welcher Feiertag ist übermorgen?",
-                "type": "string",
-                "read": true,
-                "write": false
-            },
-            "native": {}
-        },
-        {
-            "_id": "uebermorgen.boolean",
-            "type": "state",
-            "common": {
-                "name": "Feiertag übermorgen?",
-                "desc": "Ist übermorgen ein Feiertag?",
-                "type": "boolean",
-                "read": true,
-                "write": false
-            },
-            "native": {}
-        },
-        {
-            "_id": "naechster",
-            "type": "channel",
-            "common": {
-                "role": "day",
-                "name": ""
-            },
-            "native": {}
-        },
-        {
-            "_id": "naechster.Name",
-            "type": "state",
-            "common": {
-                "name": "naechster Feiertag - Name",
-                "desc": "Welcher ist der naechste Feiertag?",
-                "type": "string",
-                "read": true,
-                "write": false
-            },
-            "native": {}
-        },
-        {
-            "_id": "naechster.Datum",
-            "type": "state",
-            "common": {
-                "name": "Naechster Feiertag - Datum?",
-                "desc": "Wann ist der naechste Feiertag?",
-                "type": "string",
-                "role": "value.date",
-                "read": true,
-                "write": false
-            },
-            "native": {}
-        },
-        {
-            "_id": "naechster.Dauer",
-            "type": "state",
-            "common": {
-                "name": "Naechster Feiertag - Dauer bis dahin",
-                "desc": "Zahl der Tage bis zum nächsten Feiertag",
-                "type": "number",
-                "unit": "Tage",
-                "role": "value.interval.days",
-                "read": true,
-                "write": false
-            },
-            "native": {}
-        },
-        {
-            "_id": "today",
-            "type": "channel",
-            "common": {
-                "role": "day",
-                "name": ""
-            },
-            "native": {}
-        },
-        {
-            "_id": "today.name",
-            "type": "state",
-            "common": {
-                "name": "Holiday today - Name",
-                "desc": "What the holiday is today?",
-                "type": "string",
-                "role": "state",
-                "read": true,
-                "write": false
-            },
-            "native": {}
-        },
-        {
-            "_id": "today.boolean",
-            "type": "state",
-            "common": {
-                "name": "Holiday today?",
-                "desc": "Is the holiday today?",
-                "type": "boolean",
-                "role": "state",
-                "read": true,
-                "write": false
-            },
-            "native": {}
-        },
-        {
-            "_id": "tomorrow",
-            "type": "channel",
-            "common": {
-                "role": "day",
-                "name": ""
-            },
-            "native": {}
-        },
-        {
-            "_id": "tomorrow.name",
-            "type": "state",
-            "common": {
-                "name": "Holiday tomorrow - Name",
-                "desc": "What the holiday is tomorrow?",
-                "type": "string",
-                "role": "state",
-                "read": true,
-                "write": false
-            },
-            "native": {}
-        },
-        {
-            "_id": "tomorrow.boolean",
-            "type": "state",
-            "common": {
-                "name": "Holiday tomorrow?",
-                "desc": "Is the holiday tomorrow?",
-                "type": "boolean",
-                "role": "state",
-                "read": true,
-                "write": false
-            },
-            "native": {}
-        },
-        {
-            "_id": "aftertomorrow",
-            "type": "channel",
-            "common": {
-                "role": "day",
-                "name": ""
-            },
-            "native": {}
-        },
-        {
-            "_id": "aftertomorrow.name",
-            "type": "state",
-            "common": {
-                "name": "Holiday after tomorrow - Name",
-                "desc": "What the holiday is in the day after tomorrow?",
-                "type": "string",
-                "role": "state",
-                "read": true,
-                "write": false
-            },
-            "native": {}
-        },
-        {
-            "_id": "aftertomorrow.boolean",
-            "type": "state",
-            "common": {
-                "name": "Holiday in the day after tomorrow?",
-                "desc": "Is the holiday in the day after tomorrow?",
-                "type": "boolean",
-                "role": "state",
-                "read": true,
-                "write": false
-            },
-            "native": {}
-        },
-        {
-            "_id": "next",
-            "type": "channel",
-            "common": {
-                "role": "day",
-                "name": ""
-            },
-            "native": {}
-        },
-        {
-            "_id": "next.name",
-            "type": "state",
-            "common": {
-                "name": "Next holiday - Name",
-                "desc": "What the holiday is next?",
-                "type": "string",
-                "role": "state",
-                "read": true,
-                "write": false
-            },
-            "native": {}
-        },
-        {
-            "_id": "next.date",
-            "type": "state",
-            "common": {
-                "name": "Next holiday - date?",
-                "desc": "When is the next holiday?",
-                "type": "string",
-                "role": "value.date",
-                "read": true,
-                "write": false
-            },
-            "native": {}
-        },
-        {
-            "_id": "next.duration",
-            "type": "state",
-            "common": {
-                "name": "Duration till next holiday",
-                "desc": "Number of days till next holiday",
-                "type": "number",
-                "role": "value.interval.days",
-                "unit": "days",
-                "read": true,
-                "write": false
-            },
-            "native": {}
-        }
-    ]
+    "desc": {
+      "en": "German Holidays calculates religous, political and calendarial Holidays",
+      "de": "German Holidays berechnet religiöse, politische und kalendarische Feiertage",
+      "ru": "Праздники Германии празднуют религиозные, политические и календарные праздники",
+      "pt": "Feriados alemães calcula feriados religiosos, políticos e do calendário",
+      "nl": "Duitse feestdagen berekent religieuze, politieke en kalendervakanties",
+      "fr": "Vacances allemandes calcule les fêtes religieuses, politiques et calendaires",
+      "it": "Le festività tedesche calcolano le festività religiose, politiche e di calendario",
+      "es": "Vacaciones en Alemania calcula vacaciones religiosas, políticas y de calendario",
+      "pl": "Święta niemieckie obliczają święta religijne, polityczne i kalendarzowe"
+    },
+    "docs": {
+      "en": "docs/en/doc_feiertage_en.md",
+      "de": "docs/de/doc_feiertage_de.md",
+      "ru": "docs/en/doc_feiertage_en.md",
+      "pt": "docs/en/doc_feiertage_en.md",
+      "nl": "docs/en/doc_feiertage_en.md",
+      "fr": "docs/en/doc_feiertage_en.md",
+      "it": "docs/en/doc_feiertage_en.md",
+      "es": "docs/en/doc_feiertage_en.md",
+      "pl": "docs/en/doc_feiertage_en.md"
+    },
+    "version": "1.1.0",
+    "news": {
+      "1.1.0": {
+        "en": "Formatting\nfixed error with the events in the next year",
+        "de": "Formatierung\nFehler bei den Ereignissen im nächsten Jahr behoben",
+        "ru": "Форматирование\nисправлена ошибка с событиями в следующем году",
+        "pt": "Formatação\ncorrigiu o erro com os eventos no próximo ano",
+        "nl": "opmaak\nfout opgelost met de gebeurtenissen in het volgende jaar",
+        "fr": "Mise en page\nerreur corrigée avec les événements de l'année suivante",
+        "it": "formattazione\ncorretto errore con gli eventi del prossimo anno",
+        "es": "Formateo\nSe corrigió el error con los eventos del próximo año.",
+        "pl": "Formatowanie\nnaprawiony błąd ze zdarzeniami w przyszłym roku",
+        "zh-cn": "格式化\n修复了明年事件的错误"
+      },
+      "1.0.23": {
+        "en": "Code improved (timer)",
+        "de": "Code verbessert (Timer)",
+        "ru": "Код улучшен (таймер)",
+        "pt": "Código melhorado (cronômetro)",
+        "nl": "Code verbeterd (timer)",
+        "fr": "Code amélioré (minuterie)",
+        "it": "Codice migliorato (timer)",
+        "es": "Código mejorado (temporizador)",
+        "pl": "Kod poprawiony (timer)",
+        "zh-cn": "代码改进（计时器）"
+      },
+      "1.0.22": {
+        "en": "Fixed bridge days",
+        "de": "Feste Brückentage",
+        "ru": "Фиксированные дни моста",
+        "pt": "Dias de ponte fixos",
+        "nl": "Vaste brugdagen",
+        "fr": "Jours de pont fixes",
+        "it": "Giorni di bridge fissi",
+        "es": "Días de puente fijo",
+        "pl": "Naprawiono dni mostu",
+        "zh-cn": "固定桥梁天数"
+      },
+      "1.0.21": {
+        "en": "minor code changes, update news cleaned",
+        "de": "kleine Änderungen im Code, update Erläuterungen aufgeräumt"
+      },
+      "1.0.19": {
+        "en": "NodeJS 10 or higher required",
+        "de": "NodeJS 10 oder höher erforderlich",
+        "ru": "Требуется NodeJS 10 или выше",
+        "pt": "Necessário NodeJS 10 ou superior",
+        "nl": "NodeJS 10 of hoger vereist",
+        "fr": "NodeJS 10 ou supérieur requis",
+        "it": "Nodo JS 10 o superiore richiesto",
+        "es": "Nodo JS 10 o superior requerido",
+        "pl": "Wymagany NodeJS 10 lub wyższy",
+        "zh-cn": "需要NodeJS 10或更高版本"
+      },
+      "1.0.15": {
+        "en": "Fixed wrong year displayed if holiday is in next year",
+        "de": "Das falsche Jahr wird angezeigt, wenn der Feiertag im nächsten Jahr liegt. Dieser Fehler wurde behoben",
+        "ru": "Исправлено неверное отображение года, если в следующем году",
+        "pt": "Corrigido ano errado exibido se o feriado for no próximo ano",
+        "nl": "Verkeerd jaar weergegeven als vakantie in volgend jaar is",
+        "fr": "Correction de la mauvaise année affichée si les vacances sont l'année prochaine",
+        "it": "Risolto il problema con l'anno sbagliato visualizzato se l'anno prossimo è festivo",
+        "es": "Se corrigió el año incorrecto que se muestra si las vacaciones son el próximo año",
+        "pl": "Naprawiono błędny rok wyświetlany, jeśli wakacje są w przyszłym roku",
+        "zh-cn": "修复了如果明年放假则显示错误的年份"
+      },
+      "1.0.13": {
+        "en": "Offsets corrected",
+        "de": "Offsets korrigiert",
+        "ru": "Смещения исправлены",
+        "pt": "Compensações corrigidas",
+        "nl": "Offsets gecorrigeerd",
+        "fr": "Compensation corrigée",
+        "it": "Offset corretti",
+        "es": "Desplazamientos corregidos",
+        "pl": "Poprawione przesunięcia",
+        "zh-cn": "偏移校正"
+      }
+    },
+    "mode": "schedule",
+    "schedule": "0 0 * * *",
+    "platform": "Javascript/Node.js",
+    "loglevel": "info",
+    "materialize": true,
+    "keywords": [
+      "calendar",
+      "Kalender",
+      "Feiertag",
+      "Feiertage",
+      "Woche",
+      "Jahr",
+      "Tag",
+      "Monat",
+      "holiday"
+    ],
+    "main": "main.js",
+    "authors": [
+      "Pix",
+      "Bluefox"
+    ],
+    "license": "MIT",
+    "readme": "https://github.com/Pix---/ioBroker.feiertage/blob/master/README.md",
+    "icon": "feiertage.png",
+    "extIcon": "https://raw.githubusercontent.com/Pix---/ioBroker.feiertage/master/admin/feiertage.png",
+    "allowInit": true,
+    "type": "date-and-time",
+    "connectionType": "local",
+    "dataSource": "push",
+    "compact": true
+  },
+  "native": {},
+  "objects": [],
+  "instanceObjects": [
+    {
+      "_id": "heute",
+      "type": "channel",
+      "common": {
+        "role": "day",
+        "name": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "heute.Name",
+      "type": "state",
+      "common": {
+        "name": "Feiertag heute - Name",
+        "desc": "Welcher Feiertag ist heute?",
+        "type": "string",
+        "read": true,
+        "write": false
+      },
+      "native": {}
+    },
+    {
+      "_id": "heute.boolean",
+      "type": "state",
+      "common": {
+        "name": "Feiertag heute?",
+        "desc": "Ist heute ein Feiertag?",
+        "type": "boolean",
+        "read": true,
+        "write": false
+      },
+      "native": {}
+    },
+    {
+      "_id": "morgen",
+      "type": "channel",
+      "common": {
+        "role": "day",
+        "name": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "morgen.Name",
+      "type": "state",
+      "common": {
+        "name": "Feiertag morgen - Name",
+        "desc": "Welcher Feiertag ist morgen?",
+        "type": "string",
+        "read": true,
+        "write": false
+      },
+      "native": {}
+    },
+    {
+      "_id": "morgen.boolean",
+      "type": "state",
+      "common": {
+        "name": "Feiertag morgen?",
+        "desc": "Ist morgen ein Feiertag?",
+        "type": "boolean",
+        "read": true,
+        "write": false
+      },
+      "native": {}
+    },
+    {
+      "_id": "uebermorgen",
+      "type": "channel",
+      "common": {
+        "role": "day",
+        "name": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "uebermorgen.Name",
+      "type": "state",
+      "common": {
+        "name": "Feiertag übermorgen - Name",
+        "desc": "Welcher Feiertag ist übermorgen?",
+        "type": "string",
+        "read": true,
+        "write": false
+      },
+      "native": {}
+    },
+    {
+      "_id": "uebermorgen.boolean",
+      "type": "state",
+      "common": {
+        "name": "Feiertag übermorgen?",
+        "desc": "Ist übermorgen ein Feiertag?",
+        "type": "boolean",
+        "read": true,
+        "write": false
+      },
+      "native": {}
+    },
+    {
+      "_id": "naechster",
+      "type": "channel",
+      "common": {
+        "role": "day",
+        "name": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "naechster.Name",
+      "type": "state",
+      "common": {
+        "name": "naechster Feiertag - Name",
+        "desc": "Welcher ist der naechste Feiertag?",
+        "type": "string",
+        "read": true,
+        "write": false
+      },
+      "native": {}
+    },
+    {
+      "_id": "naechster.Datum",
+      "type": "state",
+      "common": {
+        "name": "Naechster Feiertag - Datum?",
+        "desc": "Wann ist der naechste Feiertag?",
+        "type": "string",
+        "role": "value.date",
+        "read": true,
+        "write": false
+      },
+      "native": {}
+    },
+    {
+      "_id": "naechster.Dauer",
+      "type": "state",
+      "common": {
+        "name": "Naechster Feiertag - Dauer bis dahin",
+        "desc": "Zahl der Tage bis zum nächsten Feiertag",
+        "type": "number",
+        "unit": "Tage",
+        "role": "value.interval.days",
+        "read": true,
+        "write": false
+      },
+      "native": {}
+    },
+    {
+      "_id": "today",
+      "type": "channel",
+      "common": {
+        "role": "day",
+        "name": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "today.name",
+      "type": "state",
+      "common": {
+        "name": "Holiday today - Name",
+        "desc": "What the holiday is today?",
+        "type": "string",
+        "role": "state",
+        "read": true,
+        "write": false
+      },
+      "native": {}
+    },
+    {
+      "_id": "today.boolean",
+      "type": "state",
+      "common": {
+        "name": "Holiday today?",
+        "desc": "Is the holiday today?",
+        "type": "boolean",
+        "role": "state",
+        "read": true,
+        "write": false
+      },
+      "native": {}
+    },
+    {
+      "_id": "tomorrow",
+      "type": "channel",
+      "common": {
+        "role": "day",
+        "name": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "tomorrow.name",
+      "type": "state",
+      "common": {
+        "name": "Holiday tomorrow - Name",
+        "desc": "What the holiday is tomorrow?",
+        "type": "string",
+        "role": "state",
+        "read": true,
+        "write": false
+      },
+      "native": {}
+    },
+    {
+      "_id": "tomorrow.boolean",
+      "type": "state",
+      "common": {
+        "name": "Holiday tomorrow?",
+        "desc": "Is the holiday tomorrow?",
+        "type": "boolean",
+        "role": "state",
+        "read": true,
+        "write": false
+      },
+      "native": {}
+    },
+    {
+      "_id": "aftertomorrow",
+      "type": "channel",
+      "common": {
+        "role": "day",
+        "name": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "aftertomorrow.name",
+      "type": "state",
+      "common": {
+        "name": "Holiday after tomorrow - Name",
+        "desc": "What the holiday is in the day after tomorrow?",
+        "type": "string",
+        "role": "state",
+        "read": true,
+        "write": false
+      },
+      "native": {}
+    },
+    {
+      "_id": "aftertomorrow.boolean",
+      "type": "state",
+      "common": {
+        "name": "Holiday in the day after tomorrow?",
+        "desc": "Is the holiday in the day after tomorrow?",
+        "type": "boolean",
+        "role": "state",
+        "read": true,
+        "write": false
+      },
+      "native": {}
+    },
+    {
+      "_id": "next",
+      "type": "channel",
+      "common": {
+        "role": "day",
+        "name": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "next.name",
+      "type": "state",
+      "common": {
+        "name": "Next holiday - Name",
+        "desc": "What the holiday is next?",
+        "type": "string",
+        "role": "state",
+        "read": true,
+        "write": false
+      },
+      "native": {}
+    },
+    {
+      "_id": "next.date",
+      "type": "state",
+      "common": {
+        "name": "Next holiday - date?",
+        "desc": "When is the next holiday?",
+        "type": "string",
+        "role": "value.date",
+        "read": true,
+        "write": false
+      },
+      "native": {}
+    },
+    {
+      "_id": "next.duration",
+      "type": "state",
+      "common": {
+        "name": "Duration till next holiday",
+        "desc": "Number of days till next holiday",
+        "type": "number",
+        "role": "value.interval.days",
+        "unit": "days",
+        "read": true,
+        "write": false
+      },
+      "native": {}
+    }
+  ]
 }
