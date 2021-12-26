@@ -104,7 +104,7 @@
         },
         "mode": "schedule",
         "schedule": "0 0 * * *",
-        "platform": "javascript/Node.js",
+        "platform": "Javascript/Node.js",
         "loglevel": "info",
         "materialize": true,
         "keywords": [
@@ -131,12 +131,7 @@
         "type": "date-and-time",
         "connectionType": "local",
         "dataSource": "push",
-        "config": {
-            "width": 650,
-            "height": 680,
-            "minWidth": 650,
-            "minHeight": 300
-        }
+        "compact": true
     },
     "native": {},
     "objects": [],

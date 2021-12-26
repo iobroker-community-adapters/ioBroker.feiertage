@@ -36,7 +36,15 @@ NodeJS v10 oder höher wird vorausgesetzt.
 
 :poland: [Dokumentacja](/docs/en/doc_feiertage_en.md)
 
+<!--
+	Placeholder for the next version (at the beginning of the line):
+	### __WORK IN PROGRESS__
+-->
 ## Changelog
+### __WORK IN PROGRESS__
+* (bluefox) Formatting
+* (bluefox) fixed error with the events in the next year
+
 ### 1.0.23 (2021-05-27)
 * (pix, crycode-de) Code improved (timer)
 
