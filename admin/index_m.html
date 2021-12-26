@@ -27,10 +27,10 @@
 
         <!-- you have to define 2 functions in the global scope: -->
         <script type="text/javascript">
-            	
+
             function load(settings, onChange) {
                 var text =  '';
-                    
+
                 for (var d in holidays) {
                     text += '        <tr>\n';
                     text += '            <td>';
@@ -41,19 +41,22 @@
                     text += '            <td>' + _(holidays[d][systemLang]) + ' <span class="grey-text">' + (holidays[d]['comment_' + systemLang] ? _(holidays[d]['comment_' + systemLang]) : '') + '</span></td>\n';
                     text += '            <td class="translate">' + _(holidays[d].desc) + '</td>\n'; // Todo: wird nicht übersetzt (religion, political, ...)
                     text += '        </tr>\n';
-                    
-                    if (settings['enable_' + d] === undefined) settings['enable_' + d] = holidays[d].enabled;
+
+                    if (settings['enable_' + d] === undefined) {
+                        settings['enable_' + d] = holidays[d].enabled;
+                    }
                 }
-                
+
                 $('#config').append(text);
 
                 for (var key in settings) {
-                    if ($('#' + key).attr('type') == 'checkbox') {
-                        $('#' + key).prop('checked', settings[key]).change(function () {
+                    var $key = $('#' + key);
+                    if ($key.attr('type') === 'checkbox') {
+                        $key.prop('checked', settings[key]).change(function () {
                             onChange();
                         });
                     } else {
-                        $('#' + key).val(settings[key]).change(function () {
+                        $key.val(settings[key]).change(function () {
                             onChange();
                         }).keyup(function () {
                             $(this).trigger('change');
@@ -62,13 +65,13 @@
                 }
                 onChange(false);
             }
-    
+
             function save(callback) {
                 var obj = {};
                 $('.value').each(function () {
                     var $this = $(this);
                     var id = $this.attr('id');
-                    if ($this.attr('type') == 'checkbox') {
+                    if ($this.attr('type') === 'checkbox') {
                         obj[id] = $this.prop('checked');
                     } else {
                         obj[id] = $this.val();
@@ -76,10 +79,10 @@
                 });
                 callback(obj);
             }
-    
+
         </script>
     </head>
-    
+
     <body>
         <div class="m adapter-container">
             <div class="row" style="height: 100%;">
@@ -91,7 +94,7 @@
                         <!-- weitere Tabs hier einfügen -->
                     </ul>
                 </div>
-                <div id="tab-main" class="col s12 page">    
+                <div id="tab-main" class="col s12 page">
                     <div class="row">
                         <div class="col s12 m4 l2">
                             <img src="feiertage.png" class="logo">
@@ -108,7 +111,7 @@
                                         <th class="translate">Description</th>
                                      </tr>
                                 </thead>
-                                <tbody id="config" class="translate">             
+                                <tbody id="config" class="translate">
                                     <!-- Tabelle wird von Load-Funktion eingefügt -->
                                 </tbody>
                             <table>
