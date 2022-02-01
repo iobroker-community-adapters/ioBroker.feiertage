@@ -35,8 +35,20 @@
       "es": "docs/en/doc_feiertage_en.md",
       "pl": "docs/en/doc_feiertage_en.md"
     },
-    "version": "1.1.0",
+    "version": "1.1.1",
     "news": {
+      "1.1.1": {
+        "en": "Dependencies updated",
+        "de": "Abhängigkeiten aktualisiert",
+        "ru": "Зависимости обновлены",
+        "pt": "Dependências atualizadas",
+        "nl": "Afhankelijkheden bijgewerkt",
+        "fr": "Dépendances mises à jour",
+        "it": "Dipendenze aggiornate",
+        "es": "Dependencias actualizadas",
+        "pl": "Zaktualizowano zależności",
+        "zh-cn": "已更新依赖项"
+      },
       "1.1.0": {
         "en": "Formatting\nfixed error with the events in the next year",
         "de": "Formatierung\nFehler bei den Ereignissen im nächsten Jahr behoben",
