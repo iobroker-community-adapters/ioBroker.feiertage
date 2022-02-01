@@ -191,7 +191,7 @@ NodeJS v10 oder höher wird vorausgesetzt.
 
 ## License
 
-Copyright (c) 2021 pix
+Copyright (c) 2022 pix
 
 The MIT License (MIT)
 
