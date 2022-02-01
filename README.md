@@ -41,6 +41,9 @@ NodeJS v10 oder höher wird vorausgesetzt.
 	### __WORK IN PROGRESS__
 -->
 ## Changelog
+### 1.1.1 (2022-02-01)
+* (alcalzone, pix) Dependencies updated
+ 
 ### 1.1.0 (2021-12-26)
 * (bluefox) Formatting
 * (bluefox) fixed error with the events in the next year
