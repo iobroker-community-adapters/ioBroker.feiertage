@@ -155,7 +155,12 @@
     "type": "date-and-time",
     "connectionType": "local",
     "dataSource": "push",
-    "compact": true
+    "compact": true,
+    "dependencies": [
+      {
+        "js-controller": ">=3.3.22"
+      }
+    ]
   },
   "native": {},
   "objects": [],

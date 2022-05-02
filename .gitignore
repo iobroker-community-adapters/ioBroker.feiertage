@@ -2,3 +2,7 @@
 node_modules
 tmp
 /package-lock.json
+
+
+# ioBroker dev-server
+.dev-server/
