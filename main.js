@@ -25,6 +25,7 @@ class Feiertage extends utils.Adapter {
         const data = await this.getForeignObjectAsync('system.config');
         if (data && data.common) {
             this.lang = data.common.language;
+            this.log.debug(`Using language "${this.lang}" from system config`);
         }
 
         await this.checkHolidays();
@@ -34,8 +35,8 @@ class Feiertage extends utils.Adapter {
     // check the holidays
     async checkHolidays() {
         if (!this.readSettings()) {
-            this.log.error('No one holiday is enabled');
-            return;
+            this.log.error('No holiday is enabled');
+            return false;
         }
 
         const now = new Date();
@@ -48,7 +49,7 @@ class Feiertage extends utils.Adapter {
         // Day of the year
         const todayStart = new Date(now.setHours(0, 0, 0, 0));
         const newYear = new Date(year, 0, 1);
-        const diffDays = (todayStart - newYear) / ONE_DAY_MS + 1;
+        const diffDays = (todayStart.getTime() - newYear.getTime()) / ONE_DAY_MS + 1;
         let day = Math.ceil(diffDays);
         const todayIs = Math.ceil(diffDays);
 
@@ -137,20 +138,24 @@ class Feiertage extends utils.Adapter {
             }
         } while (!hd);
 
-        this.log.info('adapter feiertage objects written');
+        this.log.info('all objects written');
+
+        return true;
     }
 
     readSettings() {
         let isOneEnabled = false;
+
         for (const h in holidays) {
-            holidays[h].enabled = (this.config['enable_' + h] !== undefined) ?
-                (this.config['enable_' + h] === true || this.config['enable_' + h] === 'true') :
+            holidays[h].enabled = (this.config[`enable_${h}`] !== undefined) ?
+                (this.config[`enable_${h}`] === true || this.config[`enable_${h}`] === 'true') :
                 holidays[h].enabled;
 
             if (holidays[h].enabled) {
                 isOneEnabled = true;
             }
         }
+
         return isOneEnabled;
     }
 
@@ -172,7 +177,7 @@ class Feiertage extends utils.Adapter {
                 if (holidays[h].april30Offset !== 'undefined') {
                     const newYear = new Date(year, 0, 1);
                     const april30date = new Date(year, 3, 30, 0, 0, 0);
-                    const april30num = Math.ceil((april30date - newYear) / ONE_DAY_MS + 1);
+                    const april30num = Math.ceil((april30date.getTime() - newYear.getTime()) / ONE_DAY_MS + 1);
                     const mday = april30num - april30date.getDay() + holidays[h].april30Offset;
 
                     if (mday === day) {
@@ -182,7 +187,7 @@ class Feiertage extends utils.Adapter {
                 if (holidays[h].michaelisOffset !== 'undefined') {
                     const newYear = new Date(year, 0, 1);
                     const michaelisDate = new Date(year, 8, 29, 0, 0, 0);
-                    const michaelisNum = Math.ceil((michaelisDate - newYear) / ONE_DAY_MS + 1);
+                    const michaelisNum = Math.ceil((michaelisDate.getTime() - newYear.getTime()) / ONE_DAY_MS + 1);
 
                     if ((michaelisNum + (holidays[h].michaelisOffset - michaelisDate.getDay())) === day) {
                         return holidays[h][_lang] + (holidays[h]['comment_' + _lang] ? ' ' + holidays[h]['comment_' + _lang] : '');
@@ -196,11 +201,11 @@ class Feiertage extends utils.Adapter {
 
     getDateFromYearsDay(day, year) {
         const dayMs = (day - 1) * ONE_DAY_MS; // Day of the year in ms from 01.01 00:00:00
-        const newYear = new Date(year, 0, 1, 0, 0, 0, 0);     // This year 01.01 00:00:00
+        const newYear = new Date(year, 0, 1, 0, 0, 0, 0); // This year 01.01 00:00:00
         const newYearMs = newYear.getTime();
         const date = new Date();
 
-        date.setTime(newYearMs + dayMs);                      // Add to current New year the ms
+        date.setTime(newYearMs + dayMs); // Add to current New year the ms
         return date;
     }
 
@@ -221,7 +226,7 @@ class Feiertage extends utils.Adapter {
         const newYear = new Date(year, 0, 1);
         const christmas1 = new Date(year, 11, 25, 12, 0, 0);
         const advent4date = new Date(christmas1.getTime() - ((!christmas1.getDay() ? 7 : christmas1.getDay()) * ONE_DAY_MS));
-        return Math.ceil((advent4date.setHours(0, 0, 0, 0) - newYear) / ONE_DAY_MS + 1);
+        return Math.ceil((advent4date.setHours(0, 0, 0, 0) - newYear.getTime()) / ONE_DAY_MS + 1);
     }
 
     onUnload(callback) {
