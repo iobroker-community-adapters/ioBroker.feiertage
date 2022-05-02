@@ -1,40 +1,6 @@
 {
   "common": {
     "name": "feiertage",
-    "title": "Deutsche Feiertage",
-    "titleLang": {
-      "en": "German holidays",
-      "de": "Deutsche Feiertage",
-      "ru": "Праздники Германии",
-      "pt": "Feriados alemães",
-      "nl": "Duitse feestdagen",
-      "fr": "Vacances allemandes",
-      "it": "Vacanze tedesche",
-      "es": "Vacaciones en Alemania",
-      "pl": "Niemieckie święta"
-    },
-    "desc": {
-      "en": "German Holidays calculates religous, political and calendarial Holidays",
-      "de": "German Holidays berechnet religiöse, politische und kalendarische Feiertage",
-      "ru": "Праздники Германии празднуют религиозные, политические и календарные праздники",
-      "pt": "Feriados alemães calcula feriados religiosos, políticos e do calendário",
-      "nl": "Duitse feestdagen berekent religieuze, politieke en kalendervakanties",
-      "fr": "Vacances allemandes calcule les fêtes religieuses, politiques et calendaires",
-      "it": "Le festività tedesche calcolano le festività religiose, politiche e di calendario",
-      "es": "Vacaciones en Alemania calcula vacaciones religiosas, políticas y de calendario",
-      "pl": "Święta niemieckie obliczają święta religijne, polityczne i kalendarzowe"
-    },
-    "docs": {
-      "en": "docs/en/doc_feiertage_en.md",
-      "de": "docs/de/doc_feiertage_de.md",
-      "ru": "docs/en/doc_feiertage_en.md",
-      "pt": "docs/en/doc_feiertage_en.md",
-      "nl": "docs/en/doc_feiertage_en.md",
-      "fr": "docs/en/doc_feiertage_en.md",
-      "it": "docs/en/doc_feiertage_en.md",
-      "es": "docs/en/doc_feiertage_en.md",
-      "pl": "docs/en/doc_feiertage_en.md"
-    },
     "version": "1.1.1",
     "news": {
       "1.1.1": {
@@ -126,11 +92,32 @@
         "zh-cn": "偏移校正"
       }
     },
-    "mode": "schedule",
-    "schedule": "0 0 * * *",
-    "platform": "Javascript/Node.js",
-    "loglevel": "info",
-    "materialize": true,
+    "titleLang": {
+      "en": "German holidays",
+      "de": "Deutsche Feiertage",
+      "ru": "Праздники Германии",
+      "pt": "Feriados alemães",
+      "nl": "Duitse feestdagen",
+      "fr": "Vacances allemandes",
+      "it": "Vacanze tedesche",
+      "es": "Vacaciones en Alemania",
+      "pl": "Niemieckie święta"
+    },
+    "desc": {
+      "en": "German Holidays calculates religous, political and calendarial Holidays",
+      "de": "German Holidays berechnet religiöse, politische und kalendarische Feiertage",
+      "ru": "Праздники Германии празднуют религиозные, политические и календарные праздники",
+      "pt": "Feriados alemães calcula feriados religiosos, políticos e do calendário",
+      "nl": "Duitse feestdagen berekent religieuze, politieke en kalendervakanties",
+      "fr": "Vacances allemandes calcule les fêtes religieuses, politiques et calendaires",
+      "it": "Le festività tedesche calcolano le festività religiose, politiche e di calendario",
+      "es": "Vacaciones en Alemania calcula vacaciones religiosas, políticas y de calendario",
+      "pl": "Święta niemieckie obliczają święta religijne, polityczne i kalendarzowe"
+    },
+    "authors": [
+      "Pix",
+      "Bluefox"
+    ],
     "keywords": [
       "calendar",
       "Kalender",
@@ -142,20 +129,37 @@
       "Monat",
       "holiday"
     ],
-    "main": "main.js",
-    "authors": [
-      "Pix",
-      "Bluefox"
-    ],
     "license": "MIT",
-    "readme": "https://github.com/Pix---/ioBroker.feiertage/blob/master/README.md",
+    "platform": "Javascript/Node.js",
     "icon": "feiertage.png",
     "extIcon": "https://raw.githubusercontent.com/Pix---/ioBroker.feiertage/master/admin/feiertage.png",
+    "enabled": true,
+    "readme": "https://github.com/Pix---/ioBroker.feiertage/blob/master/README.md",
+    "loglevel": "info",
+    "mode": "schedule",
     "allowInit": true,
+    "schedule": "0 0 * * *",
     "type": "date-and-time",
+    "compact": true,
     "connectionType": "local",
     "dataSource": "push",
-    "compact": true
+    "materialize": true,
+    "docs": {
+      "en": "docs/en/doc_feiertage_en.md",
+      "de": "docs/de/doc_feiertage_de.md",
+      "ru": "docs/en/doc_feiertage_en.md",
+      "pt": "docs/en/doc_feiertage_en.md",
+      "nl": "docs/en/doc_feiertage_en.md",
+      "fr": "docs/en/doc_feiertage_en.md",
+      "it": "docs/en/doc_feiertage_en.md",
+      "es": "docs/en/doc_feiertage_en.md",
+      "pl": "docs/en/doc_feiertage_en.md"
+    },
+    "dependencies": [
+      {
+        "js-controller": ">=3.3.22"
+      }
+    ]
   },
   "native": {},
   "objects": [],

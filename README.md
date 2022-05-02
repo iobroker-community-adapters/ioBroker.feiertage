@@ -36,11 +36,14 @@ NodeJS v10 oder höher wird vorausgesetzt.
 
 :poland: [Dokumentacja](/docs/en/doc_feiertage_en.md)
 
-<!--
-	Placeholder for the next version (at the beginning of the line):
-	### __WORK IN PROGRESS__
--->
 ## Changelog
+<!--
+  Placeholder for the next version (at the beginning of the line):
+  ### **WORK IN PROGRESS**
+-->
+### **WORK IN PROGRESS**
+* (klein0r) Dependencies updated
+
 ### 1.1.1 (2022-02-01)
 * (alcalzone, pix) Dependencies updated
  
