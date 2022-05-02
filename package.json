@@ -33,9 +33,9 @@
     "@alcalzone/release-script": "^3.5.8",
     "@alcalzone/release-script-plugin-iobroker": "^3.5.8",
     "@alcalzone/release-script-plugin-license": "^3.5.8",
-    "gulp": "^4.0.2",
-    "mocha": "^10.0.0",
-    "chai": "^4.3.6"
+    "@iobroker/adapter-dev": "^1.0.0",
+    "chai": "^4.3.6",
+    "mocha": "^10.0.0"
   },
   "bugs": {
     "url": "https://github.com/Pix---/ioBroker.feiertage/issues"
