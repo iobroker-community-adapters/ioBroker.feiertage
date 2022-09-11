@@ -3,17 +3,13 @@
 
 ![Number of Installations](http://iobroker.live/badges/feiertage-installed.svg) ![Number of Installations](http://iobroker.live/badges/feiertage-stable.svg) [![NPM version](http://img.shields.io/npm/v/iobroker.feiertage.svg)](https://www.npmjs.com/package/iobroker.feiertage)
 [![Downloads](https://img.shields.io/npm/dm/iobroker.feiertage.svg)](https://www.npmjs.com/package/iobroker.feiertage)
-[![Tests](https://travis-ci.org/Pix---/ioBroker.feiertage.svg?branch=master)](https://travis-ci.org/Pix---/ioBroker.feiertage)
-[![Open Issues](http://githubbadges.herokuapp.com/Pix---/ioBroker.feiertage/issues.svg)](http://github.com/Pix---/ioBroker.feiertage/issues)
-[![Known Vulnerabilities](https://snyk.io/test/github/Pix---/ioBroker.feiertage/badge.svg?targetFile=package.json)](https://snyk.io/test/github/Pix---/ioBroker.feiertage?targetFile=package.json)
-
 [![NPM](https://nodei.co/npm/iobroker.feiertage.png?downloads=true)](https://nodei.co/npm/iobroker.feiertage/)
 
 **Tests:**
 
-Linux/Mac: [![Travis-CI](http://img.shields.io/travis/Pix---/ioBroker.feiertage/master.svg)](https://travis-ci.org/Pix---/ioBroker.feiertage)
+Linux/Mac: [![Travis-CI](http://img.shields.io/travis/iobroker-community-adapters/ioBroker.feiertage/master.svg)](https://travis-ci.org/iobroker-community-adapters/ioBroker.feiertage)
 
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/Pix---/ioBroker.feiertage?branch=master&svg=true)](https://ci.appveyor.com/project/Pix---/ioBroker-feiertage/)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/iobroker-community-adapters/ioBroker.feiertage?branch=master&svg=true)](https://ci.appveyor.com/project/iobroker-community-adapters/ioBroker-feiertage/)
 
 NodeJS v10 oder höher wird vorausgesetzt.
 
