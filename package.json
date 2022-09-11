@@ -10,7 +10,7 @@
     "Apollon77",
     "BuZZy1337"
   ],
-  "homepage": "https://github.com/Pix---/ioBroker.feiertage",
+  "homepage": "https://github.com/iobroker-community-adapters/ioBroker.feiertage",
   "license": "MIT",
   "keywords": [
     "ioBroker",
@@ -24,7 +24,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/Pix---/ioBroker.feiertage"
+    "url": "https://github.com/iobroker-community-adapters/ioBroker.feiertage"
   },
   "engines": {
     "node": ">=10.0.0"
@@ -78,7 +78,7 @@
     "release-major": "release-script major --yes"
   },
   "bugs": {
-    "url": "https://github.com/Pix---/ioBroker.feiertage/issues"
+    "url": "https://github.com/iobroker-community-adapters/ioBroker.feiertage/issues"
   },
   "readmeFilename": "README.md"
 }
