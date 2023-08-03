@@ -246,7 +246,7 @@ const holidays = {
         ru: 'национальный праздник в швейцарии',
         desc: 'political',
         date: '01.08',
-        offset: 211
+        offset: 212
     },
     friedensfest: {
         enabled: false,
