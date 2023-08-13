@@ -3,19 +3,6 @@
     "name": "feiertage",
     "version": "1.1.2",
     "news": {
-      "1.1.2": {
-        "en": "changed: Swiss national holiday has been corrected (# 164)\nchanged: Adapter required node 16 now\nchanged: Testing has been changed to support node 16, 18 and 20\nchanged: Dependencies have been updated\nDependencies updated",
-        "de": "geändert: Der Schweizer Nationalfeiertag wurde korrigiert (# 164)\ngeändert: Adapter erforderlicher Knoten 16 jetzt\ngeändert: Die Prüfung wurde in den Stützknoten 16, 18 und 20 geändert\ngeändert: Abhängigkeiten wurden aktualisiert\nAusgaben aktualisiert",
-        "ru": "изменено: Швейцарский национальный праздник был исправлен (# 164)\nизменено: Адаптер требуется нод 16 сейчас\nизменено: Испытание было изменено для поддержки ноды 16, 18 и 20\nизменено: В зависимости были обновлены\nОбновленные зависимости",
-        "pt": "mudou: Feriado nacional suíço foi corrigido (# 164)\nmudou: Adaptador necessário nó 16 agora\nmudou: Os testes foram alterados para suportar o nó 16, 18 e 20\nmudou: As dependências foram atualizadas\nDependências atualizadas",
-        "nl": "_ Zwitserse feestdag is gecorrigeerd\n_ Adapter vereist node 16 nu\n_ De test is veranderd om node 16 te ondersteunen, 18 en 20\n_ Afhankelijkheid\nAfhankelijkheid geüpdateerd",
-        "fr": "changé: Les vacances nationales suisses ont été corrigées (# 164)\nchangé: Adaptateur requis node 16 maintenant\nchangé: Les essais ont été modifiés pour soutenir les numéros 16, 18 et 20\nchangé: Les dépendances ont été mises à jour\nDépendances mises à jour",
-        "it": "cambiato: La festa nazionale svizzera è stata corretta (# 164)\ncambiato: Adattatore nodo richiesto 16 ora\ncambiato: I test sono stati modificati per supportare il nodo 16, 18 e 20\ncambiato: Le dipendenze sono state aggiornate\nDipendenze aggiornate",
-        "es": "cambiado: Se han corregido las vacaciones nacionales suizas (# 164)\ncambiado: Adaptador requerido nodo 16 ahora\ncambiado: Los exámenes se han modificado para apoyar los nodos 16, 18 y 20\ncambiado: Se han actualizado las dependencias\nActualización de las dependencias",
-        "pl": "zmieniono: Szwajcarskie święta państwowe zostały poprawione (# 164)\nzmieniono: Adapter potrzebował węzła 16 lat\nzmieniono: Testy zostały zmienione na węzeł 16 i 20\nzmieniono: Zależności zostały zaktualizowane\nZależności",
-        "uk": "змінено: Швейцарське національне свято було виправлено (# 164)\nзмінено: Адаптер потрібного вузла 16 тепер\nзмінено: Тестування було змінено для підтримки вузлів 16, 18 та 20\nзмінено: Оновлено залежність\nЗалежність оновлено",
-        "zh-cn": "修改: 瑞士全国节日已修改(第164号)\n修改: 现在不需要16个补给\n修改: 试验已改变,以支持第16、18和20号。\n修改: 已更新了属地\nB. 更新的属地"
-      },
       "1.1.1": {
         "en": "Dependencies updated",
         "de": "Abhängigkeiten aktualisiert",
