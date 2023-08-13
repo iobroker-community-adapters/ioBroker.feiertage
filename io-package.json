@@ -82,26 +82,30 @@
       }
     },
     "titleLang": {
-      "en": "German holidays",
-      "de": "Deutsche Feiertage",
-      "ru": "Праздники Германии",
-      "pt": "Feriados alemães",
-      "nl": "Duitse feestdagen",
-      "fr": "Vacances allemandes",
-      "it": "Vacanze tedesche",
-      "es": "Vacaciones en Alemania",
-      "pl": "Niemieckie święta"
+        "en": "Holidays (AT, CH, DE, IT)",
+        "de": "Feiertage (AT, CH, DE, IT)",
+        "ru": "Праздники (AT, CH, DE, IT)",
+        "pt": "Férias (AT, CH, DE, IT)",
+        "nl": "Vakantie (AT, CH, DE, IT)",
+        "fr": "Vacances (AT, CH, DE, IT)",
+        "it": "Vacanze (AT, CH, DE, IT)",
+        "es": "Vacaciones (AT, CH, DE, IT)",
+        "pl": "Holidays (AT, CH, DE) (ang.)",
+        "uk": "Відпочинок (AT, CH, DE, IT)",
+        "zh-cn": "Holidays(AT,CH,DE,信息技术)"
     },
     "desc": {
-      "en": "German Holidays calculates religous, political and calendarial Holidays",
-      "de": "German Holidays berechnet religiöse, politische und kalendarische Feiertage",
-      "ru": "Праздники Германии празднуют религиозные, политические и календарные праздники",
-      "pt": "Feriados alemães calcula feriados religiosos, políticos e do calendário",
-      "nl": "Duitse feestdagen berekent religieuze, politieke en kalendervakanties",
-      "fr": "Vacances allemandes calcule les fêtes religieuses, politiques et calendaires",
-      "it": "Le festività tedesche calcolano le festività religiose, politiche e di calendario",
-      "es": "Vacaciones en Alemania calcula vacaciones religiosas, políticas y de calendario",
-      "pl": "Święta niemieckie obliczają święta religijne, polityczne i kalendarzowe"
+        "en": "Holidays calculates religous, political and calendarial Holidays\n",
+        "de": "Feiertage berechnet religiöse, politische und kalenderische Feiertage\n",
+        "ru": "Праздники рассчитывают на возмятные, политические и календарные праздники\n",
+        "pt": "Feriados calculam feriados religous, políticos e calendários\n",
+        "nl": "Vakantie berekent religieus, politiek en kalenderdag\n",
+        "fr": "Vacances calcule religous, vacances politiques et calendrier\n",
+        "it": "Le vacanze calcolano le festività religose, politiche e calendariali\n",
+        "es": "Vacaciones calcula fiestas religiosas, políticas y calendario\n",
+        "pl": "Dziesięć świątecznych oblicza religousa, święta polityczne i kalendarzowe\n",
+        "uk": "Свята розраховує релігійні, політичні та календарні свята\n",
+        "zh-cn": "霍达斯计算了宗教、政治和日历的霍达斯\n"
     },
     "authors": [
       "Pix",

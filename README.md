@@ -37,7 +37,8 @@ NodeJS v10 oder höher wird vorausgesetzt.
     Placeholder for the next version (at the beginning of the line):
     ### **WORK IN PROGRESS**
 -->
-### 1.1.2 (2023-08-13)
+### **WORK IN PROGRESS**
+* (mcm1957) changed: missing translations have been added
 * (mcm1957) changed: Swiss national holiday has been corrected (# 164)
 * (mcm1957) changed: Adapter required node 16 now
 * (mcm1957) changed: Testing has been changed to support node 16, 18 and 20
