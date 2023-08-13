@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "feiertage",
-    "version": "1.1.2",
+    "version": "1.1.3",
     "news": {
+      "1.1.3": {
+        "en": "changed: missing translations have been added\nchanged: Swiss national holiday has been corrected (# 164)\nchanged: Adapter required node 16 now\nchanged: Testing has been changed to support node 16, 18 and 20\nchanged: Dependencies have been updated\nDependencies updated",
+        "de": "geändert: fehlende übersetzungen wurden hinzugefügt\ngeändert: Der Schweizer Nationalfeiertag wurde korrigiert (# 164)\ngeändert: Adapter erfordert nun Node 16\ngeändert: Die Prüfung wurde auf Node 16, 18 und 20 geändert\ngeändert: Abhängigkeiten wurden aktualisiert\nAusgaben aktualisiert",
+        "ru": "изменено: добавлены недостающие переводы\nизменено: Швейцарский национальный праздник был исправлен (# 164)\nизменено: Адаптер требуется нод 16 сейчас\nизменено: Испытание было изменено для поддержки ноды 16, 18 и 20\nизменено: В зависимости были обновлены\nОбновленные зависимости",
+        "pt": "alterado: traduções em falta foram adicionadas\nmudou: Feriado nacional suíço foi corrigido (# 164)\nmudou: Adaptador necessário nó 16 agora\nmudou: Os testes foram alterados para suportar o nó 16, 18 e 20\nmudou: As dependências foram atualizadas\nDependências atualizadas",
+        "nl": "vertaling:\n_ Zwitserse feestdag is gecorrigeerd\n_ Adapter vereist node 16 nu\n_ De test is veranderd om node 16 te ondersteunen, 18 en 20\n_ Afhankelijkheid\nAfhankelijkheid geüpdateerd",
+        "fr": "changé: les traductions manquantes ont été ajoutées\nchangé: Les vacances nationales suisses ont été corrigées (# 164)\nchangé: Adaptateur requis node 16 maintenant\nchangé: Les essais ont été modifiés pour soutenir les numéros 16, 18 et 20\nchangé: Les dépendances ont été mises à jour\nDépendances mises à jour",
+        "it": "modificato: sono state aggiunte traduzioni mancanti\ncambiato: La festa nazionale svizzera è stata corretta (# 164)\ncambiato: Adattatore nodo richiesto 16 ora\ncambiato: I test sono stati modificati per supportare il nodo 16, 18 e 20\ncambiato: Le dipendenze sono state aggiornate\nDipendenze aggiornate",
+        "es": "cambiado: traducciones faltantes se han añadido\ncambiado: Se han corregido las vacaciones nacionales suizas (# 164)\ncambiado: Adaptador requerido nodo 16 ahora\ncambiado: Los exámenes se han modificado para apoyar los nodos 16, 18 y 20\ncambiado: Se han actualizado las dependencias\nActualización de las dependencias",
+        "pl": "zmienione zostały tłumaczenia:\nzmieniono: Szwajcarskie święta państwowe zostały poprawione (# 164)\nzmieniono: Adapter potrzebował węzła 16 lat\nzmieniono: Testy zostały zmienione na węzeł 16 i 20\nzmieniono: Zależności zostały zaktualizowane\nZależności",
+        "uk": "змінено: додано відсутні переклади\nзмінено: Швейцарське національне свято було виправлено (# 164)\nзмінено: Адаптер потрібного вузла 16 тепер\nзмінено: Тестування було змінено для підтримки вузлів 16, 18 та 20\nзмінено: Оновлено залежність\nЗалежність оновлено",
+        "zh-cn": "修改:已增加出缺翻译。\n修改: 瑞士全国节日已修改(第164号)\n修改: 现在不需要16个补给\n修改: 试验已改变,以支持第16、18和20号。\n修改: 已更新了属地\nB. 更新的属地"
+      },
       "1.1.1": {
         "en": "Dependencies updated",
         "de": "Abhängigkeiten aktualisiert",
@@ -69,30 +82,30 @@
       }
     },
     "titleLang": {
-        "en": "Holidays (AT, CH, DE, IT)",
-        "de": "Feiertage (AT, CH, DE, IT)",
-        "ru": "Праздники (AT, CH, DE, IT)",
-        "pt": "Férias (AT, CH, DE, IT)",
-        "nl": "Vakantie (AT, CH, DE, IT)",
-        "fr": "Vacances (AT, CH, DE, IT)",
-        "it": "Vacanze (AT, CH, DE, IT)",
-        "es": "Vacaciones (AT, CH, DE, IT)",
-        "pl": "Holidays (AT, CH, DE) (ang.)",
-        "uk": "Відпочинок (AT, CH, DE, IT)",
-        "zh-cn": "Holidays(AT,CH,DE,信息技术)"
+      "en": "Holidays (AT, CH, DE, IT)",
+      "de": "Feiertage (AT, CH, DE, IT)",
+      "ru": "Праздники (AT, CH, DE, IT)",
+      "pt": "Férias (AT, CH, DE, IT)",
+      "nl": "Vakantie (AT, CH, DE, IT)",
+      "fr": "Vacances (AT, CH, DE, IT)",
+      "it": "Vacanze (AT, CH, DE, IT)",
+      "es": "Vacaciones (AT, CH, DE, IT)",
+      "pl": "Holidays (AT, CH, DE) (ang.)",
+      "uk": "Відпочинок (AT, CH, DE, IT)",
+      "zh-cn": "Holidays(AT,CH,DE,信息技术)"
     },
     "desc": {
-        "en": "Holidays calculates religous, political and calendarial Holidays\n",
-        "de": "Feiertage berechnet religiöse, politische und kalenderische Feiertage\n",
-        "ru": "Праздники рассчитывают на возмятные, политические и календарные праздники\n",
-        "pt": "Feriados calculam feriados religous, políticos e calendários\n",
-        "nl": "Vakantie berekent religieus, politiek en kalenderdag\n",
-        "fr": "Vacances calcule religous, vacances politiques et calendrier\n",
-        "it": "Le vacanze calcolano le festività religose, politiche e calendariali\n",
-        "es": "Vacaciones calcula fiestas religiosas, políticas y calendario\n",
-        "pl": "Dziesięć świątecznych oblicza religousa, święta polityczne i kalendarzowe\n",
-        "uk": "Свята розраховує релігійні, політичні та календарні свята\n",
-        "zh-cn": "霍达斯计算了宗教、政治和日历的霍达斯\n"
+      "en": "Holidays calculates religous, political and calendarial Holidays\n",
+      "de": "Feiertage berechnet religiöse, politische und kalenderische Feiertage\n",
+      "ru": "Праздники рассчитывают на возмятные, политические и календарные праздники\n",
+      "pt": "Feriados calculam feriados religous, políticos e calendários\n",
+      "nl": "Vakantie berekent religieus, politiek en kalenderdag\n",
+      "fr": "Vacances calcule religous, vacances politiques et calendrier\n",
+      "it": "Le vacanze calcolano le festività religose, politiche e calendariali\n",
+      "es": "Vacaciones calcula fiestas religiosas, políticas y calendario\n",
+      "pl": "Dziesięć świątecznych oblicza religousa, święta polityczne i kalendarzowe\n",
+      "uk": "Свята розраховує релігійні, політичні та календарні свята\n",
+      "zh-cn": "霍达斯计算了宗教、政治和日历的霍达斯\n"
     },
     "authors": [
       "Pix",
