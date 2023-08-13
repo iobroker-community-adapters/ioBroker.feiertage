@@ -37,7 +37,7 @@ NodeJS v10 oder höher wird vorausgesetzt.
     Placeholder for the next version (at the beginning of the line):
     ### **WORK IN PROGRESS**
 -->
-### **WORK IN PROGRESS**
+### 1.1.2 (2023-08-13)
 * (mcm1957) changed: Swiss national holiday has been corrected (# 164)
 * (mcm1957) changed: Adapter required node 16 now
 * (mcm1957) changed: Testing has been changed to support node 16, 18 and 20
@@ -46,7 +46,7 @@ NodeJS v10 oder höher wird vorausgesetzt.
 
 ### 1.1.1 (2022-02-01)
 * (alcalzone, pix) Dependencies updated
- 
+
 ### 1.1.0 (2021-12-26)
 * (bluefox) Formatting
 * (bluefox) fixed error with the events in the next year
@@ -187,7 +187,6 @@ NodeJS v10 oder höher wird vorausgesetzt.
 
 ### 0.0.1 (2016-04-26)
 * (pix) Adapter created
-
 
 ## License
 
