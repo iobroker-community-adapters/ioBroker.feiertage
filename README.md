@@ -188,13 +188,10 @@ NodeJS v10 oder höher wird vorausgesetzt.
 ### 0.0.1 (2016-04-26)
 * (pix) Adapter created
 
-## Roadmap
-* Automatische Erkennung Brückentage
-* Add compact mode
 
 ## License
 
-Copyright (c) 2022 pix
+Copyright (c) 2023 iobroker-community-adapters
 
 The MIT License (MIT)
 
