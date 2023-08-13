@@ -38,8 +38,10 @@ NodeJS v10 oder höher wird vorausgesetzt.
     ### **WORK IN PROGRESS**
 -->
 ### **WORK IN PROGRESS**
--   (mcm1957) changed: Testing has been changed to support node 16, 18 and 20
--   (mcm1957) changed: Dependencies have been updated
+* (mcm1957) changed: Swiss national holiday has been corrected (# 164)
+* (mcm1957) changed: Adapter required node 16 now
+* (mcm1957) changed: Testing has been changed to support node 16, 18 and 20
+* (mcm1957) changed: Dependencies have been updated
 * (klein0r) Dependencies updated
 
 ### 1.1.1 (2022-02-01)
