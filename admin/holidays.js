@@ -228,9 +228,9 @@ const holidays = {
         ru: 'Праздник Тела и Крови Христовых',
         desc: 'religion',
         easterOffset: 60,
-        comment_en: '(BW, BY, HE, NW, RP, SL(SA, TH not everywhere))',
-        comment_de: '(BW, BY, HE, NW, RP, SL(SA, TH nicht überall))',
-        comment_ru: '(BW, BY, HE, NW, RP, SL(SA, TH не везде))'
+        comment_en: '(BW, BY, HE, NW, RP, SL(SN, TH not everywhere))',
+        comment_de: '(BW, BY, HE, NW, RP, SL(SN, TH nicht überall))',
+        comment_ru: '(BW, BY, HE, NW, RP, SL(SN, TH не везде))'
     },
     flbrueckentag: {
         enabled: false,
@@ -323,9 +323,9 @@ const holidays = {
         desc: 'religion',
         date: '31.10',
         offset: 303,
-        comment_en: '(BB, HB, HH, MV, NI, SA, SH, ST, TH)',
-        comment_de: '(BB, HB, HH, MV, NI, SA, SH, ST, TH)',
-        comment_ru: '(BB, HB, HH, MV, NI, SA, SH, ST, TH)'
+        comment_en: '(BB, HB, HH, MV, NI, SN, SH, ST, TH)',
+        comment_de: '(BB, HB, HH, MV, NI, SN, SH, ST, TH)',
+        comment_ru: '(BB, HB, HH, MV, NI, SN, SH, ST, TH)'
     },
     allerheiligen: {
         enabled: true,
