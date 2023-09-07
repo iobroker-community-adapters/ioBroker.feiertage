@@ -37,7 +37,7 @@ NodeJS v10 oder höher wird vorausgesetzt.
     Placeholder for the next version (at the beginning of the line):
     ### **WORK IN PROGRESS**
 -->
-### **WORK IN PROGRESS**
+### 1.1.4 (2023-09-07)
 * (Quarkmax) Fixed description for Saxony from SA to SN
 
 ### 1.1.3 (2023-08-13)

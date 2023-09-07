@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "feiertage",
-    "version": "1.1.3",
+    "version": "1.1.4",
     "news": {
+      "1.1.4": {
+        "en": "Fixed description for Saxony from SA to SN",
+        "de": "Beschreibung für Sachsen von SA nach SN",
+        "ru": "Фиксированное описание для Saxony от SA до SN",
+        "pt": "Descrição fixa para a Saxónia de SA a SN",
+        "nl": "Beschrijving van Saxony tot SN",
+        "fr": "Description fixe pour la Saxe de SA à SN",
+        "it": "Descrizione fissa per Sassonia da SA a SN",
+        "es": "Descripción fija para Sajonia de SA a SN",
+        "pl": "Opis Saksonii z SA do SN",
+        "uk": "Фіксований опис для Саксонії від SA до SN",
+        "zh-cn": "SA至SNaxony的固定说明"
+      },
       "1.1.3": {
         "en": "changed: missing translations have been added\nchanged: Swiss national holiday has been corrected (# 164)\nchanged: Adapter required node 16 now\nchanged: Testing has been changed to support node 16, 18 and 20\nchanged: Dependencies have been updated\nDependencies updated",
         "de": "geändert: fehlende übersetzungen wurden hinzugefügt\ngeändert: Der Schweizer Nationalfeiertag wurde korrigiert (# 164)\ngeändert: Adapter erfordert nun Node 16\ngeändert: Die Prüfung wurde auf Node 16, 18 und 20 geändert\ngeändert: Abhängigkeiten wurden aktualisiert\nAusgaben aktualisiert",
@@ -67,18 +80,6 @@
       "1.0.21": {
         "en": "minor code changes, update news cleaned",
         "de": "kleine Änderungen im Code, update Erläuterungen aufgeräumt"
-      },
-      "1.0.19": {
-        "en": "NodeJS 10 or higher required",
-        "de": "NodeJS 10 oder höher erforderlich",
-        "ru": "Требуется NodeJS 10 или выше",
-        "pt": "Necessário NodeJS 10 ou superior",
-        "nl": "NodeJS 10 of hoger vereist",
-        "fr": "NodeJS 10 ou supérieur requis",
-        "it": "Nodo JS 10 o superiore richiesto",
-        "es": "Nodo JS 10 o superior requerido",
-        "pl": "Wymagany NodeJS 10 lub wyższy",
-        "zh-cn": "需要NodeJS 10或更高版本"
       }
     },
     "titleLang": {
