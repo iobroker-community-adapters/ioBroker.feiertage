@@ -37,6 +37,9 @@ NodeJS v10 oder höher wird vorausgesetzt.
     Placeholder for the next version (at the beginning of the line):
     ### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+* (Quarkmax) Fixed description for Saxony from SA to SN
+
 ### 1.1.3 (2023-08-13)
 * (mcm1957) changed: missing translations have been added
 * (mcm1957) changed: Swiss national holiday has been corrected (# 164)
@@ -191,7 +194,7 @@ NodeJS v10 oder höher wird vorausgesetzt.
 
 ## License
 
-Copyright (c) 2023 iobroker-community-adapters
+Copyright (c) 2016-2023 iobroker-community-adapters
 
 The MIT License (MIT)
 
