@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "feiertage",
-    "version": "1.1.4",
+    "version": "1.2.0",
     "news": {
+      "1.2.0": {
+        "en": "Adapter requires node.js 18 and js-controller >= 5 now\nDependencies have been updated",
+        "de": "Adapter benötigt node.js 18 und js-controller >= 5 jetzt\nAbhängigkeiten wurden aktualisiert",
+        "ru": "Адаптер требует node.js 18 и js-controller >= 5 сейчас\nЗависимость обновлена",
+        "pt": "Adapter requer node.js 18 e js-controller >= 5 agora\nAs dependências foram atualizadas",
+        "nl": "Adapter vereist node.js 18 en js-controller Nu 5\nAfhankelijkheden zijn bijgewerkt",
+        "fr": "Adaptateur nécessite node.js 18 et js-controller >= 5 maintenant\nLes dépendances ont été actualisées",
+        "it": "Adattatore richiede node.js 18 e js-controller >= 5 ora\nLe dipendenze sono state aggiornate",
+        "es": "Adaptador requiere node.js 18 y js-controller √= 5 ahora\nSe han actualizado las dependencias",
+        "pl": "Adapter wymaga node.js 18 i sterownika js- > = 5 teraz\nZaktualizowano zależności",
+        "uk": "Адаптер вимагає node.js 18 і js-controller >= 5 тепер\nЗалежність було оновлено",
+        "zh-cn": "适配器需要节点.js 18和js控制器 QQ 现在5号\n依赖关系已更新"
+      },
       "1.1.4": {
         "en": "Fixed description for Saxony from SA to SN",
         "de": "Beschreibung für Sachsen von SA nach SN",
@@ -76,10 +89,6 @@
         "es": "Días de puente fijo",
         "pl": "Naprawiono dni mostu",
         "zh-cn": "固定桥梁天数"
-      },
-      "1.0.21": {
-        "en": "minor code changes, update news cleaned",
-        "de": "kleine Änderungen im Code, update Erläuterungen aufgeräumt"
       }
     },
     "titleLang": {
