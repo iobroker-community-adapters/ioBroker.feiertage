@@ -110,7 +110,8 @@
     },
     "authors": [
       "Pix",
-      "Bluefox"
+      "Bluefox",
+      "mcm1957 <mcm57@gmx.at>"
     ],
     "keywords": [
       "calendar",
@@ -123,13 +124,17 @@
       "Monat",
       "holiday"
     ],
-    "license": "MIT",
+    "licenseInformation": {
+      "license": "MIT",
+      "type": "free"
+    },
     "platform": "Javascript/Node.js",
     "icon": "feiertage.png",
     "extIcon": "https://raw.githubusercontent.com/iobroker-community-adapters/ioBroker.feiertage/master/admin/feiertage.png",
     "enabled": true,
     "readme": "https://github.com/iobroker-community-adapters/ioBroker.feiertage/blob/master/README.md",
     "loglevel": "info",
+    "tier": 2,
     "mode": "schedule",
     "allowInit": true,
     "schedule": "0 0 * * *",
@@ -151,7 +156,7 @@
     },
     "dependencies": [
       {
-        "js-controller": ">=3.3.22"
+        "js-controller": ">=5.0.0"
       }
     ]
   },
