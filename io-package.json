@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "feiertage",
-    "version": "1.2.0",
+    "version": "1.2.1",
     "news": {
+      "1.2.1": {
+        "en": "2.1. has been incorrectly considered to be an holiday. This has been fixed. [#289, #132]\nDependencies have been updated",
+        "de": "2.1. wurde unrichtiger Weise als Feiertag angesehen. Das wurde behoben. [#289, #132]\nAbhängigkeiten wurden aktualisiert",
+        "ru": "2.1. ошибочно считается праздником. Это было исправлено. [#289, #132]\nЗависимость обновлена",
+        "pt": "2.1. foi considerada incorretamente como umas férias. Isto foi corrigido. [#289, #132]\nAs dependências foram atualizadas",
+        "nl": "2.1. ten onrechte als vakantie wordt beschouwd. Dit is opgelost. [#289, #132]\nAfhankelijkheden zijn bijgewerkt",
+        "fr": "2.1. a été incorrectement considéré comme un jour férié. Ça a été réparé. [#289, #132]\nLes dépendances ont été actualisées",
+        "it": "2.1. è stato considerato erroneamente una vacanza. Questo è stato risolto. [#289, #132]\nLe dipendenze sono state aggiornate",
+        "es": "2.1. ha sido considerada incorrectamente como una fiesta. Esto ha sido arreglado. [#289, #132]\nSe han actualizado las dependencias",
+        "pl": "2.1. zostało błędnie uznane za wakacje. To zostało naprawione. [# 289, # 132]\nZaktualizowano zależności",
+        "uk": "2.1. Некоректно вважається святом. Це було виправлено. [#289, #132]\nЗалежність було оновлено",
+        "zh-cn": "2.1. 被错误地视为假日。 这已经解决了。 [#289,#132] (中文(简体) )\n依赖关系已更新"
+      },
       "1.2.0": {
         "en": "Adapter requires node.js 18 and js-controller >= 5 now\nDependencies have been updated",
         "de": "Adapter benötigt node.js 18 und js-controller >= 5 jetzt\nAbhängigkeiten wurden aktualisiert",
