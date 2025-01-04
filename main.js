@@ -91,7 +91,7 @@ class Feiertage extends utils.Adapter {
         let datommoEaster = easter;
         let datommoAdvent4 = advent4;
         if (datommo > 365 + isLeap) {
-            datommo = 1;
+            datommo = 2;
         }
         if (datommo < todayIs) {
             datommoYear++;
