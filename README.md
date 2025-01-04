@@ -37,6 +37,10 @@ NodeJS v10 oder höher wird vorausgesetzt.
     Placeholder for the next version (at the beginning of the line):
     ### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+* (Diginix) 2.1. has been incorrectly considered to be an holiday. This has been fixed. [#289, #132]
+* (mcm1957) Dependencies have been updated
+
 ### 1.2.0 (2024-04-05)
 * (mcm1957) Adapter requires node.js 18 and js-controller >= 5 now
 * (mcm1957) Dependencies have been updated
