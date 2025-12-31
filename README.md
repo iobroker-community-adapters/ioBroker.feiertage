@@ -207,7 +207,7 @@ NodeJS v10 oder höher wird vorausgesetzt.
 
 ## License
 
-Copyright (c) 2016-2025 iobroker-community-adapters <iobroker-community-adapters@gmx.de>
+Copyright (c) 2016-2026 iobroker-community-adapters <iobroker-community-adapters@gmx.de>
 
 The MIT License (MIT)
 
