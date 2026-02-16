@@ -38,9 +38,10 @@ NodeJS v10 oder höher wird vorausgesetzt.
     ### **WORK IN PROGRESS**
 -->
 ### **WORK IN PROGRESS**
+- (mcm1957) Adapter requires node.js >= 20 now
 - (copilot) Adapter requires js-controller >= 6.0.11 now
 - (copilot) Adapter requires admin >= 7.6.17 now
-* (copilot) **CI/CD**: Updated GitHub Copilot instructions template from version 0.4.0 to 0.4.2
+- (mcm1957) Dependencies have been updated
 
 ### 1.2.1 (2025-01-04)
 * (Diginix) 2.1. has been incorrectly considered to be an holiday. This has been fixed. [#289, #132]
