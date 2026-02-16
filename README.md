@@ -42,6 +42,7 @@ NodeJS v10 oder höher wird vorausgesetzt.
 - (copilot) Adapter requires js-controller >= 6.0.11 now
 - (copilot) Adapter requires admin >= 7.6.17 now
 - (mcm1957) Dependencies have been updated
+- (copilot) **CI/CD**: Migrated to ESLint 9 with @iobroker/eslint-config for improved code quality and standardization
 
 ### 1.2.1 (2025-01-04)
 * (Diginix) 2.1. has been incorrectly considered to be an holiday. This has been fixed. [#289, #132]
