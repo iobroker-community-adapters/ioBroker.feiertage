@@ -3,12 +3,12 @@
 const holidays = {
     neujahr: {
         enabled: true,
-        en: 'New Year\'s Day',
+        en: "New Year's Day",
         de: 'Neujahr',
         ru: 'Новый Год',
         desc: 'calender',
         date: '01.01',
-        offset: 0
+        offset: 0,
     },
     dreikoenige: {
         enabled: true,
@@ -20,22 +20,22 @@ const holidays = {
         offset: 5,
         comment_en: '(BW, BY, ST)',
         comment_de: '(BW, BY, ST)',
-        comment_ru: '(BW, BY, ST)'
+        comment_ru: '(BW, BY, ST)',
     },
     weiberfastnacht: {
         enabled: true,
-        en: 'Old Maids\' Day',
+        en: "Old Maids' Day",
         de: 'Weiberfastnacht',
         ru: 'ба́бий четве́рг',
         desc: 'calender',
-        easterOffset: -52
+        easterOffset: -52,
     },
     wfbrueckentag: {
         enabled: false,
         en: 'Bridge Day after holiday',
         de: 'Brückentag nach Weiberfastnacht',
         desc: 'bridge day',
-        easterOffset: -51
+        easterOffset: -51,
     },
     rosenmontag: {
         enabled: true,
@@ -43,7 +43,7 @@ const holidays = {
         de: 'Rosenmontag',
         ru: 'Розовый понедельник',
         desc: 'calender',
-        easterOffset: -48
+        easterOffset: -48,
     },
     faschingsdienstag: {
         enabled: true,
@@ -51,7 +51,7 @@ const holidays = {
         de: 'Faschingsdienstag',
         ru: '???',
         desc: 'calender',
-        easterOffset: -47
+        easterOffset: -47,
     },
     aschermittwoch: {
         enabled: true,
@@ -59,25 +59,25 @@ const holidays = {
         de: 'Aschermittwoch',
         ru: 'Пе́пельная среда́',
         desc: 'calender',
-        easterOffset: -46
+        easterOffset: -46,
     },
     valentinstag: {
         enabled: false,
-        en: 'Valentine\'s Day',
+        en: "Valentine's Day",
         de: 'Valentinstag',
         ru: 'Валенти́нов день',
         desc: 'calender',
         date: '14.02',
-        offset: 44
+        offset: 44,
     },
     weltfrauentag: {
         enabled: false,
-        en: 'International Women\'s Day',
+        en: "International Women's Day",
         de: 'Weltfrauentag',
         ru: 'междунаро́дный же́нский день',
         desc: 'political',
         date: '08.03',
-        offset: 66
+        offset: 66,
     },
     palmsonntag: {
         enabled: false,
@@ -85,7 +85,7 @@ const holidays = {
         de: 'Palmsonntag',
         ru: 'Ве́рбное Воскресе́нье',
         desc: 'religion',
-        easterOffset: -7
+        easterOffset: -7,
     },
     gruendonnerstag: {
         enabled: false,
@@ -93,7 +93,7 @@ const holidays = {
         de: 'Gründonnerstag',
         ru: 'Вели́кий четве́рг',
         desc: 'religion',
-        easterOffset: -3
+        easterOffset: -3,
     },
     karfreitag: {
         enabled: true,
@@ -101,7 +101,7 @@ const holidays = {
         de: 'Karfreitag',
         ru: 'Великая пятница',
         desc: 'religion',
-        easterOffset: -2
+        easterOffset: -2,
     },
     ostersonntag: {
         enabled: true,
@@ -109,7 +109,7 @@ const holidays = {
         de: 'Ostersonntag',
         ru: 'Католическая пасха - Воскресение',
         desc: 'religion',
-        easterOffset: 0
+        easterOffset: 0,
     },
     ostermontag: {
         enabled: true,
@@ -117,7 +117,7 @@ const holidays = {
         de: 'Ostermontag',
         ru: 'Католическая пасха - Понедельник',
         desc: 'religion',
-        easterOffset: 1
+        easterOffset: 1,
     },
     itatderbefreiung: {
         enabled: false,
@@ -126,7 +126,7 @@ const holidays = {
         ru: 'день освобождения (Италия)',
         desc: 'calender',
         date: '25.04',
-        offset: 114
+        offset: 114,
     },
     walpurgisnacht: {
         enabled: false,
@@ -135,7 +135,7 @@ const holidays = {
         ru: '???',
         desc: 'calender',
         date: '30.04',
-        offset: 119
+        offset: 119,
     },
     maifeiertag: {
         enabled: true,
@@ -144,7 +144,7 @@ const holidays = {
         ru: 'День Труда',
         desc: 'political',
         date: '01.05',
-        offset: 120
+        offset: 120,
     },
     tderbefreiung: {
         enabled: false,
@@ -153,7 +153,7 @@ const holidays = {
         ru: 'день освобождения (новые федеральные страны)',
         desc: 'political',
         date: '08.05',
-        offset: 127
+        offset: 127,
     },
     chimmelfahrt: {
         enabled: false,
@@ -161,31 +161,31 @@ const holidays = {
         de: 'Christi Himmelfahrt (Vatertag)',
         ru: 'Католическое Вознесение ',
         desc: 'religion',
-        easterOffset: 39
+        easterOffset: 39,
     },
     chbrueckentag: {
         enabled: false,
         en: 'Bridge Day after holiday',
         de: 'Brückentag nach Chr. Himmelfahrt',
         desc: 'bridge day',
-        easterOffset: 40
+        easterOffset: 40,
     },
     muttertag: {
         enabled: false,
-        en: 'Mother\'s Day',
+        en: "Mother's Day",
         de: 'Muttertag',
         ru: 'День ма́тери',
         desc: 'calender',
-        april30Offset: 14
+        april30Offset: 14,
     },
     kindertag: {
         enabled: false,
-        en: 'Kid\'s Day',
+        en: "Kid's Day",
         de: 'Kindertag',
         ru: '???',
         desc: 'calender',
         date: '01.06',
-        offset: 151
+        offset: 151,
     },
     itanationalday: {
         enabled: false,
@@ -194,7 +194,7 @@ const holidays = {
         ru: 'Национальный день Италии',
         desc: 'calender',
         date: '02.06',
-        offset: 152
+        offset: 152,
     },
     pfingstsonntag: {
         enabled: true,
@@ -202,7 +202,7 @@ const holidays = {
         de: 'Pfingstsonntag',
         ru: 'Католическая Троица - Воскресение',
         desc: 'religion',
-        easterOffset: 49
+        easterOffset: 49,
     },
     pfingstmontag: {
         enabled: true,
@@ -210,16 +210,16 @@ const holidays = {
         de: 'Pfingstmontag',
         ru: 'Католическая Троица - Понедельник',
         desc: 'religion',
-        easterOffset: 50
+        easterOffset: 50,
     },
     siebenschlaefer: {
         enabled: false,
-        en: 'St Swtithin\'s Day',
+        en: "St Swtithin's Day",
         de: 'Siebenschläfertag',
         ru: 'сеногно́й',
         desc: 'calender',
         date: '27.06',
-        offset: 177
+        offset: 177,
     },
     fronleichnam: {
         enabled: false,
@@ -230,14 +230,14 @@ const holidays = {
         easterOffset: 60,
         comment_en: '(BW, BY, HE, NW, RP, SL(SN, TH not everywhere))',
         comment_de: '(BW, BY, HE, NW, RP, SL(SN, TH nicht überall))',
-        comment_ru: '(BW, BY, HE, NW, RP, SL(SN, TH не везде))'
+        comment_ru: '(BW, BY, HE, NW, RP, SL(SN, TH не везде))',
     },
     flbrueckentag: {
         enabled: false,
         en: 'Bridge Day after holiday',
         de: 'Brückentag nach Fronleichnam',
         desc: 'bridge day',
-        easterOffset: 61
+        easterOffset: 61,
     },
     suinationaltag: {
         enabled: false,
@@ -246,7 +246,7 @@ const holidays = {
         ru: 'национальный праздник в швейцарии',
         desc: 'political',
         date: '01.08',
-        offset: 212
+        offset: 212,
     },
     friedensfest: {
         enabled: false,
@@ -255,7 +255,7 @@ const holidays = {
         ru: '???',
         desc: 'religion',
         date: '08.08',
-        offset: 219
+        offset: 219,
     },
     mhimmelfahrt: {
         enabled: false,
@@ -266,11 +266,11 @@ const holidays = {
         date: '15.08',
         offset: 226,
         comment_en: '(BY (not everywhere), SL)',
-        comment_de: '(BY (nicht überall), SL)'
+        comment_de: '(BY (nicht überall), SL)',
     },
     wkinder: {
         enabled: false,
-        en: 'World Children\'s Day',
+        en: "World Children's Day",
         de: 'Weltkindertag',
         ru: 'Всемирный день защиты детей',
         desc: 'calender',
@@ -278,7 +278,7 @@ const holidays = {
         offset: 262,
         comment_en: '(Thuringia)',
         comment_de: '(Thüringen)',
-        comment_ru: '(Тюрингия)'
+        comment_ru: '(Тюрингия)',
     },
     michaelistag: {
         enabled: false,
@@ -287,7 +287,7 @@ const holidays = {
         ru: '???',
         desc: 'religion',
         date: '29.09',
-        offset: 271
+        offset: 271,
     },
     erntedankfest: {
         enabled: false,
@@ -295,7 +295,7 @@ const holidays = {
         de: 'Erntedankfest',
         ru: 'пра́здник урожа́я',
         desc: 'religion',
-        michaelisOffset: 7
+        michaelisOffset: 7,
     },
     einheitstag: {
         enabled: true,
@@ -304,7 +304,7 @@ const holidays = {
         ru: 'День объединения Германии',
         desc: 'political',
         date: '03.10',
-        offset: 275
+        offset: 275,
     },
     autnationaltag: {
         enabled: false,
@@ -313,7 +313,7 @@ const holidays = {
         ru: 'Австрийский национальный день',
         desc: 'political',
         date: '26.10',
-        offset: 298
+        offset: 298,
     },
     reformationstag: {
         enabled: false,
@@ -325,11 +325,11 @@ const holidays = {
         offset: 303,
         comment_en: '(BB, HB, HH, MV, NI, SN, SH, ST, TH)',
         comment_de: '(BB, HB, HH, MV, NI, SN, SH, ST, TH)',
-        comment_ru: '(BB, HB, HH, MV, NI, SN, SH, ST, TH)'
+        comment_ru: '(BB, HB, HH, MV, NI, SN, SH, ST, TH)',
     },
     allerheiligen: {
         enabled: true,
-        en: 'All Saints\' Day',
+        en: "All Saints' Day",
         de: 'Allerheiligen',
         ru: 'День всех святых (Хэллоуин)',
         desc: 'religion',
@@ -337,25 +337,25 @@ const holidays = {
         offset: 304,
         comment_en: '(BW, BY, NW, RP, SL)',
         comment_de: '(BW, BY, NW, RP, SL)',
-        comment_ru: '(BW, BY, NW, RP, SL)'
+        comment_ru: '(BW, BY, NW, RP, SL)',
     },
     allerseelen: {
         enabled: false,
-        en: 'All Souls\' Day',
+        en: "All Souls' Day",
         de: 'Allerseelen',
         ru: 'День Всех Душ',
         desc: 'religion',
         date: '02.11',
-        offset: 305
+        offset: 305,
     },
     martinstag: {
         enabled: true,
-        en: 'Saint Martin\'s Day',
+        en: "Saint Martin's Day",
         de: 'Martinstag',
         ru: '???',
         desc: 'religion',
         date: '11.11',
-        offset: 314
+        offset: 314,
     },
     volkstrauertag: {
         enabled: false,
@@ -363,7 +363,7 @@ const holidays = {
         de: 'Volkstrauertag',
         ru: '???',
         desc: 'political',
-        advent4Offset: -35
+        advent4Offset: -35,
     },
     bussbettag: {
         enabled: true,
@@ -374,7 +374,7 @@ const holidays = {
         advent4Offset: -32,
         comment_en: '(Saxony)',
         comment_de: '(Sachsen)',
-        comment_ru: '(SN)'
+        comment_ru: '(SN)',
     },
     totensonntag: {
         enabled: true,
@@ -382,16 +382,16 @@ const holidays = {
         de: 'Totensonntag',
         ru: '???',
         desc: 'religion',
-        advent4Offset: -28
+        advent4Offset: -28,
     },
     nikolaustag: {
         enabled: true,
-        en: 'St Nicholas\' Day',
+        en: "St Nicholas' Day",
         de: 'Nikolaustag',
         ru: 'День Свято́го Никола́я',
         desc: 'religion',
         date: '06.12',
-        offset: 339
+        offset: 339,
     },
     mempfaengnis: {
         enabled: true,
@@ -400,7 +400,7 @@ const holidays = {
         ru: 'Праздник Непорочного Зачатия',
         desc: 'religion',
         date: '08.12',
-        offset: 341
+        offset: 341,
     },
     advent1: {
         enabled: false,
@@ -408,7 +408,7 @@ const holidays = {
         de: '1. Advent',
         ru: '1. адве́нт',
         desc: 'religion',
-        advent4Offset: -21
+        advent4Offset: -21,
     },
     advent2: {
         enabled: false,
@@ -416,7 +416,7 @@ const holidays = {
         de: '2. Advent',
         ru: '2. адве́нт',
         desc: 'religion',
-        advent4Offset: -14
+        advent4Offset: -14,
     },
     advent3: {
         enabled: false,
@@ -424,7 +424,7 @@ const holidays = {
         de: '3. Advent',
         ru: '3. адве́нт',
         desc: 'religion',
-        advent4Offset: -7
+        advent4Offset: -7,
     },
     advent4: {
         enabled: false,
@@ -432,7 +432,7 @@ const holidays = {
         de: '4. Advent',
         ru: '4. адве́нт',
         desc: 'religion',
-        advent4Offset: 0
+        advent4Offset: 0,
     },
     heiligabend: {
         enabled: true,
@@ -441,7 +441,7 @@ const holidays = {
         ru: 'Католическое Рождество',
         desc: 'religion',
         date: '24.12',
-        offset: 357
+        offset: 357,
     },
     weihnachtstag1: {
         enabled: false,
@@ -450,7 +450,7 @@ const holidays = {
         ru: 'Католическое Рождество - Первый день',
         desc: 'religion',
         date: '25.12',
-        offset: 358
+        offset: 358,
     },
     weihnachtstag2: {
         enabled: true,
@@ -459,21 +459,21 @@ const holidays = {
         ru: 'Католическое Рождество - Второй день',
         desc: 'religion',
         date: '26.12',
-        offset: 359
+        offset: 359,
     },
     silvester: {
         enabled: true,
-        en: 'New Year\'s Eve',
+        en: "New Year's Eve",
         de: 'Silvester',
         ru: 'Новый год',
         desc: 'calender',
         date: '31.12',
-        offset: 364
-    }
+        offset: 364,
+    },
 };
 
 if (typeof module !== 'undefined' && module.parent) {
     module.exports = {
-        holidays: holidays
+        holidays: holidays,
     };
 }
