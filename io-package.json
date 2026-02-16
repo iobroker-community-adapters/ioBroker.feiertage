@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "feiertage",
-    "version": "1.2.1",
+    "version": "1.3.0",
     "news": {
+      "1.3.0": {
+        "en": "Adapter requires node.js >= 20 now\nAdapter requires js-controller >= 6.0.11 now\nAdapter requires admin >= 7.6.17 now\nDependencies have been updated",
+        "de": "Adapter benötigt node.js >= 20 jetzt\nAdapter benötigt jetzt js-controller >= 6.0.11\nAdapter benötigt admin >= 7.6.17 jetzt\nAbhängigkeiten wurden aktualisiert",
+        "ru": "Адаптер требует node.js >= 20 сейчас\nАдаптер требует js-контроллер >= 6.0.11\nАдаптер требует администратора >= 7.6.17\nЗависимости были обновлены",
+        "pt": "Adaptador requer nod.js >= 20 agora\nAdaptador requer js-controlador >= 6.0.11 agora\nAdaptador requer admin >= 7.6.17 agora\nAs dependências foram atualizadas",
+        "nl": "Voor de adapter zijn node.js < 20 now\nAdapter vereist js-controller > 6,0.11 nu\nVoor adapter is admin < 7.6.17 nu nodig\nAfhankelijkheden zijn bijgewerkt",
+        "fr": "Adaptateur nécessite node.js >= 20 maintenant\nAdaptateur nécessite js-controller >= 6.0.11 maintenant\nAdaptateur nécessite admin >= 7.6.17 maintenant\nLes dépendances ont été actualisées",
+        "it": "Adattatore richiede node.js >= 20 ora\nAdattatore richiede js-controller >= 6.0.11 ora\nAdattatore richiede admin >= 7.6.17 ora\nLe dipendenze sono state aggiornate",
+        "es": "Adaptador requiere node.js >= 20 ahora\nAdaptador requiere js-controller >= 6.0.11\nAdaptador requiere administración= 7.6.17 ahora\nSe han actualizado las dependencias",
+        "pl": "Adapter wymaga node.js > = 20\nAdapter wymaga sterownika js- > = 6.0.11\nAdapter wymaga admin > = 7.6.17\nZaktualizowano zależności",
+        "uk": "Адаптер вимагає node.js >= 20 тепер\nАдаптер вимагає js-controller >=6.0.11 тепер\nАдаптер вимагає адмін >= 7.6.17 тепер\nЗалежність було оновлено",
+        "zh-cn": "适配器需要节点.js >= 20 现在\n适配器需要js控制器 现在6.0.11\n适任者需要行政主管 现在7.6.17\n依赖关系已更新"
+      },
       "1.2.1": {
         "en": "2.1. has been incorrectly considered to be an holiday. This has been fixed. [#289, #132]\nDependencies have been updated",
         "de": "2.1. wurde unrichtiger Weise als Feiertag angesehen. Das wurde behoben. [#289, #132]\nAbhängigkeiten wurden aktualisiert",
