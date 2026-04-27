@@ -2,9 +2,10 @@
 
 const utils = require('@iobroker/adapter-core');
 const holidays = require('./admin/holidays').holidays; // Get common adapter utils
+const holidayMath = require('./lib/holidayMath');
 const adapterName = require('./package.json').name.split('.').pop();
 
-const ONE_DAY_MS = 24 * 60 * 60 * 1000;
+const ONE_DAY_MS = holidayMath.ONE_DAY_MS;
 
 class Feiertage extends utils.Adapter {
     constructor(options) {
@@ -40,6 +41,16 @@ class Feiertage extends utils.Adapter {
 
         const now = new Date();
         let year = now.getFullYear();
+
+        if (!holidayMath.isEasterYearSupported(year)) {
+            this.log.warn(
+                `Easter calculation may be inaccurate for year ${year} ` +
+                    `(Gauss algorithm is documented as valid until ${holidayMath.EASTER_ALGORITHM_VALID_UNTIL}). ` +
+                    `Holiday-related dates derived from Easter (Karfreitag, Ostermontag, Pfingsten, Fronleichnam, ...) ` +
+                    `may be off by up to one week.`,
+            );
+        }
+
         let isLeap = this.getIsLeap(year);
 
         // Easter sunday: day of the year
@@ -168,94 +179,40 @@ class Feiertage extends utils.Adapter {
         return isOneEnabled;
     }
 
-    // Get the name of holiday for the day of the year
+    // Holiday calculations are delegated to lib/holidayMath.js (pure functions, unit-tested).
+    // The wrapper methods preserve the original instance-method API so existing internal
+    // call sites (and any subclassing or external monkey-patching) keep working.
+
+    /**
+     * Wrapper around the pure {@link holidayMath.getHoliday} function which
+     * supplies the global `holidays` table and `this.lang` as defaults.
+     *
+     * @param {number} day - Day of year, 1-based
+     * @param {0|1} isLeap - Leap-year flag for the same year
+     * @param {number} easter - Day-of-year of Easter Sunday
+     * @param {number} advent4 - Day-of-year of the 4th advent
+     * @param {number} year - Calendar year
+     * @param {string} [_lang] - Language code; falls back to this.lang
+     * @returns {string} Localised holiday name, or empty string if none
+     */
     getHoliday(day, isLeap, easter, advent4, year, _lang) {
-        _lang = _lang || this.lang;
-
-        for (const h in holidays) {
-            if (holidays[h].enabled) {
-                if (
-                    holidays[h].offset !== 'undefined' &&
-                    1 + holidays[h].offset + (holidays[h].offset >= 59 ? isLeap : 0) === day
-                ) {
-                    return (
-                        holidays[h][_lang] +
-                        (holidays[h][`comment_${_lang}`] ? ` ${holidays[h][`comment_${_lang}`]}` : '')
-                    );
-                }
-                if (holidays[h].easterOffset !== 'undefined' && easter + holidays[h].easterOffset === day) {
-                    return (
-                        holidays[h][_lang] +
-                        (holidays[h][`comment_${_lang}`] ? ` ${holidays[h][`comment_${_lang}`]}` : '')
-                    );
-                }
-                if (holidays[h].advent4Offset !== 'undefined' && advent4 + holidays[h].advent4Offset === day) {
-                    return (
-                        holidays[h][_lang] +
-                        (holidays[h][`comment_${_lang}`] ? ` ${holidays[h][`comment_${_lang}`]}` : '')
-                    );
-                }
-                if (holidays[h].april30Offset !== 'undefined') {
-                    const newYear = new Date(year, 0, 1);
-                    const april30date = new Date(year, 3, 30, 0, 0, 0);
-                    const april30num = Math.ceil((april30date.getTime() - newYear.getTime()) / ONE_DAY_MS + 1);
-                    const mday = april30num - april30date.getDay() + holidays[h].april30Offset;
-
-                    if (mday === day) {
-                        return (
-                            holidays[h][_lang] +
-                            (holidays[h][`comment_${_lang}`] ? ` ${holidays[h][`comment_${_lang}`]}` : '')
-                        );
-                    }
-                }
-                if (holidays[h].michaelisOffset !== 'undefined') {
-                    const newYear = new Date(year, 0, 1);
-                    const michaelisDate = new Date(year, 8, 29, 0, 0, 0);
-                    const michaelisNum = Math.ceil((michaelisDate.getTime() - newYear.getTime()) / ONE_DAY_MS + 1);
-
-                    if (michaelisNum + (holidays[h].michaelisOffset - michaelisDate.getDay()) === day) {
-                        return (
-                            holidays[h][_lang] +
-                            (holidays[h][`comment_${_lang}`] ? ` ${holidays[h][`comment_${_lang}`]}` : '')
-                        );
-                    }
-                }
-            }
-        }
-
-        return '';
+        return holidayMath.getHoliday(holidays, day, isLeap, easter, advent4, year, _lang || this.lang);
     }
 
     getDateFromYearsDay(day, year) {
-        const dayMs = (day - 1) * ONE_DAY_MS; // Day of the year in ms from 01.01 00:00:00
-        const newYear = new Date(year, 0, 1, 0, 0, 0, 0); // This year 01.01 00:00:00
-        const newYearMs = newYear.getTime();
-        const date = new Date();
-
-        date.setTime(newYearMs + dayMs); // Add to current New year the ms
-        return date;
+        return holidayMath.getDateFromYearsDay(day, year);
     }
 
     getIsLeap(year) {
-        return (year % 4 === 0 && year % 100 !== 0) || year % 400 === 0 ? 1 : 0;
+        return holidayMath.getIsLeap(year);
     }
 
     getEastern(year) {
-        // The modified Gauss-Formula to calculate catholic eastern, valid till 2048
-        const A = 120 + ((19 * (year % 19) + 24) % 30);
-        const B = (A + Math.floor((5 * year) / 4)) % 7;
-        // Easter sunday: day of the year
-        return A - B - 33 + this.getIsLeap(year);
+        return holidayMath.getEastern(year);
     }
 
     getAdvent4(year) {
-        // 4th advent (sunday before first christmas day)
-        const newYear = new Date(year, 0, 1);
-        const christmas1 = new Date(year, 11, 25, 12, 0, 0);
-        const advent4date = new Date(
-            christmas1.getTime() - (!christmas1.getDay() ? 7 : christmas1.getDay()) * ONE_DAY_MS,
-        );
-        return Math.ceil((advent4date.setHours(0, 0, 0, 0) - newYear.getTime()) / ONE_DAY_MS + 1);
+        return holidayMath.getAdvent4(year);
     }
 
     onUnload(callback) {

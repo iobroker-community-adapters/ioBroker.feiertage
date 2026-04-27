@@ -39,6 +39,9 @@ Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/iobroke
 
 ### **WORK IN PROGRESS**
 - (copilot) Adapter requires admin >= 7.7.22 now
+- (krobi) **TESTING**: Add real unit-test suite (83 tests) covering Easter calculation 2020–2048, leap years, Advent4, all five holiday-resolution strategies (offset, easterOffset, advent4Offset, april30Offset, michaelisOffset), language fallback, and a regression test for the 2.1.-Neujahr bug fixed in v1.2.1
+- (krobi) **FIXED**: `getHoliday` used `entry.offset !== 'undefined'` (string compare) instead of `typeof entry.offset !== 'undefined'`. The check was effectively always true, so every holiday entry was tested against every offset strategy. Fixed by extracting the calculation into a new `lib/holidayMath.js` with proper `typeof` checks
+- (krobi) **FIXED**: Warn when the configured year exceeds 2048, the documented validity range of the Gauss-Easter algorithm. Past that year the result starts to drift by up to one week
 
 ### 1.3.0 (2026-02-16)
 - (mcm1957) Adapter requires node.js >= 20 now
