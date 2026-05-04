@@ -66,6 +66,8 @@ Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/iobroke
 * (mcm1957) changed: Dependencies have been updated
 * (klein0r) Dependencies updated
 
+[Older changelogs can be found there](CHANGELOG_OLD.md)
+
 ## License
 
 Copyright (c) 2016-2026 iobroker-community-adapters <iobroker-community-adapters@gmx.de>
