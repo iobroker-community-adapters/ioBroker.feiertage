@@ -40,7 +40,8 @@ Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/iobroke
 ### **WORK IN PROGRESS**
 - (copilot) Adapter requires node.js >= 22 now
 - (copilot) Adapter requires admin >= 7.7.22 now
-
+- (mcm1957) Dependencies have been updated
+  
 ### 1.3.0 (2026-02-16)
 - (mcm1957) Adapter requires node.js >= 20 now
 - (copilot) Adapter requires js-controller >= 6.0.11 now
