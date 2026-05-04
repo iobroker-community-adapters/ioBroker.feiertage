@@ -1,4 +1,14 @@
 # Older changes
+## 1.1.3 (2023-08-13)
+* (mcm1957) changed: missing translations have been added
+* (mcm1957) changed: Swiss national holiday has been corrected (# 164)
+* (mcm1957) changed: Adapter required node 16 now
+* (mcm1957) changed: Testing has been changed to support node 16, 18 and 20
+* (mcm1957) changed: Dependencies have been updated
+* (klein0r) Dependencies updated
+
+[Older changelogs can be found there](CHANGELOG_OLD.md)
+
 ## 1.1.1 (2022-02-01)
 * (alcalzone, pix) Dependencies updated
 
