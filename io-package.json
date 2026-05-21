@@ -154,6 +154,9 @@
     "compact": true,
     "connectionType": "local",
     "dataSource": "push",
+    "adminUI": {
+      "config": "json"
+    },
     "materialize": true,
     "docs": {
       "en": "docs/en/doc_feiertage_en.md",

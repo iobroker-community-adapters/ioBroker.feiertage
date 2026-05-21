@@ -1,30 +1,27 @@
 'use strict';
 
-/**
- * This is a dummy TypeScript test file using chai and mocha
- *
- * It's automatically excluded from npm and its build output is excluded from both git and npm.
- * It is advised to test all your modules with accompanying *.test.js-files
- */
-
-// tslint:disable:no-unused-expression
-
+const fs = require('fs');
+const path = require('path');
 const { expect } = require('chai');
-// import { functionToTest } from "./moduleToTest";
 
-describe('module to test => function to test', () => {
-    // initializing logic
-    const expected = 5;
+const { holidays } = require('./admin/holidays.js');
 
-    it(`should return ${expected}`, () => {
-        const result = 5;
-        // assign result a value from functionToTest
-        expect(result).to.equal(expected);
-        // or using the should() syntax
-        result.should.equal(expected);
+describe('admin jsonConfig migration', () => {
+    const ioPackagePath = path.join(__dirname, 'io-package.json');
+    const jsonConfigPath = path.join(__dirname, 'admin', 'jsonConfig.json');
+    const ioPackage = JSON.parse(fs.readFileSync(ioPackagePath, 'utf8'));
+    const jsonConfig = JSON.parse(fs.readFileSync(jsonConfigPath, 'utf8'));
+
+    it('should configure json admin UI in io-package', () => {
+        expect(ioPackage.common.adminUI).to.deep.equal({ config: 'json' });
     });
-    // ... more tests => it
 
+    it('should expose all holiday enable keys as boolean checkboxes in jsonConfig', () => {
+        for (const holidayId of Object.keys(holidays)) {
+            const key = `enable_${holidayId}`;
+            const field = jsonConfig.items[key];
+            expect(field, `missing config field: ${key}`).to.be.an('object');
+            expect(field.type, `unexpected type for ${key}`).to.equal('checkbox');
+        }
+    });
 });
-
-// ... more test suites => describe
