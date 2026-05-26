@@ -154,7 +154,6 @@
     "compact": true,
     "connectionType": "local",
     "dataSource": "push",
-    "materialize": true,
     "docs": {
       "en": "docs/en/doc_feiertage_en.md",
       "de": "docs/de/doc_feiertage_de.md",
@@ -175,7 +174,10 @@
       {
         "admin": ">=7.7.22"
       }
-    ]
+    ],
+    "adminUI": {
+      "config": "materialize"
+    }
   },
   "native": {},
   "objects": [],
