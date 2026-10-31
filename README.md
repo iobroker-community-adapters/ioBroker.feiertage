@@ -32,6 +32,9 @@ Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/iobroke
 :poland: [Dokumentacja](/docs/en/doc_feiertage_en.md)
 
 ## Changelog
+
+### **WORK IN PROGRESS**
+- (copilot) Adapter requires node.js >= 22.19.0 now
 <!--
     Placeholder for the next version (at the beginning of the line):
     ### **WORK IN PROGRESS**
